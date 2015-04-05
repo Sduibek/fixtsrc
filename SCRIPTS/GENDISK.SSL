@@ -1,0 +1,68 @@
+procedure start;
+
+procedure DiscardMe;
+procedure DestroyMe;
+procedure SetGVARs;
+
+// local_var(0) == HaveAlreadyFlaggedForRemoval
+
+
+procedure start
+begin
+	if script_action == 3 then begin// 3 is description (Binoculars)
+		script_overrides;
+		call DiscardMe;
+	end
+	else begin
+		if script_action == 6 then begin//use_p_proc - Use, Activate, or Manipulate the Object or Item
+			script_overrides;
+			call DiscardMe;
+		end
+		else begin
+			if script_action == 1 then begin
+				script_overrides;
+				call DestroyMe;
+			end
+		end
+	end
+end
+
+procedure DiscardMe
+begin
+	if local_var(0) != 1 then begin
+		set_local_var(0, 1);
+		display_msg(message_str(295, 106));
+		display_msg(message_str(295, 107));
+		call SetGVARs;
+	end
+end
+
+procedure DestroyMe
+begin
+	if self_obj != 0 then begin
+		if (global_var(487) == 0) and (global_var(488) == 0) and (global_var(489) == 0) then begin
+			call SetGVARs;
+		end
+	end
+end
+
+procedure SetGVARs
+begin
+	if global_var(487) == 0 then begin
+		set_global_var(487, self_obj);
+	end
+	else begin
+		if global_var(488) == 0 then begin
+			set_global_var(488, self_obj);
+		end
+		else begin
+			if global_var(489) == 0 then begin
+				set_global_var(489, self_obj);
+			end
+			else begin
+				display_msg("ERROR!!! Invalid GVAR slot past 489, cannot destroy GENDISK.SSL!");
+			end
+		end
+	end
+end
+

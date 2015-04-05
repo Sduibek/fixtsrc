@@ -1,0 +1,13 @@
+//
+// ---TRAP SCRIPT---  Sduibek
+//
+// I think this is unused.
+//
+procedure start;
+
+procedure start
+begin
+	if metarule(14, 0) then begin
+		display_msg("INIT ELECTRAP.SSL at map number " + cur_map_index + " and elevation " + elevation(self_obj) + ". Please take a screenshot now and send to Sduibek. Thanks!");
+	end
+end
