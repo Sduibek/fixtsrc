@@ -1,0 +1,24 @@
+Tools I use for modding: 
+
+[url=http://www.sadmansoftware.com/search/]Search[/url], 
+
+[url=http://www.scootersoftware.com]BeyondCompare[/url], 
+
+[url=http://www.foldermatch.com/]FolderMatch[/url], 
+
+[url=http://rename.lupasfreeware.org/]Renamer[/url], 
+
+[url=http://www.wingrep.com/]WinGrep[/url],
+
+[url=http://www.nma-fallout.com/forum/dload.php?action=file&file_id=524]FSE[/url], 
+
+[url=http://www.mediafire.com/?2jh4zde39m0mobl]Titanium Browser[/url],
+
+[url=http://www.irfanview.com/]IrfanView[/url], 
+
+[url=http://www.getpaint.net]Paint.NET[/url], 
+
+[url=http://www.nma-fallout.com/forum/dload.php?action=file&file_id=670]Viewer (for BMP->RIX)[/url]
+
+
+Beyond Compare, HexCmp, FolderMatch, SadMan SEARCH, BIS Mapper, Notepad, Flex Renamer, LupasRename, Photoshop

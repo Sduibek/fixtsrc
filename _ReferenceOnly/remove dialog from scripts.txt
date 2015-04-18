@@ -1,0 +1,539 @@
+c:\games\fallout\scripts-editing\1MOLRAT1.SSL [1 match]
+*   50 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\ALYA.ssl [1 match]
+*   67 debug_msg("ALYA init.");
+c:\games\fallout\scripts-editing\ARMDOOR.SSL [2 matches]
+*   68 display_msg(message_str(766, 103) + "65" + message_str(766, 104));
+*  106 display_msg(message_str(766, 103) + "65" + message_str(766, 104));
+c:\games\fallout\scripts-editing\ARTIFACT.SSL [1 match]
+*   25 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\BARSTOW.SSL [1 match]
+*   53 display_msg("You see Zack Barstow, an Initiate of the Childred of the Cathedral.");
+c:\games\fallout\scripts-editing\BHDOOR.SSL [2 matches]
+*  103 display_msg(message_str(766, 103) + "75" + message_str(766, 104));
+*  138 display_msg(message_str(766, 103) + "75" + message_str(766, 104));
+c:\games\fallout\scripts-editing\BRAHMIN.SSL [1 match]
+*  139 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\BRODEAD.SSL [1 match]
+*   26 debug_msg("Enter Map: BROTHERHOOD, DEAD");
+c:\games\fallout\scripts-editing\BROHD12.SSL [1 match]
+*   28 debug_msg("Enter Map: BROTHERHOOD, LEVELS 1 & 2");
+c:\games\fallout\scripts-editing\BROHD34.SSL [1 match]
+*   35 debug_msg("Enter Map: BROTHERHOOD, LEVELS 3 & 4");
+c:\games\fallout\scripts-editing\BROHDENT.ssl [1 match]
+*   28 debug_msg("Enter Map: BROTHERHOOD, OUTSIDE");
+c:\games\fallout\scripts-editing\BROHIST.SSL [1 match]
+*   20 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\BVBROKEN.SSL [1 match]
+*    8 display_msg("The elevator is broken. Maybe you can use the ladder.");
+c:\games\fallout\scripts-editing\CARCOW.SSL [1 match]
+*  103 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\CARENCTR.SSL [1 match]
+*   85 debug_msg("Enter Map: HUB CARAVANS, RANDOM ENCOUNTER, 'CARENCTR' ");
+c:\games\fallout\scripts-editing\CARVLEAD.ssl [5 matches]
+*  663 display_msg("CONTACT SDUIBEK IF YOU SEE THIS MESSAGE");
+*  664 display_msg("CONTACT SDUIBEK IF YOU SEE THIS MESSAGE");
+*  665 display_msg("CONTACT SDUIBEK IF YOU SEE THIS MESSAGE");
+*  666 display_msg("CONTACT SDUIBEK IF YOU SEE THIS MESSAGE");
+*  667 display_msg("CONTACT SDUIBEK IF YOU SEE THIS MESSAGE");
+c:\games\fallout\scripts-editing\CAVEWALL.SSL [1 match]
+*  111 display_msg(message_str(766, 188) + " " + message_str(766, 103) + LVar1 + message_str(766, 104));
+c:\games\fallout\scripts-editing\CBLKDOOR.SSL [2 matches]
+*   69 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+*  107 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\CHEATER.ssl [1 match]
+*  130 display_msg("You see a cheating person.");
+c:\games\fallout\scripts-editing\CHILDEAD.SSL [1 match]
+*   26 debug_msg("Enter Map: CHILDREN'S CATHEDRAL, DEAD");
+c:\games\fallout\scripts-editing\CHILDRN1.SSL [1 match]
+*   35 debug_msg("Enter Map: CHILDREN'S CATHEDRAL, LEVEL 1 & 2");
+c:\games\fallout\scripts-editing\CHILDRN2.SSL [1 match]
+*   30 debug_msg("Enter Map: CHILDREN'S CATHEDRAL, LEVEL 3 & 4");
+c:\games\fallout\scripts-editing\CODEDISK.SSL [1 match]
+*   20 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\COLATRUK.SSL [1 match]
+*   25 debug_msg("Enter Map: SPECIAL ENCOUNTER, NUKA-COLA TRUCK");
+c:\games\fallout\scripts-editing\COW.ssl [1 match]
+*  124 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\COYOTE.SSL [1 match]
+*   50 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\CREDDOOR.SSL [2 matches]
+*   72 display_msg(message_str(766, 103) + "85" + message_str(766, 104));
+*  110 display_msg(message_str(766, 103) + "85" + message_str(766, 104));
+c:\games\fallout\scripts-editing\DEMODOOR.SSL [9 matches]
+*   41 display_msg("That does nothing.");
+*   77 display_msg("The door is locked.");
+*   87 display_msg("You successfully unlock the refrigerator.");
+*   91 display_msg("You are having trouble with this lock.");
+*   95 display_msg("It is already unlocked.");
+*  101 display_msg("You see a refrigerator.");
+*  107 display_msg("It is closed and locked.");
+*  111 display_msg("It is open.");
+*  114 display_msg("It is closed.");
+c:\games\fallout\scripts-editing\DETHCAVE.SSL [4 matches]
+*   22 debug_msg("");
+*   23 debug_msg("Enter Map: THE HUB, DEATHCLAW CAVE");
+*   24 debug_msg("");
+*   25 debug_msg("");
+c:\games\fallout\scripts-editing\DIANA.ssl [1 match]
+*   64 debug_msg("DIANA init.");
+c:\games\fallout\scripts-editing\DISKA.SSL [1 match]
+*   21 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\DISKD.SSL [1 match]
+*   21 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\DOG.SSL [1 match]
+*  120 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\DOG2.SSL [1 match]
+*  125 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\DOGMEAT.ssl [1 match]
+*   55 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\DOOR.SSL [3 matches]
+*   72 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+*  101 display_msg(message_str(766, 203));//"You notice that the field is damaged enough to walk through."
+*  118 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+c:\games\fallout\scripts-editing\DRWHOMAP.SSL [1 match]
+*   25 debug_msg("Enter Map: SPECIAL ENCOUNTER, TARDIS PHONEBOX");
+c:\games\fallout\scripts-editing\DUMAR.SSL [3 matches]
+*   61 display_msg("You see Dumar, an Acrolyte of the Children of the Cathedral.");
+*   66 display_msg("You see Dumar, an Acrolyte of the Children of the Cathedral.");
+*  175 display_msg("Dumar pleads with you to cease your vicious attacks.");
+c:\games\fallout\scripts-editing\ELCTRAP.SSL [1 match]
+*   23 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+c:\games\fallout\scripts-editing\EMITER1A.SSL [2 matches]
+*   50 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*   76 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\EMITER1B.SSL [2 matches]
+*   50 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*   76 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\EMITER1C.SSL [2 matches]
+*   50 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*   76 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\EMITER1D.SSL [2 matches]
+*   50 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*   76 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\EMITER2A.SSL [2 matches]
+*   50 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*   76 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\EMITER2B.SSL [2 matches]
+*   50 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*   76 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\EMITER2C.SSL [2 matches]
+*   50 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*   76 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\EMITER3A.SSL [2 matches]
+*   50 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*   76 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\EMITER4A.SSL [2 matches]
+*   50 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*   76 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\EMITER5A.SSL [2 matches]
+*   50 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*   76 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\EMITER6A.SSL [2 matches]
+*   50 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*   76 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\EMITERH.SSL [2 matches]
+*   50 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*   76 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\FEVDISK.SSL [1 match]
+*   21 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\FLARE.SSL [24 matches]
+*    6 display_msg("0");
+*    9 display_msg("1");
+*   12 display_msg("2");
+*   15 display_msg("3");
+*   18 display_msg("4");
+*   21 display_msg("5");
+*   24 display_msg("6");
+*   27 display_msg("7");
+*   30 display_msg("8");
+*   33 display_msg("9");
+*   36 display_msg("10");
+*   39 display_msg("11");
+*   42 display_msg("12");
+*   45 display_msg("13");
+*   48 display_msg("14");
+*   51 display_msg("15");
+*   54 display_msg("16");
+*   57 display_msg("17");
+*   60 display_msg("18");
+*   63 display_msg("19");
+*   66 display_msg("20");
+*   69 display_msg("21");
+*   72 display_msg("22");
+*   75 display_msg("23");
+c:\games\fallout\scripts-editing\FLOATER.SSL [1 match]
+*  108 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\FOLLMAP.SSL [1 match]
+*   35 debug_msg("Enter Map: BONEYARD, FOLLOWERS - 'FOLLMAP' ");
+c:\games\fallout\scripts-editing\FOOTMAP.SSL [1 match]
+*  159 debug_msg("Enter Map: SPECIAL ENCOUNTER, FOOTPRINT");
+c:\games\fallout\scripts-editing\FSAUSER.SSL [1 match]
+*  157 debug_msg("Enter Map: SPECIAL ENCOUNTER, FLYING SAUCER");
+c:\games\fallout\scripts-editing\GARRET.ssl [1 match]
+*  372 display_msg(cash + " caps");
+c:\games\fallout\scripts-editing\GDOOR.SSL [2 matches]
+*   72 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+*  110 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+c:\games\fallout\scripts-editing\GENINT.SSL [1 match]
+*   46 display_msg("You see one of the acrolytes of the Children of the Cathedral.");
+c:\games\fallout\scripts-editing\GENLOCK.SSL [2 matches]
+*   69 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+*  109 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+c:\games\fallout\scripts-editing\GENMERCB.SSL [1 match]
+*  147 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\GENRAIDR.ssl [1 match]
+*   80 debug_msg("GENRAIDR init complete.");
+c:\games\fallout\scripts-editing\GLOBLDOR.SSL [5 matches]
+*  148 display_msg(message_str(766, 103) + "45" + message_str(766, 104));
+*  243 display_msg(message_str(766, 103) + "45" + message_str(766, 104));
+*  276 display_msg(message_str(766, 103) + "55" + message_str(766, 104));
+*  325 display_msg(message_str(766, 103) + "55" + message_str(766, 104));
+*  351 display_msg(message_str(766, 103) + "45" + message_str(766, 104));
+c:\games\fallout\scripts-editing\GLORDDOR.SSL [5 matches]
+*  148 display_msg(message_str(766, 103) + "45" + message_str(766, 104));
+*  243 display_msg(message_str(766, 103) + "45" + message_str(766, 104));
+*  276 display_msg(message_str(766, 103) + "55" + message_str(766, 104));
+*  325 display_msg(message_str(766, 103) + "55" + message_str(766, 104));
+*  351 display_msg(message_str(766, 103) + "45" + message_str(766, 104));
+c:\games\fallout\scripts-editing\GLOWENT.SSL [1 match]
+*   28 debug_msg("Enter Map: THE GLOW, CRATER");
+c:\games\fallout\scripts-editing\GLOWGEN.SSL [2 matches]
+*   36 display_msg(message_str(766, 103) + "1000" + message_str(766, 104));
+*   69 display_msg(message_str(766, 103) + "1000" + message_str(766, 104));
+c:\games\fallout\scripts-editing\GLOWMAP1.SSL [1 match]
+*   24 debug_msg("Enter Map: THE GLOW, LEVELS 1/2/3");
+c:\games\fallout\scripts-editing\GLOWMAP2.SSL [2 matches]
+*   24 debug_msg("Enter Map: THE GLOW, LEVELS 4/5/6");
+*   67 display_msg(message_str(766, 103) + "1000" + message_str(766, 104));
+c:\games\fallout\scripts-editing\GLOYLDOR.SSL [5 matches]
+*  148 display_msg(message_str(766, 103) + "55" + message_str(766, 104));
+*  243 display_msg(message_str(766, 103) + "45" + message_str(766, 104));
+*  274 display_msg(message_str(766, 103) + "55" + message_str(766, 104));
+*  323 display_msg(message_str(766, 103) + "55" + message_str(766, 104));
+*  349 display_msg(message_str(766, 103) + "45" + message_str(766, 104));
+c:\games\fallout\scripts-editing\HALLDED1.SSL [1 match]
+*   49 debug_msg("Enter Map: NECROPOLIS, HALLS OF DEAD");
+c:\games\fallout\scripts-editing\HDTUP2DN.SSL [1 match]
+*    8 display_msg("boo!");
+c:\games\fallout\scripts-editing\HDTVAULT.SSL [1 match]
+*  148 display_msg(message_str(766, 103) + "45" + message_str(766, 104));
+c:\games\fallout\scripts-editing\HHooker.ssl [1 match]
+*  187 display_msg("Upon further inspection, it's obvious that this is a prostitute. She flashes you a fake smile.");
+c:\games\fallout\scripts-editing\HHOOKER2.ssl [1 match]
+*  285 display_msg("Upon further inspection, it's obvious that this is a prostitute. She motions for you to get the fuck out of this room.");
+c:\games\fallout\scripts-editing\HOTELMAP.SSL [1 match]
+*   33 debug_msg("Enter Map: NECROPOLIS, HOTEL");
+c:\games\fallout\scripts-editing\HROULET.SSL [1 match]
+*  270 display_msg("dice == " + LVar0);
+c:\games\fallout\scripts-editing\HUBDWNTN.SSL [1 match]
+*   43 debug_msg("Enter Map: THE HUB, DOWNTOWN");
+c:\games\fallout\scripts-editing\HUBENCTR.SSL [1 match]
+*   85 debug_msg("Enter Map: HUB CARAVANS, RANDOM ENCOUNTER, 'HUBENCTR' ");
+c:\games\fallout\scripts-editing\HUBENT.SSL [1 match]
+*   29 debug_msg("Enter Map: THE HUB, ENTRANCE");
+c:\games\fallout\scripts-editing\HUBHEIGT.SSL [1 match]
+*   28 debug_msg("Enter Map: THE HUB, HEIGHTS");
+c:\games\fallout\scripts-editing\HUBMIS1.SSL [1 match]
+*   25 debug_msg("Enter Map: THE HUB, IRWIN'S FARM");
+c:\games\fallout\scripts-editing\HUBOLDTN.SSL [1 match]
+*   30 debug_msg("Enter Map: THE HUB, OLDTOWN");
+c:\games\fallout\scripts-editing\HUBWATER.SSL [1 match]
+*   28 debug_msg("Enter Map: THE HUB, WATER MERCHANTS");
+c:\games\fallout\scripts-editing\IAN.SSL [2 matches]
+*  195 display_msg(message_str(766, 192) + (global_var(463) + 1) + ".");
+*  410 float_msg(self_obj, "Thanks, i'll make good use of that in combat!", 0);
+c:\games\fallout\scripts-editing\INVADER.ssl [11 matches]
+*   29 debug_msg("Invader Mutant's maxHP is "+MaxHP+".");
+*   68 debug_msg("WeaponID for Invader: " + WeaponID);
+*   75 debug_msg("weaponPtr: MINIGUN  ");
+*   83 debug_msg("weaponPtr: MELEE, brass  ");
+*   87 debug_msg("weaponPtr: MELEE, spiked  ");
+*   95 debug_msg("weaponPtr: LASER  ");
+*  102 debug_msg("weaponPtr: FLAME  ");
+*  109 debug_msg("weaponPtr: PLASMA  ");
+*  116 debug_msg("weaponPtr: GATLING  ");
+*  124 debug_msg("weaponPtr: ROCKET  ");
+*  176 debug_msg("Invader Mutant warcry: [" + message_str(912, LVar0) + "] (Sduibek)");
+c:\games\fallout\scripts-editing\JUNKCAS.SSL [1 match]
+*   70 debug_msg("Enter Map: JUNKTOWN, CASINO");
+c:\games\fallout\scripts-editing\JUNKDOG.SSL [2 matches]
+*  144 display_msg("You see: Dogmeat.");
+*  237 float_msg(self_obj, "Woof woof!", 3);
+c:\games\fallout\scripts-editing\JUNKENT.SSL [1 match]
+*   39 debug_msg("Enter Map: JUNKTOWN, ENTRANCE");
+c:\games\fallout\scripts-editing\JUNKKILL.SSL [1 match]
+*   53 debug_msg("Enter Map: JUNKTOWN, KILLIAN");
+c:\games\fallout\scripts-editing\KATJA.SSL [2 matches]
+*  152 display_msg(message_str(766, 193) + (global_var(465) + 1) + ".");
+*  227 float_msg(self_obj, "Thanks, i'll make good use of that in combat!", 5);
+c:\games\fallout\scripts-editing\LAADYTUM.SSL [1 match]
+*   45 debug_msg("Enter Map: BONEYARD, ADYTUM");
+c:\games\fallout\scripts-editing\LABLADES.SSL [1 match]
+*   36 debug_msg("Enter Map: BONEYARD, BLADES");
+c:\games\fallout\scripts-editing\LAFOLLWR.SSL [1 match]
+*   26 debug_msg("Enter Map: BONEYARD, FOLLOWERS - 'LAFOLLWR' ");
+c:\games\fallout\scripts-editing\LAGUNRUN.SSL [1 match]
+*   29 debug_msg("Enter Map: BONEYARD, GUN RUNNERS");
+c:\games\fallout\scripts-editing\LARIPPER.SSL [1 match]
+*   27 debug_msg("Enter Map: BONEYARD, RIPPERS");
+c:\games\fallout\scripts-editing\LTCODES.SSL [2 matches]
+*    8 display_msg(message_str(350, 103));// "You see an encryption decoder disk."
+*   18 display_msg(message_str(350, 102));// "downloading,..."
+c:\games\fallout\scripts-editing\MANTIS.SSL [1 match]
+*  134 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\MASTER1.SSL [1 match]
+*   34 debug_msg("Enter Map: MASTER'S VAULT, LEVEL 1 & 2");
+c:\games\fallout\scripts-editing\MASTER2.SSL [1 match]
+*   38 debug_msg("Enter Map: MASTER'S VAULT, LEVEL 3 & 4");
+c:\games\fallout\scripts-editing\MAXDISK.SSL [1 match]
+*   20 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\MBDEAD.SSL [1 match]
+*   26 debug_msg("Enter Map: MILITARY BASE, DEAD");
+c:\games\fallout\scripts-editing\MBENT.SSL [1 match]
+*   32 debug_msg("Enter Map: MILITARY BASE, OUTSIDE");
+c:\games\fallout\scripts-editing\MBOUT2IN.SSL [2 matches]
+*   78 display_msg(message_str(766, 103) + "65" + message_str(766, 104));
+*  104 display_msg(message_str(766, 103) + "85" + message_str(766, 104));
+c:\games\fallout\scripts-editing\MBSTRONG.SSL [1 match]
+*   49 debug_msg("Enter Map: MILITARY BASE, LEVELS 1 & 2");
+c:\games\fallout\scripts-editing\MBVATS.SSL [4 matches]
+*   43 debug_msg("");
+*   44 debug_msg("Enter Map: MILITARY BASE, LEVELS 3 & 4");
+*   45 debug_msg("");
+*   46 debug_msg("");
+c:\games\fallout\scripts-editing\MOLERAT2.SSL [1 match]
+*   69 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\MRHANDYA.SSL [1 match]
+*  125 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\MRHANDYB.SSL [1 match]
+*   96 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\MRHANDYC.SSL [1 match]
+*  133 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\MUTDISK.SSL [1 match]
+*   20 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\NGARFRDG.ssl [1 match]
+*  119 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+c:\games\fallout\scripts-editing\obj_dude BACKUP.txt [9 matches]
+*   74 // display_msg("c");
+*   76 // display_msg("Combat diff: " + combat_difficulty + " ");
+*   77 // display_msg("Game diff: " + difficulty_level + " ");
+*  106 // display_msg("oh my goodness, item#2 is "+ LVar0+" !");
+*  122 display_msg("The poison has left your system.");
+*  134 float_msg(dude_obj, "Fire in the hole!", 0);
+*  139 float_msg(dude_obj, "Fire in the hole!", 0);
+*  200 float_msg(dude_obj, "Fire in the hole!", 0);
+*  205 float_msg(dude_obj, "Fire in the hole!", 0);
+c:\games\fallout\scripts-editing\OBJ_DUDE.ssl [29 matches]
+*  130 display_msg("");
+*  131 display_msg(""+LVar0+"");
+*  132 display_msg("");
+*  134 display_msg("Done.");
+*  142 // display_msg("You must have a lot of time on your hands to be checking yourself out like this.");
+*  143 // display_msg("You look at yourself for a while. Do you like what you see?");
+*  159 // display_msg("done.");
+*  409 // display_msg("oh my goodness, item#2 is "+ LVar0+" !");
+*  424 display_msg("The poison has left your system.");
+*  436 float_msg(dude_obj, "Fire in the hole!", 0);
+*  441 float_msg(dude_obj, "Fire in the hole!", 0);
+*  508 float_msg(dude_obj, "Fire in the hole!", 0);
+*  513 float_msg(dude_obj, "Fire in the hole!", 0);
+*  581 display_msg("GVAR_Vomit := "+global_var(GVAR_DUDE_VOMITING));
+*  696 display_msg("EndGame Mod variables reset. Please try to enter Vault 13 again.");
+*  709 display_msg(""+item1+" (self_obj, 1)");
+*  710 display_msg(""+item2+" (self_obj, 2)");
+*  714 display_msg("You have died. The Vault is doomed.");
+*  738 display_msg(""+global_var(194)+"");
+*  792 debug_msg("ROLL SUCCESS");
+*  793 debug_msg("Amount above/below: " + LVar1 + "     ");
+*  796 debug_msg("ROLL FAILURE");
+*  797 debug_msg("Amount above/below: " + LVar1 + "     ");
+*  802 //display_msg("roll_vs_skill(dude_obj, 14, 0) :: "+LVar0+"");
+*  803 //display_msg("how_much :: "+LVar1+"");
+*  804 //display_msg("do_check(dude_obj, 14, 0) :: "+LVar2+"");
+*  805 //display_msg("how_much :: "+LVar3+"");
+*  925 display_msg("before: " + get_critter_stat(dude_obj, 36) + " ");
+*  927 display_msg("after: " + get_critter_stat(dude_obj, 36) + " ");
+c:\games\fallout\scripts-editing\RADRAT.SSL [1 match]
+*   93 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\RADSCAVE.SSL [4 matches]
+*   24 debug_msg("");
+*   25 debug_msg("Enter Map: SHADY SANDS, SCORPION CAVE");
+*   26 debug_msg("");
+*   27 debug_msg("");
+c:\games\fallout\scripts-editing\RADSCOR2.ssl [2 matches]
+*  154 display_msg("You cannot steal from this critter.");
+*  162 display_msg("It looks to have originated from the North American Emperor scorpion.");
+c:\games\fallout\scripts-editing\RADSCORP.ssl [2 matches]
+*  154 display_msg("You cannot steal from this critter.");
+*  162 display_msg("It looks to have originated from the North American Emperor scorpion.");
+c:\games\fallout\scripts-editing\RAIDDOOR.SSL [2 matches]
+*   74 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+*  111 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+c:\games\fallout\scripts-editing\RAIDMAP.SSL [1 match]
+*   30 debug_msg("Enter Map: KHANS");
+c:\games\fallout\scripts-editing\RATION.SSL [12 matches]
+*   69 display_msg("You see Cindy crying.");
+*   73 display_msg("You see Lisa crying.");
+*   77 display_msg("You see Sandy crying.");
+*   81 display_msg("You see Mary crying.");
+*   85 display_msg("You see Stacy crying.");
+*   89 display_msg("You see Susan crying.");
+*  100 display_msg("You see Cindy.");
+*  104 display_msg("You see Lisa.");
+*  108 display_msg("You see Sandy.");
+*  112 display_msg("You see Mary.");
+*  116 display_msg("You see Stacy.");
+*  120 display_msg("You see Susan.");
+c:\games\fallout\scripts-editing\REDFIELD.SSL [2 matches]
+*   69 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+*  105 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+c:\games\fallout\scripts-editing\REGDISK.SSL [1 match]
+*   20 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\RNDCITY.SSL [2 matches]
+*  133 debug_msg("Enter Map: RANDOM ENCOUNTER, CITY ");
+*  220 display_msg("City encounter type: " + Encounter_Num);
+c:\games\fallout\scripts-editing\RNDCOAST.SSL [1 match]
+*   54 debug_msg("Enter Map: RANDOM ENCOUNTER, COAST ");
+c:\games\fallout\scripts-editing\RNDDESRT.ssl [13 matches]
+*  141 debug_msg("Enter Map: RANDOM ENCOUNTER, DESERT ");
+*  350 debug_msg("Bone Desert encounter type: " + Encounter_Num);
+*  965 debug_msg("Death Claw encounter type: " + Encounter_Num);
+* 1260 debug_msg("Glow Desert encounter type: " + Encounter_Num);
+* 1547 debug_msg("Hub Desert encounter type: " + Encounter_Num);
+* 2086 debug_msg("Junk Town Desert encounter type: " + Encounter_Num);
+* 2522 debug_msg("Necropolis Desert encounter type: " + Encounter_Num);
+* 3079 debug_msg("Northern Desert encounter type: " + Encounter_Num);
+* 3535 debug_msg("Raiders Desert encounter type: " + Encounter_Num);
+* 4740 debug_msg("Shady Sands Desert encounter type: " + Encounter_Num);
+* 5211 debug_msg("Southern Desert encounter type: " + Encounter_Num);
+* 5497 debug_msg("Brotherhood of Steel Desert encounter type: " + Encounter_Num);
+* 6520 debug_msg("Vats Desert encounter type: " + Encounter_Num);
+c:\games\fallout\scripts-editing\RNDMTN.SSL [16 matches]
+*  150 debug_msg("Enter Map: RANDOM ENCOUNTER, MOUNTAIN ");
+* 2914 display_msg("You receive " + LVar1 + " points of damage and a crippled left leg.");
+* 2918 display_msg("You receive " + LVar1 + " points of damage and a crippled right leg.");
+* 2934 display_msg("You receive " + LVar1 + " points of damage.");
+* 3156 display_msg("You receive " + LVar2 + " points of damage and a crippled left leg.");
+* 3160 display_msg("You receive " + LVar2 + " points of damage and a crippled right leg.");
+* 3176 display_msg("You receive " + LVar2 + " points of damage.");
+* 4845 display_msg("You receive " + LVar1 + " points of damage and a crippled left leg.");
+* 4849 display_msg("You receive " + LVar1 + " points of damage and a crippled right leg.");
+* 4865 display_msg("You receive " + LVar1 + " points of damage.");
+* 5168 display_msg("You receive " + LVar2 + " points of damage and a crippled left leg.");
+* 5172 display_msg("You receive " + LVar2 + " points of damage and a crippled right leg.");
+* 5188 display_msg("You receive " + LVar2 + " points of damage.");
+* 6767 display_msg("You receive " + LVar1 + " points of damage and a crippled left leg.");
+* 6771 display_msg("You receive " + LVar1 + " points of damage and a crippled right leg.");
+* 6787 display_msg("You receive " + LVar1 + " points of damage.");
+c:\games\fallout\scripts-editing\SECDISK.SSL [1 match]
+*   21 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\SETDOOR.SSL [3 matches]
+*  155 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*  178 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+*  250 display_msg(message_str(766, 103) + "50" + message_str(766, 104));
+c:\games\fallout\scripts-editing\SGENROB.SSL [3 matches]
+*   52 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+*   63 //debug display_msg("Glow_Power == " + global_var(224));
+*   64 //debug display_msg("Weapons_Armed == " + global_var(140));
+c:\games\fallout\scripts-editing\SHADYET.SSL [4 matches]
+*   33 debug_msg("Enter Map: SHADY SANDS, EAST");
+*  315 debug_msg("THIS SHOULD NEVER BE CALLED. ERROR FAIL WARNING");
+*  316 display_msg("THIS SHOULD NEVER BE CALLED. ERROR FAIL WARNING");
+*  327 // Added by Sduibek for Fallout FIXT. Displays a random "this town is dead" msg if map's been invaded.
+c:\games\fallout\scripts-editing\SHADYWST.ssl [4 matches]
+*   35 debug_msg("Enter Map: SHADY SANDS, WEST");
+*  387 debug_msg("THIS SHOULD NEVER BE CALLED. ERROR FAIL WARNING");
+*  388 display_msg("THIS SHOULD NEVER BE CALLED. ERROR FAIL WARNING");
+*  399 // Added by Sduibek for Fallout FIXT. Displays a random "this town is dead" msg if map's been invaded.
+c:\games\fallout\scripts-editing\SOPDISK.SSL [1 match]
+*   20 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\SSRADSCO.ssl [2 matches]
+*  143 display_msg("You cannot steal from this critter.");
+*  175 display_msg("It looks to have originated from the North American Emperor scorpion.");
+c:\games\fallout\scripts-editing\SUPDOOR.SSL [2 matches]
+*   69 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+*  109 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\TALKCOWS.SSL [1 match]
+*  159 debug_msg("Enter Map: SPECIAL ENCOUNTER, TALKING COWS");
+c:\games\fallout\scripts-editing\TEST.SSL [24 matches]
+*   10 display_msg("0");
+*   13 display_msg("1");
+*   16 display_msg("2");
+*   19 display_msg("3");
+*   22 display_msg("4");
+*   25 display_msg("5");
+*   28 display_msg("6");
+*   31 display_msg("7");
+*   34 display_msg("8");
+*   37 display_msg("9");
+*   40 display_msg("10");
+*   43 display_msg("11");
+*   46 display_msg("12");
+*   49 display_msg("13");
+*   52 display_msg("14");
+*   55 display_msg("15");
+*   58 display_msg("16");
+*   61 display_msg("17");
+*   64 display_msg("18");
+*   67 display_msg("19");
+*   70 display_msg("20");
+*   73 display_msg("21");
+*   76 display_msg("22");
+*   79 display_msg("23");
+c:\games\fallout\scripts-editing\TESTER.SSL [1 match]
+*    8 display_msg("Hurt dude");
+c:\games\fallout\scripts-editing\TRAPFLOR.SSL [1 match]
+*   21 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+c:\games\fallout\scripts-editing\TYCHO.SSL [2 matches]
+*  270 display_msg(message_str(766, 191) + (global_var(622) + 1) + ".");
+*  485 float_msg(self_obj, "Thanks, i'll make good use of that in combat!", 0);
+c:\games\fallout\scripts-editing\USEDCAR.SSL [1 match]
+*  169 debug_msg("Enter Map: SPECIAL ENCOUNTER, CAR SALESMAN");
+c:\games\fallout\scripts-editing\V13CAVE.SSL [4 matches]
+*   48 debug_msg("");
+*   49 debug_msg("Enter Map: VAULT 13, CAVE");
+*   50 debug_msg("");
+*   51 debug_msg("");
+c:\games\fallout\scripts-editing\V13CAVES.SSL [5 matches]
+*   45 debug_msg("");
+*   46 debug_msg("Enter Map: VAULT 13, CAVES - **THIS SCRIPT SHOULD NOT BE USED**");
+*   47 debug_msg("");
+*   48 debug_msg("");
+*   96 display_msg(message_str(766, 103) + "150" + message_str(766, 104));
+c:\games\fallout\scripts-editing\V13COMP.SSL [1 match]
+*   34 float_msg(self_obj, message_str(344, 102), 0);//was ", 8" in endgame mod's version
+c:\games\fallout\scripts-editing\VALTDISK.SSL [1 match]
+*   20 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\VALTNEC.SSL [4 matches]
+*   31 debug_msg("");
+*   32 debug_msg("Enter Map: NECROPOLIS, VAULT LEVEL 1/2/3");
+*   33 debug_msg("");
+*   34 debug_msg("");
+c:\games\fallout\scripts-editing\VAULT13.SSL [1 match]
+*   37 debug_msg("Enter Map: VAULT 13, LEVELS 1/2/3");
+c:\games\fallout\scripts-editing\VAULTBUR.SSL [4 matches]
+*   25 debug_msg("");
+*   26 debug_msg("Enter Map: VAULT 15, LEVELS 1/2/3");
+*   27 debug_msg("");
+*   28 debug_msg("");
+c:\games\fallout\scripts-editing\VAULTENT.SSL [1 match]
+*   32 debug_msg("Enter Map: VAULT 15, SHACK");
+c:\games\fallout\scripts-editing\VCONCOMP.SSL [1 match]
+*  121 display_msg("c");
+c:\games\fallout\scripts-editing\VELCTRAP.SSL [1 match]
+*   22 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+c:\games\fallout\scripts-editing\VEXDTRAP.SSL [1 match]
+*   22 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+c:\games\fallout\scripts-editing\VPLSTRAP.SSL [1 match]
+*   22 display_msg(message_str(766, 103) + "25" + message_str(766, 104));
+c:\games\fallout\scripts-editing\VREEDISK.SSL [1 match]
+*   20 display_msg(message_str(766, 103) + "100" + message_str(766, 104));
+c:\games\fallout\scripts-editing\WANRAT2.SSL [1 match]
+*   81 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\WANRATS.SSL [1 match]
+*   89 display_msg("You cannot steal from this critter.");
+c:\games\fallout\scripts-editing\WATRSHED.SSL [1 match]
+*   37 debug_msg("Enter Map: NECROPOLIS, WATERSHED");
+c:\games\fallout\scripts-editing\WORLD.SSL [1 match]
+*    9 display_msg("You are now entering the world map.");

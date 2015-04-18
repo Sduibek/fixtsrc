@@ -1,0 +1,94 @@
+======================================================
+use Hex Workshop?
+======================================================
+
+
+ENCOUNTER CHANCE
+
+0009BAEB
+changed for Encounter Tweaker tool BA 0A 00 00 00 90
+restored/original 8B 15 A4 0F 67 00
+
+0009BBA1
+changed for Encounter Tweaker tool 0C
+restored/original 08
+
+
+
+VERSION DISPLAY ON MAIN MENU (removed in FIXT)
+
+000DE980
+
+
+
+STARTING LOOK
+
+000D1680
+male (hmjmps)
+
+000D1688
+female (hfjmps)
+
+
+
+F1_RES CHANGES
+
+0xBF2C0
+original  C7 05 44 1F 6B 00 C0 A1 4C 00
+f1_res    E8 43 20 01 00 90 90 90 90 90
+
+0XD12F8
+version info for f1_res (previously was just zeros)
+
+
+
+THESE ARE REQUIRED FOR THE NEW VAULTBOY ICON TO WORK PROPERLY:
+
+0xA1
+mine was B2, f1RP is CC
+
+0x10C
+mine was 5C 09, f1RP is 00 24
+
+0x248
+mine was 5C 09, f1RP is 00 00
+
+0x251
+mine was 0A, f1RP is 24
+
+
+
+
+------------------------------------------------------------------------
+Debug Mode enabled
+------------------------------------------------------------------------
+000124A0
+mine was 03 C0 03 C0 29 44 24 04 90 90 90 90
+f1RP is 8B 54 24 04 01 C0 29 C2 89 54 24 04
+------------------------------------------------------------------------
+0002E3E7
+mine was E8 94 53 07 00 E9 F4 00 00 00 90 90 90 90
+f1RP is 83 FE 01 0F 85 F5 00 00 00 B9 88 20 4F 00
+------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------
+TO REMOVE CINEMATICS AND SPLASH SCREEN:
+------------------------------------------------------------------------
+0002B85E
+original  E8 89 24 00 00
+disabled  90 90 90 90 90
+------------------------------------------------------------------------
+00062E77
+original  E8 A4 3A FD FF
+disabled  90 90 90 90 90
+------------------------------------------------------------------------
+00062E83
+original  E8 98 3A FD FF
+disabled  90 90 90 90 90
+------------------------------------------------------------------------
+00062F32
+original  E8 E9 39 FD FF
+disabled  90 90 90 90 90
+------------------------------------------------------------------------

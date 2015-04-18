@@ -1,0 +1,24 @@
+The letter is for terrain. D for desert, M for mountain, C for coast and Ci for city.
+The number is 65:G_var World_Terrain, it decides what encounter table is used.
+
+Random City: don't check g_var 65, only 1 table
+
+Random Coast: don't check g_var 65, only 1 table
+
+Random mountain:  G_var65 set to   2 = North_table, 3 = South_table, else = Vault table
+
+Random Desert:   G_var65 set to    0 = North_table, 1 = South_table, 2-4 = random North_table or South_table, 5 = Shady_table, 6 = Raider_table,
+                                   7= Junk_table, 8 = Hub_table, 9 = Necrop_table, 10 = Steel_table, 11 = Vats_table, 12 = Glow_table,
+                                   13 = Bone_table, 14 = Death_table
+
+=========================================================
+
+D11 == Vats
+M11 == 50/50 DVats / MVault
+C11 == 50/50 DVats / origCity
+
+D2 == Raiders
+M2 == North
+
+D4 == 
+M4 == Vault
