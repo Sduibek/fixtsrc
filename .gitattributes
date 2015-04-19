@@ -2,16 +2,157 @@
 * text=auto
 
 # Custom for Visual Studio
-*.cs     diff=csharp
+*.cs  diff=csharp
 
 # Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
+*.diz  diff=astextplain
+*.DIZ  diff=astextplain
+*.doc  diff=astextplain
+*.DOC  diff=astextplain
+*.docx  diff=astextplain
+*.DOCX  diff=astextplain
 *.dot  diff=astextplain
 *.DOT  diff=astextplain
+*.log  diff=astextplain
+*.LOG  diff=astextplain
 *.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+*.PDF  diff=astextplain
+*.rtf  diff=astextplain
+*.RTF  diff=astextplain
+*.txt  diff=astextplain
+*.TXT  diff=astextplain
+
+# Binaries
+*.7z  binary -delta
+*.7Z  binary -delta
+*.bz2  binary -delta
+*.bZ2  binary -delta
+*.cab  binary -delta
+*.CAB  binary -delta
+*.dat  binary -delta
+*.DAT  binary -delta
+*.dll  binary -delta
+*.DLL  binary -delta
+*.exe  binary -delta
+*.EXE  binary -delta
+*.gz  binary -delta
+*.GZ  binary -delta
+*.jpeg  binary -delta
+*.JPEG  binary -delta
+*.jpg  binary -delta
+*.JPG  binary -delta
+*.mp3  binary -delta
+*.MP3  binary -delta
+*.msi  binary -delta
+*.MSI  binary -delta
+*.msm  binary -delta
+*.MSM  binary -delta
+*.msp  binary -delta
+*.MSP  binary -delta
+*.png  binary -delta
+*.PNG  binary -delta
+*.psd  binary -delta
+*.PSD  binary -delta
+*.rar  binary -delta
+*.RAR  binary -delta
+*.ttf  binary -delta
+*.TTF  binary -delta
+*.zip  binary -delta
+*.ZIP  binary -delta
+
+###############################
+# Fallout binaries
+###############################
+
+# UI graphics
+*.001  binary -delta
+
+# Fonts
+*.aaf  binary -delta
+*.AAF  binary -delta
+*.fon  binary -delta
+*.FON  binary -delta
+
+# Music and sounds
+*.acm  binary -delta
+*.ACM  binary -delta
+
+# Edge definitions for maps
+*.edg  binary -delta
+*.EDG  binary -delta
+
+# Graphics
+*.fr0  binary -delta
+*.FR0  binary -delta
+*.fr1  binary -delta
+*.FR1  binary -delta
+*.fr2  binary -delta
+*.FR2  binary -delta
+*.fr3  binary -delta
+*.FR3  binary -delta
+*.fr4  binary -delta
+*.FR4  binary -delta
+*.fr5  binary -delta
+*.FR5  binary -delta
+*.frm  binary -delta
+*.FRM  binary -delta
+
+# Saved characters
+*.gcd  binary -delta
+*.gcd  binary -delta
+
+# Compiled scripts
+*.int  binary -delta
+*.INT  binary -delta
+
+# Map data
+*.map  binary -delta
+*.MAP  binary -delta
+
+# Worldmap masks
+*.msk  binary -delta
+*.MSK  binary -delta
+
+# Cutscenes
+*.mve  binary -delta
+*.MVE  binary -delta
+
+# Graphics palettes
+*.pal  binary -delta
+*.PAL  binary -delta
+
+# Critter stats
+*.pro  binary -delta
+*.PRO  binary -delta
+
+# Splash screens
+*.rix  binary -delta
+*.RIX  binary -delta
+
+# Save files
+*.sav  binary -delta
+*.SAV  binary -delta
+
+###############################
+# Fallout text
+###############################
+
+# Premade character stories
+*.bio  diff=astextplain
+*.BIO  diff=astextplain
+
+# Global variable definitions
+*.gam  diff=astextplain
+*.GAM  diff=astextplain
+
+# Lists of files or scripts
+*.lst  diff=astextplain
+*.LST  diff=astextplain
+
+# Dialogs, UI texts, other messages
+*.msg  diff=astextplain
+*.MSG  diff=astextplain
+
+# Movie subtitles
+*.sve  diff=astextplain
+*.SVE  diff=astextplain

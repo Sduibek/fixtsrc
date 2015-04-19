@@ -1,10 +1,29 @@
 # These entries added by Sduibek:
 
+## *.cab, *.msi, *.msm, *.msp, *.lnk allowed.
+## All other ignores below the separator are identical to standard Windows/Mac ignores.
+
 # Don't try to commit the ones with tildes because GitHub won't allow it.
-*~1.INT
-*~1.MSG
-*~1.SSL
-*~1.TXT
+*~1.[Ii][Nn][Tt]
+*~2.[Ii][Nn][Tt]
+*~3.[Ii][Nn][Tt]
+*~4.[Ii][Nn][Tt]
+*~5.[Ii][Nn][Tt]
+*~1.[Mm][Ss][Gg]
+*~2.[Mm][Ss][Gg]
+*~3.[Mm][Ss][Gg]
+*~4.[Mm][Ss][Gg]
+*~5.[Mm][Ss][Gg]
+*~1.[Ss][Ss][Ll]
+*~2.[Ss][Ss][Ll]
+*~3.[Ss][Ss][Ll]
+*~4.[Ss][Ss][Ll]
+*~5.[Ss][Ss][Ll]
+*~1.[Tt][Xx][Tt]
+*~2.[Tt][Xx][Tt]
+*~3.[Tt][Xx][Tt]
+*~4.[Tt][Xx][Tt]
+*~5.[Tt][Xx][Tt]
 
 # Dropbox
 .dropbox
@@ -21,15 +40,6 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
 
 # =========================
 # Operating System Files
