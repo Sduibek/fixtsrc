@@ -1,10 +1,17 @@
 # These entries added by Sduibek:
 
+# Don't try to commit the ones with tildes because GitHub won't allow it.
+*~1.INT
+*~1.MSG
 *~1.SSL
-*.INT
+*~1.TXT
 
+# Dropbox
+.dropbox
+.dropbox.attr
+.dropbox.cache
 
-######################################################################
+###################################################################################
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
