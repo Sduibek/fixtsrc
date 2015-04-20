@@ -14,9 +14,16 @@
 ;  7)   Do a test install and compare folders to make sure no files missed.
 ;  8)   remove fixed stuff from Fallout Fixt Bug Reports wiki
 ;
-;  alpha 0.85     ? 2010
-;  alpha 0.95     ? 2010
-;  alpha 0.995    ? 2011
+;  alpha first        December 2010, maybe?
+;  alpha 0.?          Jan 5, 2011
+;  alpha 0.?          Jan 12, 2011
+;  alpha 0.?          Jan 19, 2011
+;  alpha 0.99         Feb 3, 2011
+;  alpha 0.995        Feb 8, 2011
+;  alpha 0.996        March 3, 2011
+;  alpha 0.997        March 6, 2011
+;  alpha 0.998        March 9, 2011
+;  alpha 0.999        March 14, 2011
 ;  alpha 0.9995       March 16, 2011
 ;  alpha 0.9996       April 11, 2011
 ;  alpha 0.99961      April 16, 2011
@@ -44,6 +51,7 @@
 ;  alpha 6.7.3        June 2, 2014
 ;  alpha 7.0          March 30, 2015
 ;  alpha 7.1          April 4, 2015
+;  beta 0.1           May 1, 2015
 #define MyAppName "Fallout Fixt"
 #define MyAppPublisher "Sduibek"
 #define MyAppURL "http://www.nma-fallout.com/showthread.php?194562"
