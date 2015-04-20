@@ -1,13 +1,32 @@
-# Auto detect text files and perform LF normalization
+#
+# The built-in macro attribute "binary" is equivalent to -diff -merge -text
+#
+# Auto-detect text files and perform LF normalization
 * text=auto
 
-# Custom for Fallout scripts
+# Custom for FALLOUT scripts
 *.ssl  diff=pascal
 *.Ssl  diff=pascal
 *.SSL  diff=pascal
+*.h  diff=pascal
+*.H  diff=pascal
 
 # Custom for Visual Studio
 *.cs  diff=csharp
+*.config  diff=csharp
+*.csproj  diff=csharp
+*.manifest  diff=csharp
+*.resx  diff=csharp
+*.settings  diff=csharp
+*.user  diff=csharp
+*.xml  diff=csharp
+*.cpp  diff=cpp
+*.filters  diff=cpp
+*.vcxproj  diff=cpp
+
+# Hypertext markup
+*.html  diff=html
+*.htm  diff=html
 
 # Standard to msysgit
 *.diz  diff=astextplain
