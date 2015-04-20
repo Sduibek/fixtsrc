@@ -1,6 +1,11 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
+# Custom for Fallout scripts
+*.ssl  diff=pascal
+*.Ssl  diff=pascal
+*.SSL  diff=pascal
+
 # Custom for Visual Studio
 *.cs  diff=csharp
 
