@@ -271,7 +271,11 @@ DerivedData
 
 # Build results
 [Dd]ebug/
-[Dd]ebug[Pp]ublic/
+[Dd]ebugPublic/
+[Bb]in/[Dd]ebug/
+x64/
+x86/
+[Oo]bj/
 
 # Roslyn cache directories
 *.ide/
@@ -400,7 +404,7 @@ AppPackages/
 
 # Others
 sql/
-*.Cache
+*.[Cc]ache
 ClientBin/
 [Ss]tyle[Cc]op.*
 *.dbmdl
