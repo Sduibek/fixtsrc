@@ -1100,6 +1100,12 @@ begin
 	set_global_var(488, 0); // GENDISK_HOLODISK_POINTER2
 	set_global_var(489, 0); // GENDISK_HOLODISK_POINTER3
 	set_global_var(450, 0); // VREE_AUTOPSY
+// fix wrong Days Left on Fixes Only mode
+	if global_var(0) == 1 then begin
+		if global_var(10) > 150 then begin
+			set_global_var(10, 150);
+		end
+	end
 // "Player has entered map number blah blah blah"
 	if global_var(325) then begin// <-- Debug_Enabled
 		call DebugEnterMsgs;

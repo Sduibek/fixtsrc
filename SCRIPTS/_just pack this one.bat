@@ -2,10 +2,14 @@
 ECHO OFF
 C:
 CD\
-CD C:\Users\Sduibek\Documents\Dropbox\Fallout\Scripts-editing
+CD C:\Users\Sduibek\Documents\Dropbox\GitHub\fixtsrc\SCRIPTS
+IF ERRORLEVEL 1 PAUSE
 DEL *.INT /Q
+IF ERRORLEVEL 1 PAUSE
 DEL *.BAK /Q
+IF ERRORLEVEL 1 PAUSE
 DEL *.INT /Q
+IF ERRORLEVEL 1 PAUSE
 rem
 rem Testing for Mike's save, SLOT09 that crashes in combat:
 rem
