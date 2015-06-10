@@ -282,30 +282,30 @@ end
 
 procedure VConComp32
 begin
-	gsay_message(371, 205, 50);
 	set_global_var(146, 0);//	disable "VATS_ALARM_ALERT" (disable it)
+	gsay_message(371, 205, 50);
 end
 
 procedure VConComp33
 begin
-	gsay_message(371, 302, 50);
 	set_global_var(147, (game_time / 10) + 300);
 	set_global_var(146, 1);//	"VATS_ALARM_ALERT"
+	gsay_message(371, 302, 50);
 	call VatsGoBoom_SETVARS;
 end
 
 procedure VConComp34
 begin
-	gsay_message(371, 305, 50);
 	set_global_var(147, (game_time / 10) + 600);
+	gsay_message(371, 305, 50);
 	call VatsGoBoom_SETVARS;
 end
 
 procedure VConComp37
 begin
-	gsay_message(371, 188, 50);
 	set_global_var(147, (game_time / 10) + 60);
 	set_global_var(146, 1);//	"VATS_ALARM_ALERT"
+	gsay_message(371, 188, 50);
 	call VatsGoBoom_SETVARS;
 end
 
@@ -321,59 +321,59 @@ end
 
 procedure VConComp03
 begin
-	gsay_message(371, 114, 50);
 	set_global_var(147, (game_time / 10) + 60);
+	gsay_message(371, 114, 50);
 	call VatsGoBoom_SETVARS;
 end
 
 procedure VConComp04
 begin
-	gsay_message(371, 115, 50);
 	set_global_var(147, (game_time / 10) + 30);
 	set_global_var(146, 1);//	"VATS_ALARM_ALERT"
+	gsay_message(371, 115, 50);
 	call VatsGoBoom_SETVARS;
 end
 
 procedure VConComp05
 begin
-	gsay_message(371, 116, 50);
 	set_global_var(146, 1);//	"VATS_ALARM_ALERT"
+	gsay_message(371, 116, 50);
 end
 
 procedure VConComp35
 begin
-	gsay_message(371, 206, 50);
 	set_local_var(2, 1);//	<-- lock out console
 	set_global_var(146, 1);//	"VATS_ALARM_ALERT"
+	gsay_message(371, 206, 50);
 end
 
 procedure VConComp06
 begin
-	gsay_message(371, 117, 50);
 	set_global_var(147, (game_time / 10) + 180);
+	gsay_message(371, 117, 50);
 	call VatsGoBoom_SETVARS;
 end
 
 procedure VConComp36
 begin
-	gsay_message(371, 117, 50);
 	set_global_var(147, (game_time / 10) + 300);
+	gsay_message(371, 117, 50);
 	call VatsGoBoom_SETVARS;
 end
 
 procedure VConComp07
 begin
-	gsay_message(371, 118, 50);
 	set_global_var(147, (game_time / 10) + 180);
 	set_global_var(146, 1);//	"VATS_ALARM_ALERT"
+	gsay_message(371, 118, 50);
 	call VatsGoBoom_SETVARS;
 end
 
 procedure VConComp08
 begin
-	gsay_message(371, 119, 50);
 	set_global_var(147, (game_time / 10));// plus nothing because it's instant boom
 	set_global_var(146, 1);//	"VATS_ALARM_ALERT"
+	gsay_message(371, 119, 50);
 	call VatsGoBoom_SETVARS;
 end
 
