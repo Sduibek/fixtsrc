@@ -12,11 +12,12 @@ variable Hex_Number;
 
 procedure start
 begin
-//		display_msg("moving BroInvad...");
-//		move_to(self_obj, 26893, elevation(dude_obj));
-	display_msg("dude at " + tile_num(dude_obj));
-	display_msg("self at " + tile_num(self_obj));
-
+	if global_var(325) then begin
+		display_msg("attempting to move BroInvad...");
+		move_to(self_obj, 26893, elevation(dude_obj));
+		display_msg("dude at " + tile_num(dude_obj));
+		display_msg("self at " + tile_num(self_obj));
+	end
 	if local_var(12) != 1 then begin// Fallout Fixt lvar12 - this code block heals critter to full HP one time (first time player enters the map) to make sure they always start with full HP.
 		if metarule(14, 0) then begin// Fallout Fixt lvar12 - first visit to map?
 			if metarule(22, 0) == 0 then begin// Fallout Fixt lvar12 - Not currently loading a save?
