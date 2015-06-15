@@ -4,13 +4,6 @@
 # Auto-detect text files and perform LF normalization
 * text=auto
 
-# Custom for FALLOUT scripts
-*.ssl  diff=pascal
-*.Ssl  diff=pascal
-*.SSL  diff=pascal
-*.h  diff=pascal
-*.H  diff=pascal
-
 # Custom for Visual Studio
 *.cs  diff=csharp
 *.config  diff=csharp
@@ -85,6 +78,40 @@
 *.ZIP  binary -delta
 
 ###############################
+# Fallout scripts/source
+###############################
+
+*.ssl  diff=pascal
+*.Ssl  diff=pascal
+*.SSL  diff=pascal
+*.h  diff=pascal
+*.H  diff=pascal
+
+###############################
+# Fallout text
+###############################
+
+# Premade character stories
+*.bio  diff=astextplain
+*.BIO  diff=astextplain
+
+# Global variable definitions
+*.gam  diff=astextplain
+*.GAM  diff=astextplain
+
+# Lists of files or scripts
+*.lst  diff=astextplain
+*.LST  diff=astextplain
+
+# Dialogs, UI texts, other messages
+*.msg  diff=astextplain
+*.MSG  diff=astextplain
+
+# Movie subtitles
+*.sve  diff=astextplain
+*.SVE  diff=astextplain
+
+###############################
 # Fallout binaries
 ###############################
 
@@ -157,26 +184,3 @@
 *.sav  binary -delta
 *.SAV  binary -delta
 
-###############################
-# Fallout text
-###############################
-
-# Premade character stories
-*.bio  diff=astextplain
-*.BIO  diff=astextplain
-
-# Global variable definitions
-*.gam  diff=astextplain
-*.GAM  diff=astextplain
-
-# Lists of files or scripts
-*.lst  diff=astextplain
-*.LST  diff=astextplain
-
-# Dialogs, UI texts, other messages
-*.msg  diff=astextplain
-*.MSG  diff=astextplain
-
-# Movie subtitles
-*.sve  diff=astextplain
-*.SVE  diff=astextplain
