@@ -397,7 +397,7 @@ Filename: {app}\CrashFix\Install64bit.bat; WorkingDir: {app}\CrashFix; Check: Is
 Filename: {app}\CrashFix\DeleteSavegamesOPTIONAL.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Deleting current savegame files, if selected to do so ...; Components: Mod; Tasks: DeleteSaves
 Filename: {app}\CrashFix\InstallDone_FixtFilesMove.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Performing final distribution and cleanup, closing logfile ...; Components: Mod
 [Messages]
-WelcomeLabel2=This package will install [name] {#MyAppVersion}.%n %n Have fun!%n --Sduibek
+WelcomeLabel2=This package will install [name] {#MyAppVersion}.%n%nWARNING: SAVEGAMES FROM OTHER VERSIONS OF FALLOUT ARE NOT COMPATIBLE WITH FALLOUT FIXT.%n%nSavegames from previous Fallout Fixt versions should work. You'll get a brief in-game reminder when loading saves from old versions, until the save slot is re-written.
 WelcomeLabel1=Welcome to the installer for [name], an all-in-one mod/patch/update/restoration for Fallout, Interplay's classic post-nuclear role-playing game.
 LicenseAccepted=Yes, i've backed up all of my Fallout 1 data, let's go!
 LicenseNotAccepted=No, i'm scared to overwrite any files right now. Get me out of here!
