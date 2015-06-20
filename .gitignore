@@ -105,6 +105,7 @@ $*.*
 
 # Folder attributes
 .DS_Store
+._.DS_Store
 
 # Resource Forks
 __MACOSX/
@@ -140,7 +141,6 @@ Temporary Items
 
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
-
 
 #======================
 # Ruby & Ruby On Rails
@@ -272,6 +272,7 @@ DerivedData
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
+[Bb]in/
 [Bb]in/[Dd]ebug/
 x64/
 x86/
@@ -465,3 +466,8 @@ FakesAssemblies/
 *~4.[Tt][Xx][Tt]
 *~5.[Tt][Xx][Tt]
 
+#======================================================
+# BFG Repo Cleaner - rtyley.github.io/bfg-repo-cleaner
+#======================================================
+
+*bfg*.jar
