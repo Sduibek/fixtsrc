@@ -82,45 +82,45 @@
 *.REG  diff=astextplain
 
 # Binaries
-*.7z  binary -delta
-*.7Z  binary -delta
-*.application  binary -delta
-*.bz2  binary -delta
-*.bZ2  binary -delta
-*.cab  binary -delta
-*.CAB  binary -delta
-*.dat  binary -delta
-*.DAT  binary -delta
-*.dll  binary -delta
-*.DLL  binary -delta
-*.exe  binary -delta
-*.EXE  binary -delta
-*.gz  binary -delta
-*.GZ  binary -delta
-*.jpeg  binary -delta
-*.JPEG  binary -delta
-*.jpg  binary -delta
-*.JPG  binary -delta
-*.mid  binary -delta
-*.MID  binary -delta
-*.mp3  binary -delta
-*.MP3  binary -delta
-*.msi  binary -delta
-*.MSI  binary -delta
-*.msm  binary -delta
-*.MSM  binary -delta
-*.msp  binary -delta
-*.MSP  binary -delta
-*.png  binary -delta
-*.PNG  binary -delta
-*.psd  binary -delta
-*.PSD  binary -delta
-*.rar  binary -delta
-*.RAR  binary -delta
-*.ttf  binary -delta
-*.TTF  binary -delta
-*.zip  binary -delta
-*.ZIP  binary -delta
+*.7z  binary
+*.7Z  binary
+*.application  binary
+*.bz2  binary
+*.bZ2  binary
+*.cab  binary
+*.CAB  binary
+*.dat  binary
+*.DAT  binary
+*.dll  binary
+*.DLL  binary
+*.exe  binary
+*.EXE  binary
+*.gz  binary
+*.GZ  binary
+*.jpeg  binary
+*.JPEG  binary
+*.jpg  binary
+*.JPG  binary
+*.mid  binary
+*.MID  binary
+*.mp3  binary
+*.MP3  binary
+*.msi  binary
+*.MSI  binary
+*.msm  binary
+*.MSM  binary
+*.msp  binary
+*.MSP  binary
+*.png  binary
+*.PNG  binary
+*.psd  binary
+*.PSD  binary
+*.rar  binary
+*.RAR  binary
+*.ttf  binary
+*.TTF  binary
+*.zip  binary
+*.ZIP  binary
 
 ###############################
 # Fallout scripts/source
@@ -161,71 +161,71 @@
 ###############################
 
 # UI graphics
-*.001  binary -delta
+*.001  binary
 
 # Fonts
-*.aaf  binary -delta
-*.AAF  binary -delta
-*.fon  binary -delta
-*.FON  binary -delta
+*.aaf  binary
+*.AAF  binary
+*.fon  binary
+*.FON  binary
 
 # Music and sounds
-*.acm  binary -delta
-*.ACM  binary -delta
+*.acm  binary
+*.ACM  binary
 
 # Edge definitions for maps
-*.edg  binary -delta
-*.EDG  binary -delta
+*.edg  binary
+*.EDG  binary
 
 # Graphics
-*.fr0  binary -delta
-*.FR0  binary -delta
-*.fr1  binary -delta
-*.FR1  binary -delta
-*.fr2  binary -delta
-*.FR2  binary -delta
-*.fr3  binary -delta
-*.FR3  binary -delta
-*.fr4  binary -delta
-*.FR4  binary -delta
-*.fr5  binary -delta
-*.FR5  binary -delta
-*.frm  binary -delta
-*.FRM  binary -delta
+*.fr0  binary
+*.FR0  binary
+*.fr1  binary
+*.FR1  binary
+*.fr2  binary
+*.FR2  binary
+*.fr3  binary
+*.FR3  binary
+*.fr4  binary
+*.FR4  binary
+*.fr5  binary
+*.FR5  binary
+*.frm  binary
+*.FRM  binary
 
 # Saved characters
-*.gcd  binary -delta
-*.gcd  binary -delta
+*.gcd  binary
+*.gcd  binary
 
 # Compiled scripts
-*.int  binary -delta
-*.INT  binary -delta
+*.int  binary
+*.INT  binary
 
 # Map data
-*.map  binary -delta
-*.MAP  binary -delta
+*.map  binary
+*.MAP  binary
 
 # Worldmap masks
-*.msk  binary -delta
-*.MSK  binary -delta
+*.msk  binary
+*.MSK  binary
 
 # Cutscenes
-*.mve  binary -delta
-*.MVE  binary -delta
+*.mve  binary
+*.MVE  binary
 
 # Graphics palettes
-*.pal  binary -delta
-*.PAL  binary -delta
+*.pal  binary
+*.PAL  binary
 
 # Critter stats
-*.pro  binary -delta
-*.PRO  binary -delta
+*.pro  binary
+*.PRO  binary
 
 # Splash screens
-*.rix  binary -delta
-*.RIX  binary -delta
+*.rix  binary
+*.RIX  binary
 
 # Save files
-*.sav  binary -delta
-*.SAV  binary -delta
+*.sav  binary
+*.SAV  binary
 
