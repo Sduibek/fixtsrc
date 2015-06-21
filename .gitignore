@@ -2,6 +2,73 @@
 #             https://github.com/Sduibek/myignore             #
 ###############################################################
 
+#=====================
+# Archives / Packages
+#=====================
+
+*.7[Zz]
+*.[Aa][Pp][Kk]
+*.[Bb][Zz]
+*.[Bb][Zz]2
+*.[Cc][Aa][Bb]
+*.[Dd][Mm][Gg]
+*.[Gg][Zz]
+*.[Ii][Ss][Oo]
+*.[Jj][Aa][Rr]
+*.[Ll][Zz]
+*.[Ll][Zz][Mm][Aa]
+*.[Ll][Zz][Oo]
+*.[Mm][Pp][Qq]
+*.[Pp][Aa][Kk]
+*.[Pp][Kk]3
+*.[Rr][Aa][Rr]
+*.[Rr][Zz]
+*.[Ss][Ff][Xx]
+*.[Tt][Aa][Rr]
+*.[Zz][Ii][Pp]
+
+#=============
+# Executables
+#=============
+
+*.application
+*.[Ee][Xx][Ee]
+*.[Mm][Ss][Ii]
+*.[Mm][Ss][Mm]
+*.[Mm][Ss][Pp]
+
+#=======================
+# Binary Data Resources
+#=======================
+
+*.[Bb][Ii][Nn]
+*.[Dd][Aa][Tt]
+*.[Dd][Ll][Ll]
+
+#=======
+# Audio
+#=======
+
+*.[Aa][Cc][Mm]
+*.[Mm][Ii][Dd]
+*.[Mm][Pp]3
+*.[Ww][Aa][Vv]
+
+#===================
+# Pictures / Images
+#===================
+
+*.[Bb][Mm][Pp]
+*.[Gg][Ii][Ff]
+*.[Ii][Cc][Oo]
+*.[Jj][Pp][Ee][Gg]
+*.[Jj][Pp][Gg]
+*.[Pp][Cc][Xx]
+*.[Pp][Dd][Ff]
+*.[Pp][Nn][Gg]
+*.[Pp][Ss][Dd]
+*.[Tt][Gg][Aa]
+
 #===========================
 # Temporary files & folders
 #===========================
@@ -11,7 +78,7 @@
 [Tt]emporary [Ii]nternet [Ff]iles/
 [Tt][Ee][Mm][Pp]/
 [Tt][Mm][Pp]/
-[Tt]emporary/
+[Tt]emporary*/
 
 #========================
 # Backup files & folders
@@ -438,36 +505,31 @@ FakesAssemblies/
 # CUSTOM: FALLOUT (Modding for the Fallout games)
 #=================================================
 
-# Compiled scripts - Don't try to commit the ones with a tilde (MS-DOS style 8.3-compliance renaming) because GitHub won't allow it.
-*~1.[Ii][Nn][Tt]
-*~2.[Ii][Nn][Tt]
-*~3.[Ii][Nn][Tt]
-*~4.[Ii][Nn][Tt]
-*~5.[Ii][Nn][Tt]
+# Don't try to commit the ones with a tilde (MS-DOS style 8.3-compliance renaming) because GitHub won't allow it.
+*~1.*
+*~2.*
+*~3.*
+*~4.*
+*~5.*
 
-# Dialog/Messages - Don't try to commit the ones with a tilde (MS-DOS style 8.3-compliance renaming) because GitHub won't allow it.
-*~1.[Mm][Ss][Gg]
-*~2.[Mm][Ss][Gg]
-*~3.[Mm][Ss][Gg]
-*~4.[Mm][Ss][Gg]
-*~5.[Mm][Ss][Gg]
+# Compiled Scripts
+*.[Ii][Nn][Tt]
 
-# Scripts source - Don't try to commit the ones with a tilde (MS-DOS style 8.3-compliance renaming) because GitHub won't allow it.
-*~1.[Ss][Ss][Ll]
-*~2.[Ss][Ss][Ll]
-*~3.[Ss][Ss][Ll]
-*~4.[Ss][Ss][Ll]
-*~5.[Ss][Ss][Ll]
+# Prototype settings
+*.[Pp][Rr][Oo]
 
-# Talking heads dialog - Don't try to commit the ones with a tilde (MS-DOS style 8.3-compliance renaming) because GitHub won't allow it.
-*~1.[Tt][Xx][Tt]
-*~2.[Tt][Xx][Tt]
-*~3.[Tt][Xx][Tt]
-*~4.[Tt][Xx][Tt]
-*~5.[Tt][Xx][Tt]
+# Maps
+*.[Mm][Aa][Pp]
 
 #======================================================
 # BFG Repo Cleaner - rtyley.github.io/bfg-repo-cleaner
 #======================================================
 
 *bfg*.jar
+
+#===========
+# Savegames
+#===========
+
+[Ss]ave
+*.[Ss][Aa][Vv]
