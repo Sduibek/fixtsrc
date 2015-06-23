@@ -2063,10 +2063,10 @@ end
 
 procedure TestRolls
 begin
-	variable LVar0 := 0
-	variable LVar1 := 0
-	variable LVar2 := 0
-	variable LVar3 := 0
+	variable LVar0 := 0;
+	variable LVar1 := 0;
+	variable LVar2 := 0;
+	variable LVar3 := 0;
 	//LVar0 := roll_vs_skill(dude_obj, 14, 0);
 	LVar0 := do_check(dude_obj, 4, -9);
 	LVar2 := is_success(LVar0);
