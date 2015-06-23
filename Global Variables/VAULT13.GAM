@@ -30,7 +30,7 @@ HIT_GIVES_RADS_GHOULS     :=0;  // (21)  Fixt: CHOSEN BY PLAYER - Do hits from i
 FIXT_BASE_VERSION_NUM     :=7;  // (22)  Fixt: Also check GVAR179 - What version of the mod is currently installed?
 DISPLAY_PLVL_ON_LVLUP     :=0;  // (23)  Fixt: CHOSEN BY PLAYER - Did player choose "You are now level:" messages display?
 FOLLOWERS_LEFT            :=24; // (24)  Fixt: How many Followers Of The Apocalypse members are still alive? Used for checking the Good Followers Ending slide.
-IS_HEATHER_ALIVE          :=1;  // (25)  Fixt: Is Heather alive? Used for tracking Followers Children spy quest.
+IS_HEATHER_ALIVE          :=1;  // (25)  Fixt: Is Heather alive? Used for tracking Followers Children spy.
 TANDI_HIRELING_STATUS     :=0;  // (26)  1 is kidnapped, 2 is returned (leaves party), 3 is dead, 5 is rescued (not yet returned)
 PLAYER_CURRENT_PLVL       :=0;  // (27)  Fixt: What is the player character's current level? (starts at 1)
 RADSCORPIONS_KILLED       :=0;  // (28)  Are the radscorpions killed or contained?
@@ -149,8 +149,8 @@ QUEST_GLOW_1_TRAPS_OFF    :=0;  // (140)  (2+ == DONE) Disarm traps for the faci
 HOLODISK_ACCESS_CODE      :=0;  // (141)  have you found the access code?
 WEAPON_LOCKER             :=0;  // (142)  are the weapon depot security systems armed?
 SAVE_SINTHIA              :=0;  // (143)  Sellbaby held hostage in Junktown
-SAUL_QUEST                :=0;  // (144)  some quest which still needs to be written
-TRISH_QUEST               :=0;  // (145)  some quest not written yet
+SAUL_EVENT                :=0;  // (144)  some thing which still needs to be written
+TRISH_EVENT               :=0;  // (145)  some thing not written yet
 VATS_ALERT                :=0;  // (146)  are the Vats on Alert?
 VATS_COUNTDOWN            :=0;  // (147)  Seconds left before VatsConComp goes BOOOOOOOOM
 FOLLOWERS_INVADED_DATE    :=64000;  // (148)
@@ -166,7 +166,7 @@ CHAMPION_REPUTATION       :=0;  // (157)
 CHILDKILLER_REPUATION     :=0;  // (158)  Technically, this counts the number of children killed. vanilla was ">2" for the rep --Sduibek
 GOOD_MONSTER              :=0;  // (159)
 BAD_MONSTER               :=0;  // (160)
-ARTIFACT_HOLODISK_USED    :=0;  // (161)  Player has used this disk, now it's in Pip-Boy list. (Brotherhood artifact needed for quest)
+ARTIFACT_HOLODISK_USED    :=0;  // (161)  Player has used this disk, now it's in Pip-Boy list. (Brotherhood artifact needed for entry)
 FEVDISK_HOLODISK_USED     :=0;  // (162)  Player has used this disk, now it's in Pip-Boy list. (describes the FEV)
 SECDISK_HOLODISK_USED     :=0;  // (163)  Player has used this disk, now it's in Pip-Boy list. (has the security code to lower weapons)
 DISKA_HOLODISK_USED       :=0;  // (164)  Player has used this disk, now it's in Pip-Boy list. (experiment. random stuff)
@@ -231,7 +231,7 @@ WANTED_THEFT              :=0;  //  222
 BROTHERHOOD_SEND_HELP     :=0;  //  223  // Convinced BoS to send 3 Paladins. 1 = Cathedral/Master, 2 = Military Base, 10 = signal to leave, 11 = screenfade, leave
 GLOW_POWER                :=1;  //  224
 NECRO_MUTANTS_TIME_LEFT   :=0;  //  225  // Holds date at which Watershed mutants were killed or left. 30 days after, Watershed is invaded.
-MISSING_CARAVANS_QUEST    :=0;  //  226  // Starts with Rutger and Butch (:=1), Beth makes (2), Harold to (3), killing DethClaw makes it (5)
+MISSING_CARAVANS_STATUS   :=0;  //  226  // Starts with Rutger and Butch (:=1), Beth makes (2), Harold to (3), killing DethClaw makes it (5)
 HUB_FILLER_30             :=0;  //  227
 TORCH_LEFT_HAND           :=0;  //  228  Fixt: Is the player holding a Flare in this slot?
 TORCH_RIGHT_HAND          :=0;  //  229  Fixt: Is the player holding a Flare in this slot?
@@ -312,9 +312,9 @@ MICHAEL_SOPHIA_GRENADES   :=0;  //  303  // by Ash for Fallout Fixt: 1 = begun, 
 BROTHER_BUILD_POWER_ARMOR :=0;  //  304  // Status of build power armor, used in Kyle, Michael, Armor, Paul
 GRETCH_PRIMECUTS          :=0;  //  305  // Does the player know that Morbid is using human meat for his Prime Cuts? 0 or 1
 WATERSHED_MUTANTS_LEAVE   :=0;  //  306  // tracking if Harry and gang are gonna leave peacably
-IRWIN_FARM_STATUS         :=0;  //  307  // Quest from Irwin. 1 = accepted, 2 = completed, 501 = gave reward
-QUEST_VAULT13_3_KILL_VATS :=0;  //  308  // (2+ == DONE) Quest to destroy Military Base: Overseer sets to 1 (received), vconcomp sets to 2 (complete)
-QUEST_VAULT13_2_MASTER    :=0;  //  309  // (2+ == DONE) Quest to destroy The Master: Overseer sets to 1 (received), The Master sets to 2 (complete)
+IRWIN_FARM_STATUS         :=0;  //  307  // Received from Irwin. 1 = accepted, 2 = completed, 501 = gave reward
+QUEST_VAULT13_3_KILL_VATS :=0;  //  308  // (2+ == DONE) To destroy Military Base: Overseer sets to 1 (received), vconcomp sets to 2 (complete)
+QUEST_VAULT13_2_MASTER    :=0;  //  309  // (2+ == DONE) To destroy The Master: Overseer sets to 1 (received), The Master sets to 2 (complete)
 VREE_DISK_TRACKER         :=0;  //  310  Fixt: set to 1 when given disk, set to 2 when item created and placed in inventory.
 DESTROY_MASTER_7          :=0;  //  311
 CC_NECROP_ALREADY_LOADED  :=0;  //  312  // To fix the "blank map" bug on Crimson Caravans when heading back to Necropolis
@@ -417,12 +417,12 @@ TOTALLY_AVAIL_GLOVAR_58   :=0;  //  408  // available
 TOTALLY_AVAIL_GLOVAR_59   :=0;  //  409  // available
 TOTALLY_AVAIL_GLOVAR_60   :=0;  //  410  // available
 TOTALLY_AVAIL_GLOVAR_61   :=0;  //  411  // available
-TOTALLY_AVAIL_GLOVAR_62   :=0;  //  412  // available
-TOTALLY_AVAIL_GLOVAR_63   :=0;  //  413  // available
-TOTALLY_AVAIL_GLOVAR_64   :=0;  //  414  // available
-TOTALLY_AVAIL_GLOVAR_65   :=0;  //  415  // available
-TOTALLY_AVAIL_GLOVAR_66   :=0;  //  416  // available
-TOTALLY_AVAIL_GLOVAR_67   :=0;  //  417  // available
+SPECIAL_COLATRUK          :=0;  //  412  Fixt: Number of times this encounter has been seen
+SPECIAL_FSAUSER           :=0;  //  413  Fixt: Number of times this encounter has been seen
+SPECIAL_FOOT              :=0;  //  414  Fixt: Number of times this encounter has been seen
+SPECIAL_TARDIS            :=0;  //  415  Fixt: Number of times this encounter has been seen
+SPECIAL_TALKCOW           :=0;  //  416  Fixt: Number of times this encounter has been seen
+SPECIAL_USEDCAR           :=0;  //  417  Fixt: Number of times this encounter has been seen
 MRHANDYC_NO_DESTROY_MSG   :=0;  //  418  Fixt: Used to prevent the "dissipates" msg when getting MrHandyC to destroy the field.
 MBASE_RED_ONLY_PLAYER     :=0;  //  419  Fixt: CHOSEN BY PLAYER - Do red fields in Military Base only damage player?
 MBASE_RED_ONLY_PARTY      :=1;  //  420  Fixt: CHOSEN BY PLAYER - Do red fields in Military Base only damage player AND homies?
@@ -457,7 +457,7 @@ ARTIFACT_DISK_FOUND_GIVEN :=0;  //  448  Fixt: For destroying Ancient Brotherhoo
 VREE_GIVEN_DUDE_AUTOPSY   :=0;  //  449  Fixt: Has Vree given player the reports that can make Master suicide? Vree sets to 1, Master sets to 2, set to 5 is given to Master
 VREE_AUTOPSY_POINTER      :=0;  //  450  Fixt: Pointer used to create and destroy the tape.
 DCMUTANT_DISK_POINTER     :=0;  //  451  Fixt: Holds the DCMutant disk pointer
-REMOVE_JON_DISK_SON       :=0;  //  452  Fixt: Has he taken it from the player in the Zimmerman/Razor quest
+REMOVE_JON_DISK_SON       :=0;  //  452  Fixt: Has he taken it from the player in the Zimmerman/Razor plot
 RAZOR_HOLODISK_POINTER    :=0;  //  453  Fixt: For tracking and destroying it
 ALL_SS_RADSCORPS_KILLED   :=0;  //  454  Fixt: Have gotten XP for completing Radscorpion Cave?
 FIXT_VATWARN_TRIGGERED    :=0;  //  455  Fixt: VATWARN.SSL has run once, and now gives no more warnings.
