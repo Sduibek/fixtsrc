@@ -6,7 +6,7 @@ procedure use_p_proc;//    script_action == 6
 procedure start
 begin
 	if global_var(296) then begin
-		//display_msg("Door destroyed.");
+		display_msg("DEBUG MODE: Door destroyed :)");
 		destroy_object(self_obj);
 	end
 	if (script_action == 14) then begin//<-- damage_p_proc - has this Critter or Object been shot, hit with TNT, punched, etc.
