@@ -16,6 +16,12 @@ begin
 		end
 	end
 	if (Only_Once == 0) then begin
+//		if elevation(self_obj) != elevation(dude_obj) then begin
+//			if global_var(325) then begin
+//				display_msg("Moving dude_obj...");
+//			end
+//			move_to(dude_obj, (tile_num(self_obj) + 202), elevation(self_obj));
+//		end
 		call initialize_p_proc;
 	end
 	else begin

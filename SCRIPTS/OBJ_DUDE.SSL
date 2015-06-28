@@ -945,13 +945,13 @@ begin
 //		set_local_var(0, 0);
 //	end
 // Necropolis Caravans bug fix (blank map teleports back to Hotel now)
-	if cur_map_index == 57 then begin
-		if elevation(dude_obj) == 2 then begin
-			if global_var(312) > 1 then begin
-				load_map(4, 0);
-			end
-		end
-	end
+//	if cur_map_index == 57 then begin
+//		if elevation(dude_obj) == 2 then begin
+//			if global_var(312) > 1 then begin
+//				load_map(4, 0);
+//			end
+//		end
+//	end
 end
 
 
@@ -1125,9 +1125,9 @@ begin
 		end
 	end
 // For part of the crude fix of the Necropolis caravans' loading empty map elevation issue.
-	if cur_map_index == 4 then begin
-		set_global_var(312, 0);
-	end
+//	if cur_map_index == 4 then begin
+//		set_global_var(312, 0);
+//	end
 // "You earn 10000 experience points" since previously it only showed once Vats and Master both dead, even thuogh both give 10000xp independently
 	if (global_var(22) >= 6) and (global_var(179) >= 3) then begin
 		if (global_var(318) != 1) then begin
