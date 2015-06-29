@@ -13,10 +13,18 @@
 ;  7)   Check settings of f1_res/f2_res and ddraw/Sfall.
 ;  7)   Do a test install and compare folders to make sure no files missed.
 ;  8)   remove fixed stuff from Fallout Fixt Bug Reports wiki
+;  9)   Verify web links still go to valid & current files: Troubleshooting Guide, Changelog, etc.
 ;
-;  alpha 0.85     ? 2010
-;  alpha 0.95     ? 2010
-;  alpha 0.995    ? 2011
+;  alpha first        December 2010, maybe?
+;  alpha 0.?          Jan 5, 2011
+;  alpha 0.?          Jan 12, 2011
+;  alpha 0.?          Jan 19, 2011
+;  alpha 0.99         Feb 3, 2011
+;  alpha 0.995        Feb 8, 2011
+;  alpha 0.996        March 3, 2011
+;  alpha 0.997        March 6, 2011
+;  alpha 0.998        March 9, 2011
+;  alpha 0.999        March 14, 2011
 ;  alpha 0.9995       March 16, 2011
 ;  alpha 0.9996       April 11, 2011
 ;  alpha 0.99961      April 16, 2011
@@ -44,6 +52,8 @@
 ;  alpha 6.7.3        June 2, 2014
 ;  alpha 7.0          March 30, 2015
 ;  alpha 7.1          April 4, 2015
+;  0.80alpha          June 28, 2015  <-- using Fallout engine (deprecated)
+;  0.90beta           June 28, 2015  <-- using Fallout 2 engine
 #define MyAppName "Fallout Fixt"
 #define MyAppPublisher "Sduibek"
 #define MyAppURL "http://www.nma-fallout.com/showthread.php?194562"
@@ -115,16 +125,16 @@ EnableDirDoesntExistWarning=1
 Encryption=false
 ;	ExtraDiskSpaceRequired=  This is in BYTES
 FlatComponentsList=1
-InfoAfterFile=..\FF_afterinstall info.txt
-InfoBeforeFile=..\FF_preinstall info.txt
-LicenseFile=..\FF_license.txt
+LicenseFile=..\..\fixtlang\ENGLISH_FIXT\Installer text\Installer_info_first.txt
+InfoBeforeFile=..\..\fixtlang\ENGLISH_FIXT\Installer text\Installer_info_second.txt
+InfoAfterFile=..\..\fixtlang\ENGLISH_FIXT\Installer text\Installer_info_third.txt
 OutputBaseFilename=Fallout_Fixt_{#MyAppVersionFileName}_FULL_CUSTOM
 OutputDir=C:\Users\Sduibek\Desktop
 ;	OutputManifestFile=Fallout_Fixt_Manifest.txt
 PrivilegesRequired=admin
 RestartApplications=0
 RestartIfNeededByRun=1
-SetupIconFile=Icons (.ico)\FalloutFixt.ico
+SetupIconFile=Icons (.ico)\Fixt.ico
 SetupLogging=true
 ShowComponentSizes=0
 ShowLanguageDialog=1
@@ -142,7 +152,7 @@ UsePreviousSetupType=1
 UsePreviousTasks=1
 UsePreviousUserInfo=1
 UserInfoPage=0
-VersionInfoVersion=0.0.7.0
+VersionInfoVersion=0.80
 WizardImageBackColor=clBlack
 WizardImageFile=WizardImageFile.bmp
 WizardImageStretch=1
