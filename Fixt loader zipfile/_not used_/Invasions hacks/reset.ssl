@@ -1,0 +1,294 @@
+procedure start;
+procedure timed_event_p_proc;
+procedure description_p_proc;
+procedure look_at_p_proc;
+procedure map_enter_p_proc;
+procedure critter_p_proc;
+procedure map_update_p_proc;
+procedure combat_p_proc;
+
+variable gun_ptr;
+variable ShootOverseer;
+variable GunSoundAnim;
+variable FlareLit;
+variable FlareRIGHT;
+variable FlareLEFT;
+variable PlayedSfxFLARE2;
+variable HasTorch;
+variable TorchDEAD;
+variable item1;
+variable item2;
+
+
+procedure start
+begin
+	if (script_action == 22) then begin
+		call timed_event_p_proc;
+	end
+	else begin
+		if (script_action == 23) then begin
+			call map_update_p_proc;
+		end
+		else begin
+			if (script_action == 21) then begin//MOUSE OVER DESCRIPTION
+				call look_at_p_proc;
+			end
+			else begin
+				if (script_action == 3) then begin//DETAILED ON-CLICK DESCRIPTION
+					call description_p_proc;
+				end
+				else begin
+					if (script_action == 12) then begin
+						call critter_p_proc;
+					end
+					else begin
+						if (script_action == 13) then begin
+							call combat_p_proc;
+						end
+						else begin
+							if (script_action == 15) then begin
+								call map_enter_p_proc;
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
+procedure timed_event_p_proc
+begin
+	if (fixed_param == 3) then begin
+		metarule(13, 0);
+	end
+	else begin
+		if (fixed_param == 4) then begin
+			float_msg(self_obj, message_str(1, 500), -2);
+			add_timer_event(dude_obj, game_ticks(15), 3);
+		end
+		else begin
+			if (fixed_param == 5) then begin
+				game_ui_disable;
+				animate_move_obj_to_tile(map_var(0), 16890, 0);
+				add_timer_event(dude_obj, 5, 6);
+			end
+			else begin
+				if (fixed_param == 6) then begin
+					ShootOverseer := 0;
+					if (has_trait(2, dude_obj, 8)) then begin
+						ShootOverseer := 1;
+					end
+					else begin
+						if (((global_var(160) + global_var(159)) >= 25) and ((global_var(159) > (2 * global_var(160))) or (global_var(156) == 1))) then begin
+							ShootOverseer := 1;
+						end
+						else begin
+							if (global_var(155) < -1) then begin
+								ShootOverseer := 1;
+							end
+							else begin
+								if (global_var(158) >= 2) then begin
+									ShootOverseer := 1;
+								end
+							end
+						end
+					end
+					if (ShootOverseer == 1) then begin
+						gun_ptr := create_object_sid(8, 0, 0, -1);
+						add_obj_to_inven(dude_obj, gun_ptr);
+						wield_obj_critter(dude_obj, gun_ptr);
+						add_timer_event(dude_obj, 25, 7);
+					end
+					else begin
+						add_timer_event(dude_obj, 25, 8);
+					end
+				end
+				else begin
+					if (fixed_param == 7) then begin
+						reg_anim_func(2, map_var(0));
+						reg_anim_func(1, 1);
+						reg_anim_animate(dude_obj, 43, -1);
+						GunSoundAnim := sfx_build_weapon_name(1, gun_ptr, 0, map_var(0));
+						reg_anim_play_sfx(dude_obj, GunSoundAnim, -1);
+						reg_anim_animate(dude_obj, 45, -1);
+						GunSoundAnim := sfx_build_char_name(map_var(0), 20, 3);
+						reg_anim_play_sfx(map_var(0), GunSoundAnim, 0);
+						reg_anim_animate(map_var(0), 20, 0);
+						reg_anim_animate(dude_obj, 44, 0);
+						reg_anim_func(3, 0);
+						add_timer_event(dude_obj, game_ticks(11), 8);
+					end
+					else begin
+						if (fixed_param == 8) then begin
+							game_ui_enable;
+							endgame_movie;
+							metarule(13, 0);
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
+procedure description_p_proc
+begin
+	script_overrides;
+	set_global_var(7, 0);
+	set_global_var(11, 0);
+	set_global_var(12, 0);
+	set_global_var(13, 0);
+	set_global_var(14, 0);
+	set_global_var(15, 0);
+	set_global_var(16, 0);
+	set_global_var(148, 90);
+	set_global_var(149, 110);
+	set_global_var(150, 140);
+	set_global_var(151, 170);
+	set_global_var(152, 200);
+	set_global_var(153, 230);
+	set_global_var(154, 500);
+	set_global_var(7, 0);
+	set_global_var(11, 0);
+	set_global_var(12, 0);
+	set_global_var(13, 0);
+	set_global_var(14, 0);
+	set_global_var(15, 0);
+	set_global_var(16, 0);
+	display_msg("Note this will not restore already-invaded towns, for that you'd need to replace the [mapname].SAV file with a fresh one");
+	float_msg(dude_obj, "Note this will not restore already-invaded towns; for that you'd need to replace the [mapname].SAV file in your save slot with a non-invaded one for each town", 2);
+	display_msg("INVASIONS 'DAYS LEFT' RESET TO DEFAULT VALUES- Adytum 90 Necro 110 Hub 140 BoS 170 Junk 200 Shady 230 Vault 500");
+end
+
+procedure look_at_p_proc
+begin
+	display_msg(message_str(766, 212));
+end
+
+procedure map_enter_p_proc
+begin
+	if (global_var(228) != 0) then begin
+		HasTorch := obj_carrying_pid_obj(dude_obj, 205);
+		rm_obj_from_inven(dude_obj, HasTorch);
+		destroy_object(HasTorch);
+		FlareRIGHT := create_object_sid(205, 0, 0, -1);
+		add_obj_to_inven(dude_obj, FlareRIGHT);
+		wield_obj_critter(self_obj, FlareRIGHT);
+		set_global_var(228, 0);
+		FlareRIGHT := 0;
+		HasTorch := 0;
+	end
+	if (global_var(229) != 0) then begin
+		HasTorch := obj_carrying_pid_obj(dude_obj, 205);
+		rm_obj_from_inven(dude_obj, HasTorch);
+		destroy_object(HasTorch);
+		FlareLEFT := create_object_sid(205, 0, 0, -1);
+		add_obj_to_inven(dude_obj, FlareLEFT);
+		wield_obj_critter(self_obj, FlareLEFT);
+		set_global_var(229, 0);
+		FlareLEFT := 0;
+		HasTorch := 0;
+	end
+end
+
+procedure critter_p_proc
+begin
+	if (global_var(635) == 1) then begin
+		if (get_critter_stat(dude_obj, 36) == 0) then begin
+			set_global_var(635, 0);
+			display_msg("The poison has left your system.");
+		end
+	end
+	if (get_critter_stat(dude_obj, 36) != 0) then begin
+		set_global_var(635, 1);
+	end
+	if (obj_pid(critter_inven_obj(dude_obj, 1)) == 205) then begin
+		if (global_var(230) == 0) then begin
+			set_global_var(230, game_time);
+		end
+		if (FlareLit == 0) then begin
+			if (PlayedSfxFLARE2 != 1) then begin
+				play_sfx("FLARE2");
+				PlayedSfxFLARE2 := 1;
+			end
+			FlareLit := 1;
+			if (global_var(228) == 0) then begin
+				set_global_var(228, 1);
+			end
+		end
+		if (global_var(230) != 0) then begin
+			if ((game_time - global_var(230)) >= 72000) then begin
+				obj_set_light_level(dude_obj, 100, 4);
+				TorchDEAD := critter_inven_obj(dude_obj, 1);
+				destroy_object(TorchDEAD);
+				set_global_var(230, 0);
+				PlayedSfxFLARE2 := 0;
+			end
+			else begin
+				obj_set_light_level(dude_obj, 100, 10);
+			end
+		end
+	end
+	else begin
+		if (obj_pid(critter_inven_obj(dude_obj, 2)) == 205) then begin
+			if (global_var(230) == 0) then begin
+				set_global_var(230, game_time);
+			end
+			if (FlareLit == 0) then begin
+				if (PlayedSfxFLARE2 != 1) then begin
+					play_sfx("FLARE2");
+					PlayedSfxFLARE2 := 1;
+				end
+				FlareLit := 1;
+				if (global_var(229) == 0) then begin
+					set_global_var(229, 1);
+				end
+				if (global_var(230) == 0) then begin
+					set_global_var(230, game_time);
+				end
+			end
+			if (global_var(230) != 0) then begin
+				if ((game_time - global_var(230)) >= 72000) then begin
+					obj_set_light_level(dude_obj, 100, 4);
+					TorchDEAD := critter_inven_obj(dude_obj, 2);
+					destroy_object(TorchDEAD);
+					set_global_var(230, 0);
+					PlayedSfxFLARE2 := 0;
+				end
+				else begin
+					obj_set_light_level(dude_obj, 100, 10);
+				end
+			end
+		end
+		else begin
+			obj_set_light_level(dude_obj, 100, 4);
+		end
+	end
+	if (obj_pid(critter_inven_obj(dude_obj, 1)) == 206) then begin
+		drop_obj(critter_inven_obj(dude_obj, 1));
+		
+	end
+	if (obj_pid(critter_inven_obj(dude_obj, 2)) == 206) then begin
+		drop_obj(critter_inven_obj(dude_obj, 2));
+		
+	end
+	if (obj_pid(critter_inven_obj(dude_obj, 1)) == 209) then begin
+		drop_obj(critter_inven_obj(dude_obj, 1));
+		
+	end
+	if (obj_pid(critter_inven_obj(dude_obj, 2)) == 209) then begin
+		drop_obj(critter_inven_obj(dude_obj, 2));
+		
+	end
+end
+
+procedure map_update_p_proc
+begin
+end
+
+procedure combat_p_proc
+begin
+	obj_set_light_level(dude_obj, 100, 4);
+end
+

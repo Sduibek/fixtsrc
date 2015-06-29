@@ -1,0 +1,84 @@
+Default FPS for running animations
+
+Fallout 1
+
+==========ALPHABETICALLY==========
+
+HAPOWR	18	(with helmet)		Sduibek created version @ 20
+HAROBE	20	(purple robe)
+HASROB	20
+HFCMBT	20
+HFJMPS	22
+HFLTHR	22
+HFMAXX	20
+HFMETL	20
+HMBMET	20	(black guy metal)
+HMCMBT	20
+HMJMPS	20
+HMLTHR	20
+HMMAXX	20
+HMMETL	20
+MADDOG	14	(dogs)		Sduibek created version @ 22
+MADOGM	14	(dogmeat, red)		Sduibek created version @ 22
+MAROBO	20
+NABLUE	20	(brotherhood robes)
+NABRWN	20	(brotherhood robes)
+NACHLD	16	(kids, hands in air)
+NAPOWR	20	(without helmet)
+NAROBE	16	(tattered robe, hands in air)
+NAWHIT	20
+NFBRLP	16	(female peasant, blonde, hands in air)
+NFCHLD	16
+NFMAXX	20
+NFMETL	20	(redhead)
+NFPEAS	20
+NFTRMP	16	(hands in air)
+NMBPEA	20
+NMBRLP	16	(hands in air)
+NMBSNP	16	(hands in air)
+NMDOCC	16	(hands in air)
+NMLTHR	20	(Tycho)
+NMMAXX	20	(Ian)
+NMPEAS	10	(fisherman, hands in air)
+
+
+
+==========BY FPS==========
+
+NMPEAS	10	(fisherman, hands in air)		Sduibek created version @ 20
+MADDOG	14	(dogs)					Sduibek created version @ 	24
+MADOGM	14	(dogmeat, red)				Sduibek created version @ 	24
+NACHLD	16	(kids, hands in air)			Sduibek created version @ 20
+NAROBE	16	(tattered robe, hands in air)		Sduibek created version @ 20
+NFBRLP	16	(female peasant, blonde, hands in air)	Sduibek created version @ 20
+NFCHLD	16	(hands in air)				Sduibek created version @ 20
+NFTRMP	16	(hands in air)				Sduibek created version @ 20
+NMBRLP	16	(hands in air)				Sduibek created version @ 20
+NMBSNP	16	(hands in air)				Sduibek created version @ 20
+NMDOCC	16	(hands in air)				Sduibek created version @ 20
+HAPOWR	18	(with helmet)				Sduibek created version @ 	20
+HAROBE	20	(purple robe)		
+HASROB	20			
+HFCMBT	20
+HFMAXX	20	
+HFMETL	20			
+HMBMET	20	(black guy metal)		
+HMCMBT	20			
+HMJMPS	20			
+HMLTHR	20			
+HMMAXX	20			
+HMMETL	20			
+MAROBO	20			
+NABLUE	20	(brotherhood robes)		
+NABRWN	20	(brotherhood robes)		
+NAPOWR	20	(without helmet)		
+NAWHIT	20			
+NFMAXX	20	(Katja)		OBSOLETE
+NFMETL	20	(redhead)		
+NFPEAS	20			
+NMBPEA	20			
+NMLTHR	20	(Tycho)		OBSOLETE
+NMMAXX	20	(Ian)		OBSOLETE
+HFJMPS	22			
+HFLTHR	22			
+

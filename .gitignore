@@ -1,3 +1,9 @@
+# Ignore these because otherwise it would add ~4000 files!
+Fixt loader zipfile/**/*.FR*
+Fixt loader zipfile/**/*.FON
+Fixt loader zipfile/**/*.AAF
+Fixt loader zipfile/**/*.RIX
+
 ###############################################################
 #             https://github.com/Sduibek/myignore             #
 ###############################################################

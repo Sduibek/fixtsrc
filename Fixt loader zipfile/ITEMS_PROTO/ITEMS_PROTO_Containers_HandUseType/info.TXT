@@ -1,0 +1,46 @@
+HEX Location  0x40
+
+
+set to 00 for "wiggle hands to access it"
+[empty]
+
+
+
+set to 08 for "bend down to grab from ground"
+
+46 bag
+90 backpack
+93 bag
+
+
+
+set to 09 for "cannot pick up" AND "bend down to grab from ground"
+
+43, 44 ice chest
+107 108 bones (alien)
+128 129 130 131 footlocker
+180 crate ON GROUND
+211 bones
+
+
+
+set to 01 for "cannot pick up" - WRONG, 01 IMPLIES 08. Not sure why it works this way.
+
+42 fridge
+60 61 62 63 64 65 bookcase
+66 67 desk
+68 69 70 dresser
+132 133 134 135 136 137 138 139 locker
+145 146 147 149 bookshelf
+151 152 153 155 shelves
+157 workbench
+158 toolboard
+165 iguana stand
+166 167 table
+168 169 170 171 172 173 174 175 176 177 178 179 stuff
+181 182 183 184 185 186 187 desk
+188 189 locker
+197 198 199 200 201 202 203 204 box (Brotherhood)
+213 remains of gizmo
+214 gizmo desk
+
