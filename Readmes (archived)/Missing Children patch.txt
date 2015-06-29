@@ -1,0 +1,24 @@
+Fallout 1 Children Patch By Skynet.
+
+
+Description:
+
+This handy little patch brings children's back to the Fallout 1.2 UK version.
+
+
+Installation:
+
+Just unzip the F1ChildPatch.zip into your Fallout folder (example C:\InterPlay\Fallout\) and let it overwrite some files. 
+
+If you are using Windows version, launch the Falloutw.exe.
+If you are using DOS version, launch the FALLOUT.exe.
+
+
+Version history:
+
+V.1.1: Added support for DOS version.
+V.1.0: Initial Release.
+
+
+
+

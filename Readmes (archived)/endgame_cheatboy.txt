@@ -1,0 +1,29 @@
+Fallout End Game Patch and Cheat-Boy  by Cpt Corpse.
+
+This file contains the Fallout end game patch, cheater utility and source code (Noid's compiler format).
+
+Also included is the End game patcher by NXRV, this utility patches falloutw.exe so Vault 13 becomes inaccesible from the town entrance map once the game has been finished.
+
+Changes 17-3-2004
+
+- Added a fix to Razor.int which caused Razor (the leader of the Blades) to bring up the wrong dialog if you have been to Adytum and talked to any of the Regulators.
+
+- Added two reference text files listing script and critter prototype IDs.
+
+- Added five new generic recruitable npc scripts; these can be assigned to spawned critters from the 'Spawn Generic NPC' function, the new scripts are:
+
+  SID 965 - Genmerc: Generic mercenary, has full dialog options.
+
+  SID 966 - Genpet: Generic Pet, can be assigned to dogs, rats, deathclaws, etc.  No dialog options, talking to critter will either add or remove it to your party.
+
+  SID 967 - Genbot: Generic Robot, has full dialog options, need to use repair skill on critter to add to your party.
+
+  SID 968 - Broinvar: Brotherhood Crack Assault Paladin, this is just a modified version of the original script; no dialog options, just floaters; talking to npc will either add or remove to your party.
+
+  SID 969 - Folinvar: Follower invader, modified version of the original script; talks only in floaters; talking will either add or remove npc to your party.
+
+To apply the patches simply unzip the file to the Fallout folder with 'Use folder names' option checked.
+
+Enjoy.
+
+Da Wasted Corpse of the Wastelands.

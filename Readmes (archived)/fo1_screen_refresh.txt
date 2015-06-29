@@ -1,0 +1,34 @@
+Fallout 1 - Screen Refresh
+--------------------------
+
+On some newer machines, Fallout1 seems to have a problem with refreshing of the screen. This little tool allows you to eradicate this problem by forcing Fallout to refresh (with a large gulp of Nuka-Cola of course ;)
+
+To use it:
+- Unzip it where you want
+- Launch it before Fallout and let it run in the background.
+
+Nothing easier then;)
+
+This tool does not work for big test since I only tested on my machine running XP. If you encounter problems, please contact me.
+
+Good game;)
+
+Lionel d'Hauenens -=¤ LABO ¤=-
+
+Mail : yolejedi@free.fr
+http://www.labo-asso.com/
+
+30/08/2006
+
+--------------------------
+
+For some reason this useful tool is almost unknown to international Fallout community. May be, because of French origin.
+I've slightly updated Lionel's work. Translated non-Unicode version of the tool to English (fo1_screen_refresh.exe). And added Unicode version with some internationalization (fo1_screen_refresh_int.exe).
+If you are just fine with English, choose the first one. If you'd prefer to see program messages in your native German, French, Spanish, Polish or Russian, choose the second one. Unicode version will try to conform current interface language selection of your local system.
+
+Alchemist
+
+Mail : alchemist@fromru.com
+http://www.teamx.ru/
+
+23/10/2010

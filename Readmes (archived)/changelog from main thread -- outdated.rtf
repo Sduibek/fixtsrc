@@ -1,0 +1,250 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww37900\viewh17620\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 \
+My changelog isn't very good at the moment. [url=http://www.dropbox.com/s/dwdb6tckiw43ool/Change%20Log%20for%20Fallout%20FIXT.txt]You can view the by-release version here (shows what's been changed since last time, for all releases back to pre-alpha stage)[/url]\
+\
+Changelog: ([b]this doesn't have any of the stuff from alpha 6.0 or 6.1, and it's in pretty sorry shape at the moment. I do plan on making a nicely organized comprehensive changelog, I just haven't gotten to it yet.[/b])\
+[spoiler]\
+TEXT/DIALOG CHANGES:\
+- Some fixes, tweaks and additions to Stupid (Intelligence <= 3) dialog options with Lori (Brotherhood of Steel)\
+- Stat boost messages from Lori fixed (had a mismatch on Intelligence, and "___ increased 1 point" messages added)\
+- New dialog options made from scratch with Lori for relations (see below)\
+- Added notification messages for the remaining skillpoint increase scripts\
+- Tandi's "Thanks for saving me" verbiage once you've saved her only plays once. After that is generic "Hello again, how can I help you?"\
+- Added some more floats for Tycho for when the player betrays Junktown\
+- Dogmeat now interacts properly with Stupid characters.\
+- Dogmeat's hover descriptions are now correct\
+- Various routing changes and fixes to The Master, to make the end of conversations flow better, be more applicable to context and avoid the repeat-dialog issue\
+- All instances of "Cane" corrected to "Kane"\
+- "irradiated" now used instead of "radiated"\
+- Superstim description grammar fix\
+- Added more entries to floats for Hotel's hostile zombie packs and increased chance-to-display\
+- Gizmo now gives a float message asking who you are if you haven't talked to him before\
+- Tweaks to Gizmo's dialog routings and options\
+- Fixed lots more Vance dialog bugs. He now has proper and appropriate messages for Stupid characters and people he hasn't met before (Vance's dialog tree has been significantly modified to be more realistic and glitch-free)\
+- There's now an option to back out from setting timers if you changed your mind about blowing up the base after hacking into the computer\
+- Fixed Gizmo dialog option's reversed empathy flags\
+- Alert status (silent or normal) and countdown times in the Military Base computer now match their descriptions\
+- Stupid players have a few new dialog options for Avellone\
+- Added some dialog options and descriptions to Khans. (Part of an ongoing project to expand and improve upon the Khans)\
+- Quick Reference Card now included\
+\
+\
+SCRIPT/GAMEPLAY CHANGES:\
+- Improved the Children of Cathedral healers' code for radiation and poison treatment\
+- Improved code for detecting and curing poison for all healers\
+- Intelligence required for healing, poison and radiation treatment from Lori reduced to 4\
+- Stupid characters can now get healing, poison and radiation treatment from Lori\
+THIS WILL BE OPTIONAL IN NEXT RELEASE - Player can now have 'intimate relations' with Lori and Tandi (Lori is Charisma-or-Speech check, Tandi's check is same as before but easier if player is female)\
+THIS WILL BE REMOVED IN NEXT RELEASE - Tycho now gives 10 skillpoints to Outdoorsman instead of 5\
+THIS WILL BE REMOVED IN NEXT RELEASE - Player now gets 3 skillpoints from each "phase" of watching Thomas, instead of 1\
+- Beating Zax at chess: Requires Intelligence of 10, Luck of at least 7, if those are met there's a 33% chance of winning\
+- Code for Tycho attacking the player if player murders Junktown citizens. In some cases he still might behave improperly, but at this point it's an engine bug\
+- Dogmeat now interacts properly with Stupid characters.\
+- The Master no longer re-initiates dialog saying "You think you can destroy me? Destroy? Me!" regardless of how dialog ended. This means he will now suicide properly\
+- Junktown Casino guards' cooloff between weapon checks is now longer, only pings if the player is close or they can see you\
+- Killian's wares are now combined and moved to his inventory whenever talking to him, thus if bartering via button or dialog you'll always see all his stuff. \
+- For the fix above, after dialog all the original item types go back to their respective shelves but leaves a couple items on him (stims, ammo, Desert Eagle) and puts everything else off-screen\
+- If Killian dies, some of his items go into his safe instead of staying in his inventory\
+- Can no longer talk to Watershed ghoul prisoner repeatedly for infinite experience\
+- Karma received from Watershed ghoul prisoner immediately (before it didn't until he walked completely off the map)\
+THIS WILL BE REMOVED IN NEXT RELEASE - After killing Lieutenant, countdown for the base destruction triggers for 500 ticks. (It's no longer required to destroy the base "diplomatically" using bomb interaction)\
+- Animal Friend now works for all: dog types, rat types, scorpion types\
+\
+\
+BEHIND-THE-SCENES CHANGES:\
+- Added a few more music files that should help with the Glow/Cathedral/Master's Lair crashes\
+- Fixed wrong Default AI Packet and Extra Gender in certain Protos (mostly Vault Dwellers)\
+- Additional weapon drop mod checks added to avoid debug log errors\
+- Corrected wrong critter ID at offset 0x2: PROs 269, 270, 271\
+\
+\
+DOCUMENTATION CHANGES:\
+- Added a "Troubleshooting Fallout FIXT" text file, as well as "fixing color display issues" text file in the "Scrambled Colors Fixes" folder\
+\
+\
+RESTORATIONS:\
+ - Can now alternatively get experience and complete the Phil quest by killing Dogmeat.\
+ - Descriptions for ghouls from message files are now used.\
+WILL BE REMOVED OR OPTIONAL IN NEXT RELEASE - Agatha in Shady Sands\
+WILL BE REMOVED OR OPTIONAL IN NEXT RELEASE  - Barterguy and Elder in Shady Sands\
+WILL BE REMOVED OR OPTIONAL IN NEXT RELEASE  - Prisoner at the Raiders.\
+\
+\
+FIXES:\
+ - Sharpshooter Perk fix included (code by ravachol), and it DOES have an effect at Perception of 9 and 10.\
+ - Staircases no longer have some sections that do nothing when clicked.\
+ - Correct default AI packet linked with critters in their data files. Many were wrong.\
+ - Invading Mutant wander code much better than previous code.\
+SOME OF THESE WILL BE ROLLED BACK WITH NEXT VERSION - Various fixes & improvements to Radscorpion Caves.\
+ - Hub police patrols in random encounters (and the city itself, mostly) now actually wield weapons against you. the weapons they have frames for are limited unfortunately, so the black guys get either a 10mm or DE, and the redheads get spiked knuckles and a combat knife.\
+ - Fixed a freeze/crash that could happen when Kyle installed the Systolic Motivator\
+ - Multiple bug fixes with Vance.\
+ - Evil characters can buy drugs from Vance.\
+ - Using a ladder, stair, or manhole now longer makes the "You See: [object]" message appear twice.\
+ - Using a ladder, stair, or manhole now works properly even if player is playing idle animation.\
+ - Tardis' "You see a police box to the northeast." msg no longer appears twice on map load\
+ - Caravaner guards' dialog improved/fixed\
+ - "Taylor" (shop keeper/trader from Adytum, underground near entrance) is now properly refered to as Tine by all game messages and dialogs.\
+THIS WILL BE REMOVED IN NEXT VERSION - Killing Tine now turns Adytum hostile.\
+ - Tine's barter price mod can no longer be bypassed by clicking on his shelves/Stuff instead of talking to him.\
+ - Brotherhood Armor price increased from 4800 to 7800, to fit into armor price hierarchy.\
+ - Bob can no longer be bribed for infinite amounts of cash (tops out at 2000 caps every 5 days)\
+ - Dialog for all Glowing Ones in Necropolis Vault now functions properly. (Including them attacking you if you don't fix the pump)\
+ - Can no longer avoid Hightower's conversation by entering combat and walking forward.\
+ - Map view edges corrected for Irwin's Farm\
+ - "Hub - Irwin's Farm" displays instead of "Error" when loading a game from that map.\
+ - NPCs: system message generated when they level up, as to what their new level# is.\
+ - Can no longer freely steal from Killian Darkwater. [Reported by Nevill]\
+ - Can no longer get experience for caving in the radscorpions if you've already killed them all.\
+ - Izo now kicks the player out via screen fade and teleport.\
+ - Flash now reacts properly regarding loitering, and for attacking the player after telling them to leave. [Reported by Nevill]\
+ - Tycho can no longer be hired if you've murdered Junktown innocents. If you kill Junktown innocents with Tycho in your party, he will leave your party and attack you. [Reported by Nevill]\
+ - Animal Friend now works on all critters that it should.\
+ - After Irwin walks off the Hub Downtown map, he dissapears from the map.\
+ - Dehydration damage now ignores your armor's DT and DR as it should have all along.\
+ - Red force field emitters in the Military Base can now be destroyed via explosives.\
+ - Brahmin pulling caravan carts now identify as a domesticated brahma instead of a wild brahma.\
+ - If you disable the green forcefields in the Military Base, they stay disabled, and can be toggled via the Radio as intended.\
+ - Children no longer spawn infinite Rocks.\
+ - Children no longer run constantly.\
+ - Khans, if mistaking you for Garl's father, will now display floating messages at a more realistic interval.\
+ - MacRae now properly gives you a bonus to fighting skills.\
+ - When earning experience, stat points, or skill points, a notification message is now always displayed.\
+ - Fixed a few mismatches between reported Exp earned, and actual Exp earned.\
+ - Medics/Doctors now properly heal Radiation and Poison (when & where applicable).\
+ - About five female critters were Male gender and/or Male Kill type. This is corrected.\
+ - Can no longer steal back your caps after paying through dialog (i.e. hiring Ian, buying holodisk from Stapleton).\
+ - Superstims can be used on your NPCs\
+ - Generic Caravan Drivers' dialog at the Hub entrance now works as intended. (differs based on time of day and if a caravan is active)\
+ - "Going to Lou" via Harry's dialog takes proper amount of time in game and from "Days Left" counters.\
+ - Radscorpion poisoning damage code improved (now checks against Endurance and Luck, instead of just Luck)\
+ - Cows only talk on the Mad Cows map.\
+ - Killing cows no longer makes Junktown hostile regardless of where they're killed. However, killing a cow in a town does make the cow's town hostile.\
+ - Doc Morbid animates properly when cutting out player's eye, and player receives damage from this.\
+ - Killing the Caravaner and/or Caravan Guards while on a caravan reduces your pay when you return to town, and you take a karma hit.\
+ - Necropolis Ghouls go hostile if chip taken w/out pump fixed (as intended)\
+ - Player now correctly loses a Flask when game states you avoided dehydration "due to your supplies of water".\
+ - Talus will now grant the player weekly ammo.\
+ - Elevator doors in The Glow that didn't used to display exp earned message on pickock and traps disarm, now do.\
+ - Message for exp from getting to lvl 5 @ The Glow is displayed\
+ - Can get 700xp from Zax if you beat him at chess (this is a fix because it checked Critical Success again Intelligence before, but stat checks can't generate criticals)\
+ - Hirable NPCs can be asked to join and leave party (if already hired), and to step aside, even if the player is stupid.\
+ - Crashes at Cathedral level 3, Military Base, and The Glow level 3 should be fixed for good.\
+ - Other dialog fixes (incorrect Tell-Me-Abouts, innacurate information, etc).\
+THIS WILL BE REMOVED IN NEXT VERSION (It didn't work as well as I thought) - Time reduction bugs fixed: Going to Irwin's Farm, going to the Military Base, and most importantly going on Caravan jobs subtracts time from all "Days Left" variables equal to the amount of time that's added to the displayed game date & time. The time amounts are still very high (sometimes 20 days for a caravan) but as far as I can tell those values are hard-coded, so I can't fix it (yet).\
+ - Due to how the game reads the critter files, some critters would start with partial HP on map load. Examples are Lars, Justin Greene, and the Hub cops. I've fixed this so they are set to full HP on first visit to the map. At least 450 scripts changed.\
+ - Number of critters in random encounters changed to match their description, or vice-versa. For example, a plural descriptor used when sometimes only a single monster spawned.\
+ - Bob's Iguana Stand now works properly - goes to dialog if he's alive, is accessible (and now actually has items) if he's dead.\
+ - Mrs Stapleton's inventory is now stored off-screen like the other merchants. If killed, it will show on her corpse.\
+ - Mrs Stapleton spawns new books at a random and staggered rate (i.e. no more infinite books exploit)\
+ - Many many many fixes to grammar, spelling, punctuation, formatting, and other text and dialog file issues, such as innacurate descriptions. At least 459 files modified.\
+ - Various scripting fixes w/ Khans\
+\
+\
+ADDITIONS:\
+ - Overturned Truck now also spawns bottles of Nuka-Cola based on player's Luck\
+ - If you leave Irwin's Farm without killing all the raiders, now you can go back to finish the quest. (due to how I had to implement this, all items, critter locations and critter HP will be reset)\
+ - Message appears when radiation received from monsters.\
+THIS WILL BE OPTIONAL IN NEXT RELEASE - The player can now "interact" with prostitutes at the Falcon in The Hub. They say a bunch of nasty stuff, which totally changes based on character gender, and price is based on your Charisma.\
+ - Centaurs and Floaters always radiate the player on hit.\
+ - Ghouls have a chance to radiate the player on hit, if attacking with fists. 22 scripts changed.\
+ == Chance is based on checks against Luck and Endurance.\
+ == Glowing ghouls and Radiated rats always radiate on hit.\
+ - Flares provide light around the player when held in the active item slot. [Thanks to gvx for reporting debugging issues with this!]\
+ == Light goes away in combat, as this would provide exploitable To-Hit% bonuses.\
+ == Sound file plays to simulate lighting the flare.\
+ - Dehydration causes more damage, 10x original values. However it cannot be fatal.\
+ - Tandi now has normal Dialog interface including audio when in player's party, and has the standard entries for follow distance settings and the new Step Aside function.\
+ == Her old floating text entries are still used; they display after exiting dialog screen.\
+ - Marcelles in Junktown's Crash House talks to the player and rents rooms regardless of time of day. [Reported by Nevill]\
+ - Mountain and City squares now support all random encounter types.\
+ - An extra entry for each distance option in Hirable NPCs' follow settings that are tigher than normal; meaning they run more often and have a shorter leash, reducing follow lag.\
+ - All Hirable NPCs, including Dogmeat, can be ordered to step aside (akin to Push action in Fallout 2).\
+ == It's a teleport instead of a realistic walking animation. This is necessary due to limitations of Fallout 1's engine.\
+ - Badwords.txt entries copied over from Fallout 2, making many more words correctly censored, for those of you who have the language filter enabled.\
+ - Caravan team members now have some ammo and 1 stimpack each\
+ - Added stats to drugs/useables that were totally useless, so now things like Iguana, Beer, NukaCola, actually have a use.\
+ - Rockfalls in Mountain encounters cause more damage, as above cannot be fatal unless running FIXT: Survival.\
+ - Baby radscorpion and baby deathclaw graphics brought over from Fallout 2.\
+ - Radscorpion Caves now have a "mother radscorpion" and several baby radscorpions.\
+THIS WILL BE OPTIONAL IN NEXT RELEASE - Unique sprite graphics for several talking heads and non-talking unique NPCs:\
+[-] Harry, Viscious, Troy: Tanned Super Mutant Sargeant\
+[-] Ian: Long Haired Guy Mad Maxx\
+[-] Tycho: Bald Guy Leather Armor\
+[-] Laura: Sand Robe\
+[-] Aradesh: Sand Robe\
+ - Descriptions to many scenery items that were missing it (easy test is to check out Grafitti in Boneyard)\
+ - Fleshed out AI.txt messages (this is still in progress however). Many critters had a very small selection of combat messages to choose from. I also added some in from Wasteland and spiced up the ones that were overused or boring.\
+- "Use All Weapons" option for your NPCs, if you choose it\
+- NPCs can be shown in custom gfx for different armors - using "Bald Dude" and "Long Hair Dude" graphics for Tycho and Ian respectively.\
+- Message is now received when Poison Level reached zero, after having been poisoned.\
+\
+\
+CHANGES:\
+ - The addiction messages ("you feel groggy" etc) are now more interesting and should be much more clear what addiction they apply to.\
+ == Alcohol's "you crave a drink" message is a brand new message, created by me.\
+THIS WILL BE OPTIONAL IN NEXT RELEASE - Names of addictions under Karma are a bit more fun now, but should still be obvious which is which.\
+THIS WILL BE OPTIONAL IN NEXT RELEASE - Many script's fade-to-black times increased because on modern PCs the fade times are usually too fast.\
+THIS WILL BE REMOVED IN NEXT RELEASE - Vault 15 desert entrance can now have two radscorpions instead of one if the player fails a Luck check.\
+ - Normalized sound files: 384 changed, such as dynamite/C4 explosion is louder, 14mm pistol firing is quieter, death animation sounds balanced against each other, "ca-chunk" sound when grabbing inventory items quieter.\
+THIS WILL BE OPTIONAL IN NEXT RELEASE  - Psycho's damage resistance boost lowered from 50% to 30%.\
+THIS WILL BE OPTIONAL IN NEXT RELEASE  - Childkiller status now received after 2 child kills, versus 3.\
+ == If your Hirable NPC kills a child, that counts as a child kill.\
+ - Luck affects random encounters differently. There should now be a more noticable difference between random encounters received when character has very high or low Luck. Previously, some encounters never appeared.\
+ == This applies to types of encounters (i.e. Radscorpions vs Super Mutants), as well as strength of monsters and items found in those encounters.\
+ - Graphic for flare on the ground changed to be brighter (easier to see in dark maps) [Created by .Pixote.]\
+ - Izo is slightly more talkative.\
+ - If you set the timer on an explosive you're holding in an active item slot, it drops to the ground at your feet.\
+THIS WILL BE OPTIONAL IN NEXT RELEASE  - Radiation "damage" received increased: The Glow all levels & entrance map (very large increase), random encounters near the Military Base and The Glow (doubled), and Ghouls (slight increase) and lastly implemented for all random encounters @ The Glow and Vats/MB. Some of the original values were ridiculously low to the point of being totally unrealistic and having very little (if any) affect on gameplay. Beware and carry Rad-X!\
+THIS WILL BE OPTIONAL IN NEXT RELEASE  - Level of poison received from radscorpions increased.\
+ - Changed some map names/labels (Special encounters for example have a more accurate name when loading a game saved on that map)\
+ - A few worldmap names (the green ones you click on the green circle) changed for accuracy / continuity (Mariposa Military Base, L.A. Boneyard, Brotherhood of Steel, Khans' Camp, Children's Cathedral, The Glow, The Hub)\
+THIS WILL BE OPTIONAL IN NEXT RELEASE  - Underground maps (aside from The Glow due to secondary power) have had their light value(s) reduced from 40 to 20 for realism/atmosphere. (Max is 100)\
+Changed wind sound between loading maps (the other one that came with Fallout 1 sounds more eerie/hollow to me which I think is neat)\
+ - Better code for detection/attack range of radscorpions and rats.\
+ - Removed the Tim Cain face icon that appears at Tile/Thumbnail view.\
+THIS WILL BE REMOVED IN NEXT RELEASE  - Initial encounter at Necropolis Vault entrance has about three times the ghouls as it previously did.\
+THIS WILL BE OPTIONAL IN NEXT RELEASE  - Level 3 of Necropolis Vault is much more populated.\
+ - Many tweaks to CombatAI file (mostly minor stuff).\
+THIS WILL BE OPTIONAL IN NEXT RELEASE  - All critters are 50% more likely to say stuff in combat.\
+ - Invasion Mutants now get a random weapon, a random number of stimpacks (0 to 2), and a Radio.\
+\
+\
+MISC:\
+THIS WILL BE OPTIONAL IN NEXT RELEASE  - An exciting easter egg from the Fallout 1 Demo is now implemented in Necropolis. Happy hunting!\
+ - Changed the f1_screen_refresh dialog box verbiage for clarity.\
+ - Fix to caves.edg (hires mod)\
+ - Expanded bottom-right exit grid in The Hub Downtown map (hires mod)\
+ - Any instances of "local_vars=0" set to "local_vars=1" for ALL scripts in SCRIPTS.LST. Fixes issues and crashes believe it or not.\
+ - Violence level is set to Maximum Blood when the game is run.\
+ - Included graphic fixes by...\
+120% Mutant Deaths:  .Pixote.\
+Metal Armor Sledge Thrust:  x'il\
+Lieoutenant Fixed Offsets:  Lexx\
+ - Different default AI for Invasion Mutants.\
+ - Dialog, text, and graphics interface files for Spanish and French versions are included. (You need to set the Language= value in fallout.cfg to use these)\
+ - Imported some minor and probably unused files from GOG and Steam versions that were missing from my version.\
+\
+\
+STILL-IN-PROGRESS:\
+ - Some critters were using the same text for hover description and detailed description. working on rebuilding all of these to work as all other critters do. (e.g. a simple hover text and more detailed binoculars / examine text)\
+ - Some dialog options increased the hireable NPCs' opinion of the player for no explicable reason  - like when saying "OK Goodbye" or something similarly mundane. i've change these to be a neutral reaction.\
+ - Usable coke machines\
+ - Increased encounter types at Coast squares.\
+ - Balancing of random encounter types based on Luck.\
+THIS WILL BE OPTIONAL IN NEXT RELEASE  - Followers (added Heather for future implementation of the Spy quest)\
+ - added some new talking head backgrounds, changed a few and brought a few from Fallout 2, in prepartion for a fully functioning Tandi NPC\
+\
+\
+MODDER-ONLY CHANGES:\
+ - Comments have been added to all script files, as well as many dialog and global variable files.\
+ - Empty missing sound files included as placeholders to squelch debug errors, and avoid theoretical crashes.\
+ - Standardization of most scripts' function code and verbiage.\
+ - Optimization or streamlining of some script's code.\
+\
+}

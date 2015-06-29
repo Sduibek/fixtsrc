@@ -1,0 +1,62 @@
+Fallout 3rd level of the Cathedral crash fix
+
+
+
+About
+
+There are some variations of the broken Fallout distributions spread across
+the Internet which crash while player tries to enter the lowest (3rd)
+level of the Cathedral. Crashes are caused by the corruption of master.dat
+and critter.dat files. Current fix designed to correct corrupted data files.
+
+
+
+Compatibility
+
+This fix can be applied to US releases v1.0 and v1.1 with the following
+MD5 hash values for the main data files:
+
+critter.dat   4F6B9784411B92BEBB622C81ED720DAE
+master.dat    0F173D86D623BB2F60DC741A4EE8B7BB
+
+Patcher could run under any of MS/PC/DR-DOS 5.0+, Windows 4.0+, Windows NT 5.0+.
+
+
+
+Application
+
+ 1. Make at least Large installation of the game.
+ 2. Unpack fix contents into the game installation directory.
+ 3. Run patch.bat.
+ 4. There should two 'Success' messages appear.
+ 5. If they don't send me console messages log. Go to step 9.
+ 6. If you have Fallout v1.1 download and REinstall the official patch v1.1.
+ 7. Load your saved game and check level 3 for problems.
+ 8. If the problem persists contact me for further assistance. Go to step 9.
+ 9. Delete patch.cmd file and patch directory.
+10. End of the algorithm.
+
+
+
+Notes
+
+Corrupted distributions that we have tested had broken PDF manual as well.
+That file is NOT covered with the fix. You have do download it separately
+if needed.
+
+Choose MD5 calculation utility carefully. Some of the programs available
+on the Internet return erroneous results. HashTab is recommended. Program
+site: http://www.beeblebrox.org/hashtab/
+
+
+
+Acknowledgement
+
+Thanks go to Coyote from Serbia for efforts in testing and patience. :)
+
+
+
+Contact information
+
+Alchemist (alchemist@fromru.com)
+TeamX     (http://www.teamx.ru)

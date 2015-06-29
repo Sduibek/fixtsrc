@@ -1,0 +1,55 @@
+This FAQ refers only to the latest version. (2.1) If you are using an older version, update sfall before doing anything else.
+
+====================================================================================
+== On startup, fallout crashes with a 'Failure initializing input devices' error. ==
+====================================================================================
+In ddraw.ini, in the [input] section, change BackgroundKeyboard to 1 and see if that fixes the error. If it doesn't change BackgroundMouse to 1 too.
+
+===============================================
+== Black screens/psychedelic color schemes. ==
+===============================================
+In ddraw.ini, in the [Graphics] section, change Mode to 4 or 5.
+
+==========================================================================================================
+== Fallout refuses to run, displaying the message 'Fallout appears to be running in compatibility mode' ==
+==========================================================================================================
+sfall doesn't play nicely with any compatibility mode settings, so it refuses to run with them turned on. Turn them all off. Do this by right clicking fallout2.exe, switching to the compatibility tab and unchecking everything.
+
+========================================================================================
+== The world map stutters horribly, or the rate of random encounters is insanely high ==
+========================================================================================
+In the [Misc] section of ddraw.ini, make sure WorldMapFPSPatch, WorldMapFPS and WorldMapDelay are all set to 0.
+
+=========================================================================================================================
+== Fallout refuses to run, displaying the message 'You're trying to use sfall with an incompatible version of fallout' ==
+=========================================================================================================================
+sfall requires a specific version of fallout2.exe. (specifically, the american version of v1.02) Don't try using it with anything else; it simply wont work.
+
+In most cases, you can simply swap your exe out with the american one, and everything will work perfectly.
+
+=========================================================================
+== A crash on startup mentioning a missing entry point in kernel32.dll ==
+=========================================================================
+sfall requires windows xp or above. Don't try using it on windows 9x.
+
+=====================================================================================
+== Your virus scanner picks up the fallout exe and/or ddraw.dll as a generic virus ==
+=====================================================================================
+This is caused by the proactive defences side of the virus scanner noticing that fallout is displaying suspicious behaviour. Either turn behaviour analysis down/off, or add the fallout folder to its exclusion path. It's not a false positive as such, because sfall does indeed pull some stunts which would look suspicious to a virus scanner.
+
+=====================================================
+== Windows explorer hangs, consuming 100% cpu time ==
+=====================================================
+Not actually an sfall bug, but a problem with the way windows parses dll resources when you're using a multibyte character set. You need to be using a multibyte MUI like Chinese to trigger this one. Viewing a folder containing sfall will lock up windows explorer, and when running fallout it will be unable to load sfall's ddraw.dll causing it to assume direct x isn't installed properly. It seems to occur somewhat randomly, so there doesn't appear to be much I can do inside sfall to work around it.
+
+================================================================================
+== fallout crashes on startup with an error about directx not being installed ==
+================================================================================
+This can be caused by the windows explorer hang problem, so check if that applies to you.
+
+If you're using graphics mode 4 or 5, then make sure your DirectX 9 installation is up to date. If you're on vista/win 7 and have DirectX 10/11 then it doesn't automatically mean that you have the latest version of DirectX9, so install it. Specifically, when using mode 4 or 5 sfall requires D3DX9_30.dll.
+
+=============================================================================
+== Cannot edit ddraw.ini, or ddraw.ini edits don't seem to have any effect ==
+=============================================================================
+If you're on vista, or windows 7 and have UAC enabled, then do _not_ install fallout 2 to the program files directory. Instead pick a path like 'C:\Games\Fallout2'. The same thing applies to any game that you wish to mod. The program files directory is protected by windows, and you'll find yourself either unable to modify the files in it, or your files will end up getting mixed with copies in the virtualstore.

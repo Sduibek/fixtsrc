@@ -1,0 +1,20 @@
+Long Hair Dude mod v1.1
+
+By: x'il and Josan12 with expert help from Mash and Brother Soifran. 
+
+This mod adds new player character model that has long hair (based on the Ian critter). 
+
+Included in this package is Mash's "Hero Appearance mod" which allows for appearance selection on the game's character creation screen. (Big thanks to Mash!).
+
+Refer to the Hero Appearance mod read-me file for installation instructions.
+
+**You need to have Timeslip's sfall 2.0c or better**
+
+Note on the animations: 
+
+a) This mod only affects the player model up to Leather Armor. Metal Armor has it's own unique look. From Combat Armor onward, the game uses the generic hero model. 
+b) Since the female model already has long hair, there is no change for it.:p
+c) A word of warning: though all of the animations have been gone over for polishing several times, do not expect unreasonable levels of perfection!!
+
+
+Enjoy!! 

@@ -1,0 +1,66 @@
+FALCHE - Fallout Character Editor 1.11 by CH Khor (khor@kch.pl.my)
+------------------------------------------------------------------
+
+
+Version history:
+
+1.11:
+- Fixed a minor bug in the Female Sex setting.
+
+1.1:
+- Fixed the "Character data (traits) not found." bug in certain games.
+- Fixed a minor cursor bug in the main menu.
+- Improved the main character detection routine.
+- Added ability to edit crippling injuries.
+
+1.0:
+- Original version.
+
+
+Installation:
+
+Copy this editor into your Fallout folder and run it.
+
+If you're running this editor in MSDOS mode, you will need a DPMI
+server like QEMM or CWSDPMI. You can get CWSDPMI at
+ftp://ftp.simtel.net/simtelnet/gnu/djgpp/v2misc/csdpmi4b.zip
+
+Win95 users need not bother with CWSDPMI, the editor will run as is.
+
+
+Description:
+
+This is a character editor for Interplay's Fallout which can edit
+your character stats, perks, skills and more.
+
+Before using this editor, you should make a backup of the savegame you
+intend to edit just in case something bad happens. This editor modifies
+SAVE.DAT only.
+
+Also note that the editor does not limit the values you may enter in
+certain fields. Don't expect the game to work reasonably if you enter
+unreasonable values.
+
+
+Known Bugs/Features:
+
+- The age displayed shows the age of your character at the start of the
+game and not the current age.
+
+- Changes in stats due to certain perks, traits, radiation, addiction
+and injuries are not taken into account. Thus the stats you see in the
+game may not correspond to the ones in the editor.
+
+- The editor won't work on games saved in combat mode.
+
+
+Availability:
+
+This editor will always be available at its homepage at
+http://www.geocities.com/SiliconValley/7176/fallout.html
+
+
+Last modified: 12th May 1998
+Copyright (C) 1997-98 CH Khor (khor@kch.pl.my)
+
+

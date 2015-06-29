@@ -1,0 +1,56 @@
+FALLOUT END GAME PATCH V002  24-12-2003
+
+This mod has been tested with a male character with Bloody Mess trait.
+
+What this mod does, is make the game ending optional; after you finish talking to the overseer when completing the game, a dialog screen comes up that gives you the option to continue or finish the game.  Also the PC no longer gets a pistol added to his/her inventory (if traits bloody mess, etc are present) and the animation of the PC shooting the overseer is not activated.  If you choose to end the game, that's it; game over.  If you choose to continue you can shoot the overseer or leave the vault and keep playing for 12 years.
+
+Installation
+Just unzip to fallout folder and select use folder names, for the patch to fully work you will have to start a new game; previous saves will be incompatible with the patch.
+
+Fixes V000  21-12-03
+
+- Game ending optional.
+- Animation of PC blowing away overseer is no longer triggered giving you the choice of killing him or letting him live.
+
+Known bugs V000
+
+If you enter the vault after you have killed the overseer, the overseer will still be in level 3.  Also the guard at the weapons locker room turned hostile on me but my character was armed when I entered this room which might have been the cause.  When you exit the vault, the endgame sequence will be triggered placing the overseer at the vault entrance.
+
+This mod was made and tested in less than 2 hours so I need your feedback for any bugs I overlooked.
+
+Fixes V001 22-12-03
+
+- Overseer gets removed from cave entrance when you exit map (if you haven't killed him).
+- Vault door computer will no longer open the vault if you try to enter after the game is completed*.
+- Endgame sequence no longer triggered when re-entering the cave entrance.
+- Vault Door Computer script has been changed, new lines of dialog have been entered for floater messages.
+- You get more equipment when starting a new game.
+
+Bugs V001
+
+* While Vault 13 is no longer accessible through the cave entrance, you can still access all levels through the townmap; before I can fix this problem I need help locating the city and worldmap data.
+If you choose to end the game, the end animation will play followed by the credits, but the background music won't play.
+
+Minor Issues V001
+
+Version 001 adds 10 new global variables, 2 are used in the game and the rest are there to accomodate future fixes; unfortunately this will affect compatibility with other saved games forcing you to start a new game.
+
+If you want to play an old save, just rename, move or delete the file Fallout/data/data/Vault13.gam.  This should allow you to load your old game and keep playing after completion, but any new global variables defined in the scripts won't work.  I have not fully tested this with old saves so there is a possibility the game will crash if an undefined global variable is triggered, or if it does not crash, fixes that use those global variables (Vault door, Overseer status) won't work.  Any feedback on bugs, or suggestions will be appreciated.  
+
+Fixes V002 24-12-03
+
+- Endgame sequence slightly altered, overseer is now placed behind vault door and walks toward the PC before talking; finally he walks back into the vault once the conversation is over.
+- Bug that locked the game if you move away from overseer (before he is in final waypoint) has been fixed; now if the player moves before endgame sequence is triggered PC will move to original placement hex unlocking the game and starting dialog with overseer.
+- Bug that left the vault door open after overseer gets killed is fixed.
+- If you choose to end the game, the endgame animation, credits and soundtrack will now play properly.
+
+Bugs V002
+
+* Vault 13 is still accessible through the townmap, numerous attempts to prevent this from happening have been useless; any suggestions on how to fix this would be appreciated.
+
+
+
+Enjoy.
+
+Corpse.
+24-12-2003

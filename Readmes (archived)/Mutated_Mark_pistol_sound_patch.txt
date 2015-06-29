@@ -1,0 +1,10 @@
+file "WAE1XXX1" had a much to loud volume output, since repacking 
+after extracting resulted in some issues I took another pistol 
+soundfile and have overwritten the WAE1XXX1 file replacing it that way.
+As far as I know the weapons 14mm and .223 rifle modified uses this sound 
+sample.
+
+now the extra loud (to loud) pistol/rifle sounds won't be heard, instead
+a better fitting soundvolume sample is in.
+
+simply extract the DATA folder in your Fallout 1 Directory, done.

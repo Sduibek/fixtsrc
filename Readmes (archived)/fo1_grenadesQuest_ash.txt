@@ -1,0 +1,23 @@
+When i was playing Fallout patched with Fixt 5.2a i noticed that BOS grenades quest is broken.
+You get the grenades from Michael but Sophia doesn't react, making it impossible to complete the quest.
+So i decided to fix it. Sophia's dialogue messages were already there, and i just added one line to Michael's dialogue.
+The logic/algorithm was missing, so i tried to restore it according to the dialogue messages. Hope you like it)
+
+So now you have one more quest to do )
+
+--------------Install----------------------
+Put .int files into Fallout\data\Scripts\
+Put .msg file into Fallout\data\TEXT\ENGLISH\DIALOG\
+Yes, overwrite existing files.
+
+No need to start a new game, the quest will work in a saved game.
+If you have already talked to Michael - try going to 3rd floor, or to the bunker entrance and then back to Michael.
+
+--------------Translation------------------
+Replace new line in Michael.msg - {300}
+
+--------------Technical stuff--------------
+Used GVAR 303 (304 - quest for Power Armor), checked with gvar database on teamx.ru, seems to be free.
+Compiled with sslc_f1.exe (23.04.2007)
+
+\src\ folder contains .ssl files if you need to modify them.

@@ -1,0 +1,754 @@
+//////////////////////////////////////////////////////////////////////
+This change log simply tracks changes since the previous release.
+This means that some listings here might have nothing to do with the current version.
+It exists for historical and reference purposes only.
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+
+CHANGES/UPDATES/FIXES by Sduibek for Fallout Fixt:
+
+
+
+//////////////////////////////////////////////////////////////////////
+Alpha 6.1 changes:	[September 10, 2013]
+//////////////////////////////////////////////////////////////////////
+
+
+ADDITIONS:
+ - Uncut patch is now integrated into Fallout Fixt :) for those with German version of Fallout. This includes all missing death animations, death sounds, cut interface icons and the uncensored cinematics.
+
+INSTALLER OVERHAUL:
+ - Mod is now 3 separate downloads. Fixes Only, Full Custom, and German Uncut. This is to save bandwidth for people who don't want to download or need to download all the extra stuff.
+ - Fixes Only download does have some customizations available.
+ - However, the Fixes Only option within the Full Custom and German Uncut installers is not customizable.
+ - In the Full Custom and German Uncut installers, there are now "Standard" and "Full" install options, which give the user the ability to experience the extra things FIXT offers, without the huge list of spoilers of Full Custom.
+
+FIXES:
+ - Fixed improper implementation of "Flare is not a weapon" code that caused major issues. (69 scripts modified)  [Bug introduced by FIXT alpha 6.0]
+ - Various small fixes and improvements in about 20 scripts.
+ - Installer no longer erroneously links to Fallout Fixt.bat
+
+CHANGES:
+ - Children's max "run to here next" distance raised from 7 hexes to 28 hexes. Now they appear more realistic in their play. (Previously if you watched for long enough, it was very clear that it was just a scripted routine)
+ - Installer now uses previous tasks, setup type, group and install folder by default. This should make it more streamlined for those upgrading from a previous version of FIXT.
+ - Restored some code in the exe that differed from the exe that FIXT uses as its base. I'm hoping this will help with the worldmap crashes people are getting.
+ - Tweaks to ddraw.ini and f1_res.ini default settings. (again to attempt to help with worldmap crashes)
+ - Player is only informed if a door is locked on an Examine. (Previously all you had to do was hover the mouse over it. Casually glancing at a door is not possible to determine if it's locked.)
+
+NECROPOLIS "HALL OF THE DEAD":
+ - Door guard no longer has the 10-second combat timer introduced in previous FIXT versions. Instead he has:
+ - Door guard has dialog and code restored that shipped with game, meaning player can bluff (Speech) or talk (Reaction) their way into the building.
+ - Door to halls is now LOCKED by default. (It is unlocked by default with vanilla game, which makes no sense considering the guard's dialog saying you're not allowed to enter)
+ - If player passes sneak check in addition to standard lockpick success, can enter by picking the lock on the door.
+
+
+
+//////////////////////////////////////////////////////////////////////
+Alpha 6.0 changes:	[September 3, 2013]
+//////////////////////////////////////////////////////////////////////
+
+
+MAJOR OVERHAUL:
+ - Installer now has a "Bug Fixes Only" install mode, which disables all the optional content and added content for those who don't want it. Basically this is the "Megapatch" install mode.
+ - Since NPC Mod isn't a bug fix, Ian/Katja/Tycho do not gain levels if Bug Fixes Only is chosen. They do however have the commands such as change armor, step aside, etc.
+
+FIXES:
+ - Weapon Drop no longer applies to rocks or flares (their graphics bug out when dropped)
+ - The random encounter "What's left of Duc's hostile guards" spawns half of the original range, instead of same number which made no sense if some were already killed.
+ - Game acknowledges when all Irwin's raiders are dead.
+ - Can't ask to go back to irwin's once quest is completed anymore (doesn't matter anyway)
+ - Shady Sands Barterman shouldn't say Error anymore, and optimized barter exit code
+ - Duc's dialog works again, optimized barter exit code, can tag along to Shady Sands
+ - Cows dialog is now merged and they don't talk on caravan maps. Also removed weapon drop code and rotate-to-talk for cows.
+ - Improved drunk cows.
+ - Cows on caravan maps no longer wander from the carts.
+ - Improved Kalnor dialog tree a bit (no longer gives "Go on" as only option in certain circumstances)
+ - Vats Control Computer no longer says "invalid entry" erroneously when pulling up Logs
+ - Claimed countdown times and actual applied countdown times are now synced for Vats Control Computer
+ - The countdown timer for Military Base bomb now displays updates at exactly 5-second intervals.
+ - NPCs no longer act like you're holding a weapon in their face if you're holding a Flare.
+ - Ian/Katja/Tycho no longer use Flares or Grenades in combat. They tended to prefer Flares over all other weapons, and tended to kill the player with Grenades.
+ - Leveled-up versions of Ian/Katja/Tycho now have higher Bonus HP instead of Base HP, fixing the HP display issues.
+ - Extended flamer attack mod is now optional.
+ - Ian/Katja/Tycho can now be left at their original appearance.
+ - Stupid characters can now interact with the "active" hookers, fixed bugs with them and many small improvements to their script and dialog.
+ - Keycard to activate Vats Control Computer instead of Science check now spawns on Lou. Code was in vat computer's script for swiping the card, but for some reason item didn't exist.
+ - Master's Vault computer no longer checks Repair on Lockpick skill usage.
+ - Holdable flares no longer destroy when hitting exit grids. [They do last forever now though. Look for that in an upcoming patch.]
+ - "Eye" robot now uses the "goes up in smoke" death animation for criticals with weapons such as flamethrower and Alien Blaster. Previously it just fell down which was stupid.
+ - Game time now resets automatically, so the "13-year lockup" never happens, meaning you can basically play forever.
+
+ADDITIONS:
+ - Added hint from Sammael of where to look for the parts, and a miniquest from him
+ - Player is warned if loading a character from a previous version of FIXT (or previous version of Fallout for that matter).
+ - More distance values available for optional Weapon Drop Mod
+ - Includes BMP version of the new (optional) splash screens, so player can preview them.
+ - Animated Containers mod is included. A patch will soon be released that'll make this optional.
+ - Can now install Uncut Patch for German versions of Fallout.
+ - Finally updated CREDITS.TXT! So now everyone who's been a part of FIXT has credit listed in the game :)
+
+BALANCE CHANGES:
+ - Stapleton's bartermod changed from -50 to -40
+
+UPDATES:
+ - f1_res version 4.0.2 included
+ - Default f1_res.ini settings changed for compatibility with certain systems
+ - Default ddraw.ini settings changed for compatibility with certain systems
+
+ROLLBACKS:
+ - Removed Elder from Shady Sands (didn't really serve a purpose)
+ - Removed Heather and the Followers Spy quest (eventually these will be added back as an optional restoration)
+ - Removed extra guards, cooks from Shady Sands that I'd added previously.
+ - Removed the second Radscorpion from Vault 15 shack.
+ - Some stuff like changed addiction titles is now purely optional.
+ - Skill points awarded from Thomas and Tycho are back at their original values.
+ - Removed prisoner from the Khans camp.
+ - Back to original version of Radscorpion Caves. Having the Baby and Mother scorpions was a cool idea, but its implementation caused many issues.
+ - Removed pretty much all offensive language from "active" hooker dialog. It wasn't adding anything to the game.
+ - Restored code in Radscorpion Cave Wall script, it had unintended effects.
+ - Code for receiving radiation at The Glow back to normal function and values.
+ - remove extra ghouls from Necrop vault
+ - Restored to original values, changes to various inventory items.
+
+NEW OPTIONAL CONTENT: [This is all disabled if player chose Fixes Only]
+ - Vats Control Computer has Medical Uplink menu restored (although it doesn't do much yet)
+ - Vats Control Computer has option to disable base alarms (Science of 75 and 8 Intelligence needed)
+ - Vats Control Computer countdown times tweaked a bit. (For example, 30-second is removed since it's impossible to escape the base that fast)
+ - Vats Control Computer has two new countdown times (5min, 10min) if player passes a Science and INT check.
+ - Can customize "Days Left" for Water Chip timeout quest, or disable the timer entirely.
+ - Can remove the 30-day timer at Necropolis, which caused invasion even if invasions were otherwise disabled.
+ - ChildKiller karma image from Fallout 2 (Vault Boy kicking a pregnant woman's stomach)
+ - Slow critters can be set to run faster (20FPS, same as all other critters).
+ - Can set running animation to 20FPS when wearing Power Armor as well (previously it was 18FPS, slower than all other armors, even slower than NPCs who wear Power Armor; the one without a helmet)
+ - Can make player always use "bend down pickup" animation on containers, instead of "magic hands" animation. This saves time for lazy or impatient players.
+ - Can now choose between US font, US condensed font, or EU/UK font.
+ - IAN/KATJA/TYCHO: Can choose whether or not their appearance changes when wearing different armor.
+ - IAN/KATJA/TYCHO: Can choose normal weapons available for use or all weapons available for use.
+ - IAN: Can choose blue pants or black pants appearance, and can change idle animations to cigarette smoking.
+ - TYCHO: Can choose brown pants or green pants appearance.
+ - DOGMEAT: Can give him the "Red Dog" appearance, meaning he now looks different than all other dogs in the game.
+ - IAN/KATJA/TYCHO: Can set running animation to 24FPS, meaning they'll stay closer to player much easier.
+ - Can change player's idle animation to cigarette smoking, if male.
+ - Can install mp3 soundtrack from game in either 192kbps or 320kbps format.
+ - Player can heal to full HP on levelup.
+ - Can have player's title display on levelup.
+ - Can have player's level# display on levelup.
+ - Hunter (Avellone) can now show up infinitely, just like in Fallout 2.
+ - Ghouls, Rad Rats, Floaters, and Centaurs can be enabled to give radiation damage when attacking player.
+ - Animal Friend perk can apply to Radscorpions.
+ - Number of kills to become Child-Killer can be customized, as can whether your friends killing children counts toward that tally.
+ - Can customize light levels underground (20/30/40, 40 being original default)
+ - Can choose number of operations available at Brotherhood's Doctor, as well as whether Charisma can be increased there.
+ - Can use item weights for Power Armor from Fallout 2. (42 and 50 lb, Fallout 1 is 85 and 100 lb)
+ - Can use higher damage version of grenades
+ - STAPLETON: Can choose minimum and maximum number of books restocked, how many weeks between restock, and if restock amount varies based on Game Difficulty level.
+ - Can enable or disable custom addiction titles.
+ - Can enable detailed Trait descriptions, which explain exactly what they all do. Recommended. The same will eventually be done with Perks as well.
+ - Can choose whether Bob can be turned into the cops, and if he goes to jail when turned in.
+ - Can install playable demo
+ - Can install official screensaver
+ - Fallout Bible
+ - Strategy Guide
+ - Vision Statement
+
+PROBABLY USELESS INFORMATION:
+ - The copy of FALLOUTD.EXE that FIXT uses is from TeamX unofficial v1.2
+ - The copy of FalloutW.exe that FIXT uses is from TeamX Restoration Project (v1.0b1)
+ ^ Additional changes to FalloutW.exe are to remove the Tim Cain face icon. (Sorry Tim, it's not personal, I promise!)
+ - Removed unneeded gfx files (about 350)
+ - Renamed internal files "assblow" to "kalnor" (no idea why they were using that name for him...)
+
+
+
+//////////////////////////////////////////////////////////////////////
+Alpha 5.3 changes:	[September 30, 2012]
+//////////////////////////////////////////////////////////////////////
+
+
+OLD STUFF:
+ - Fallout.exe (DOS executable) v1.21 included - it has been for a while but I forgot to note it.
+ - Player will rotate to face someone when dialog is initiated. This was introduced around Alpha 5.0 but I forgot to note it.
+
+BUGS FIXED:
+ - Now checks for 64-bit OS, to prevent the various errors during install
+ - No longer get "Error" for red field emitters description
+ - Demo sfx now install to the proper paths, if chosen during install
+ - Vance no longer crashes the game
+
+BALANCE CHANGES:
+ - AP ammo stacks now have the same price as their non-AP counterparts. Why pay more if it's not better?
+ - min_to_hit changed to 0 and aggression changed to 100 for robots; this means Mr Handy will now use his weapons (minigun) at you. He's so handy.
+ -- Removed old code that destroyed their items on death (so now you can loot from their rubble the minigun they just used to kill your friends)
+
+AWESOME NEW OPTIONAL SETTINGS:
+ - Hardcore AI; Enemies don't flee from combat and will mob you.  (from a technical standpoint, this means that min_to_hit and min_hp are set to zero for all AI Packets, as well as removing all entries from hurt_too_much, and setting all packets' Aggression to 100/100)
+ - Reduced ammo stack size. This is pretty buggy, because items already on the maps or in weapons will be the old stack size, causing weird display issues. But, I think for those who want a challenge, the gltichiness is worth it. Most stacks are either 1/4 or 1/5 their normal # of rounds.
+
+INTERNAL STUFF YOU DON'T CARE ABOUT:
+ - Streamlined and improved some installer stuff (batch files)
+ - Made it easier for me to enable/disable the debug (cheating) mode.
+ - Restored old/outdated code in a handful of scripts (long story)
+
+NEW STUFF YOU DO CARE ABOUT:
+ - f1_res version 4.01 is now included (thanks Mash!)
+
+TEXT CHANGES:
+ - Minor typo fixes and changes to red field emitters descriptions
+ - Added lines regarding explosives to red field emitters and moved their entries to EMITER1A.MSG
+
+
+
+//////////////////////////////////////////////////////////////////////
+Alpha 5.2 changes:	[September 16, 2012]
+//////////////////////////////////////////////////////////////////////
+
+
+BUGS FIXED:
+ - Ian and Tycho are no longer missing
+
+AUDIO:
+ - Now have option to use button-click sounds from Fallout Demo instead of standard. These sound metallic instead of like plastic.
+
+ANIMATIONS ADDED:
+ - Tramp and Female Loser pistol-firing animations (from F2RP)
+ - Child running-on-fire animations (from F2RP)
+ - Robobrain "running" animation
+ - Male Loser fixed offsets idle animation (from F2RP)
+ - Tycho now has proper "bald guy" graphics for Power Armor and Combat Armor, unless of course the user opted out of NPC appearance changes
+----Note: Ian still uses standard graphics for Power Armor and Combat Armor, as I cannot locate "long hair dude" versions of those animation sets.
+ - Tycho and Ian now have an option to allow them to use all weapons. I haven't done Katja yet because apparently I'm lazy or something.
+ - Option to change Ian's idle animation to him smoking instead of normal one. (kids, don't do cigarettes. it's bad)
+
+GRAPHICS INTERFACE STUFF:
+ - Can now choose to use red main menu courtesy of .Pixote. (seriously check it out, it's awesome and ominous)
+ - Option to install extra splash screens (eventually these will be able to each be installed individually, and have screenshots of each. Please be patient)
+ - Splash screens no longer stretch-to-fit by default
+
+TEXT CHANGES:
+ - "Lost Hill" changed to "Lost Hills"
+ - better message than "You fail to learn anything"
+ - punctuation fix for a particular response to Set
+ - "Khan's" to "Khans'"
+ - multiple changes/additions to text of EDITOR.MSG
+ - "you some kinda of" changed to "you're some kinda" (Guard AI combat float msg)
+ - minor text fixes in SCRIPTS.LST
+ - removed a couple unnecessary capitalizations in PRO_CRIT.MSG
+ - a few changes to TRAIT.MSG and PERK.MSG
+
+BAD STUFF REMOVED
+ - cheater debug mode removed (thanks ZebraJCH)
+
+INTERNAL STUFF YOU DON'T CARE ABOUT:
+ - INTRO.CFG and HEADS.LST now included
+
+DOCUMENTATION CHANGES:
+ - Additions, edits and clarifications to the readme files and Troubleshooting file
+
+
+
+//////////////////////////////////////////////////////////////////////
+Alpha 5.0 changes:	[September 04, 2012]
+//////////////////////////////////////////////////////////////////////
+
+
+TEXT/DIALOG CHANGES:
+ - More fixes to grammar, punctuation and spelling as usual
+ - Removed duplicate text entry 981 from Abel and 110 from Mitch
+ - Removed duplicate entry in FLSUPMUT.MSG
+ - Some fixes, tweaks and additions to Stupid (Intelligence <= 3) dialog options with Lori (Brotherhood of Steel)
+ - Stat boost messages from Lori fixed (had a mismatch on Intelligence, and "___ increased 1 point" messages added)
+ - New dialog options made from scratch with Lori for relations (see below)
+ - Added notification messages for the remaining skillpoint increase scripts
+ - Tandi's "Thanks for saving me" verbiage once you've saved her only plays once. After that is generic "Hello again, how can I help you?"
+ - Added some more floats for Tycho for when the player betrays Junktown
+ - Dogmeat now interacts properly with Stupid characters.
+ - Dogmeat's hover descriptions are now correct
+ - Various routing changes and fixes to The Master, to make the end of conversations flow better, be more applicable to context and avoid the repeat-dialog issue
+ - All instances of "Cane" corrected to "Kane"
+ - "irradiated" now used instead of "radiated"
+ - Superstim description grammar fix
+ - Hotel Manager ghoul no longer just says "Error"
+ - Avellone and his thugs no longer just say "Error"
+ - Added more entries to floats for Hotel's hostile zombie packs and increased chance-to-display
+ - Gizmo now gives a float message asking who you are if you haven't talked to him before
+ - Tweaks to Gizmo's dialog routings and options
+ - No more "Error" from Casino slot machines
+ - Fixed lots more Vance dialog bugs. He now has proper and appropriate messages for Stupid characters and people he hasn't met before (Vance's dialog tree has been significantly modified to be more realistic and glitch-free)
+ - There's now an option to back out from setting timers if you changed your mind about blowing up the base after hacking into the computer
+ - Fixed Gizmo dialog option's reversed empathy flags
+ - Alert status (silent or normal) and countdown times in the Military Base computer now match their descriptions
+ - Stupid players have a few new dialog options for Avellone
+ - Added some dialog options and descriptions to Khans. (Part of an ongoing project to expand and improve upon the Khans)
+
+SCRIPT/GAMEPLAY CHANGES:
+ - Improved the Children of Cathedral healers' code for radiation and poison treatment
+ - Improved code for detecting and curing poison for all healers
+ - Intelligence required for healing, poison and radiation treatment from Lori reduced to 4
+ - Stupid characters can now get healing, poison and radiation treatment from Lori
+ - Player can now have 'intimate relations' with Lori and Tandi (Lori is Charisma-or-Speech check, Tandi's check is same as before but easier if player is female)
+ - Tycho now gives 10 skillpoints to Outdoorsman instead of 5
+ - Player now gets 3 skillpoints from each "phase" of watching Thomas, instead of 1
+ - Beating ZAX at chess is slightly easier and checks modified. Requires Intelligence of 10, Luck of at least 7, if those are met there's a 33% chance of winning
+ - Code for Tycho attacking the player if player murders Junktown citizens improved. In some cases he still might behave improperly, but at this point it's an engine bug
+ - Dogmeat now interacts properly with Stupid characters.
+ - The Master no longer re-initiates dialog saying "You think you can destroy me? Destroy? Me!" regardless of how dialog ended. This means he will now suicide properly
+ - Removed the last of the annoying HP increases for critters introduced in previous FIXT versions (this included rats, scorpions, manti, peasants, children and guards)
+ - After teleported by Izo out of Gizmo's office, game no longer crashes if character is holding a weapon or Sneak enabled
+ - Junktown Casino guards' cooloff between weapon checks is now longer, only pings if the player is close or they can see you
+ - Weapon drop mod disabled for Gizmo
+ - No more crashes from Casino slot machines
+ - Killian's wares are now combined and moved to his inventory whenever talking to him, thus if bartering via button or dialog you'll always see all his stuff. Players new to Fallout didn't understand why he only sold Desert Eagles, and needing to access the shelves to get his other inventory isn't documented anywhere
+ - For the fix above, after dialog all the original item types go back to their respective shelves but leaves a couple items on him (stims, ammo, Desert Eagle) and puts everything else off-screen
+ - If Killian dies, some of his items go into his safe instead of staying in his inventory
+ - Can no longer talk to Watershed ghoul prisoner repeatedly for infinite experience
+ - Karma received from Watershed ghoul prisoner immediately (before it didn't until he walked completely off the map)
+ - All scripts originally using Critter_Action changed back to Critter_Action from critter_p_proc (this was causing scripts not to trigger)
+ - After killing Lieutenant, countdown for the base destruction triggers for 500 ticks. (It's no longer required to destroy the base "diplomatically" using bomb interaction)
+ - Radiation at The Glow reduced overall, but now also scales based on game difficulty
+ - Animal Friend now works for all: dog types, rat types, scorpion types
+ - Slideshow for Raiders trigger fixed (# of critters in Global Variable didn't match number on map)
+
+BEHIND-THE-SCENES CHANGES:
+ - Removed a bunch of files from the installer that were no longer needed
+ - Installer also deletes unneeded files on completion, allowing cleanup for upgrading users
+ - Installer no longer warns player when folder already exists
+ - Added a few more music files that should help with the Glow/Cathedral/Master's Lair crashes
+ - Removed duplicate and old instances of readme files
+ - Other minor improvements to installer
+ - Fixed wrong Default AI Packet and Extra Gender in certain Protos (mostly vault-dwellers)
+ - Additional weapon drop mod checks added to avoid debug log errors
+ - Corrected wrong critter ID at offset 0x2: PROs 269, 270, 271
+
+INCLUDED MODS CHANGES:
+ - Newest version of Sfall (ddraw) now included  [1.18e]
+ - Newest version of High Resolution patch (f1_res) now included  [3.0.6]
+ - Default ddraw.ini settings changed for increased performance and compatibility
+ - Default f1_res.ini settings changed for increased performance and compatibility
+ - w7ddrawpatcher no longer included, as some anti-virus get a false positive from it
+ - Two tools included in "Scrambled Colors Fixes" folder; use these if getting the crazy psychedelic colors while playing
+
+RUNTIME CHANGES:
+ - Fallout Fixt.bat replaces 32-bit/64-bit batch files
+ - Cathedral Fix runs once, at time of install only
+ - Desktop and Start Menu shortcuts now function properly
+ - Default fallout.cfg settings template changed for compatibility and to avoid crashes
+
+DOCUMENTATION CHANGES:
+ - Updated the information that displays during install: reminder of install path, backup advice, rundown of tips and how to get started
+ - Added a "Troubleshooting Fallout Fixt" text file, as well as "fixing color display issues" text file in the "Scrambled Colors Fixes" folder
+ - Quick Reference Card now included
+ - Change Log for Fallout Fixt now included (this file)
+ - Imbedded Change Log texts removed from installer, for those concerned about spoilers. Did similar with OP of FIXT thread on NMA for the same reason
+ - Note about Push command being in dialog versus UI added to "Troubleshooting Fallout Fixt" text file
+ - Entry added to "Troubleshooting Fallout Fixt" text file about AP ammo being sucky
+
+ADDENDUM:
+ - Probably other fixes/changes I forgot to write down.
+
+
+
+//////////////////////////////////////////////////////////////////////
+Alpha 4.1 changes:	[October 25, 2011]
+//////////////////////////////////////////////////////////////////////
+
+
+1) Included new art entries for Ian and Tycho, as follows:
+TYCHO Metal Armor	TYCMET**.FR*
+TYCHO Leather Armor	TYCLTH**.FR*
+TYCHO Leather Jacket 	TYCMAX**.FR*
+IAN  Metal Armor	IANMET**.FR*
+IAN Leather Armor	IANLTH**.FR*
+IAN Leather Jacket	IANMAX**.FR*
+
+- Custom gfx for Combat Armor and Power Armor are not yet included. They may never be as Long Hair Dude and Bald Dude for those are either non-existent or incomplete.
+
+2) Updated two global variables (cleanup)
+
+3) All my current scripts, so you have the most updated versions of every one (988 total)
+3a)  Source for the scripts (This is OPTIONAL of course!)
+
+4) Updated JUNKCSNO.MAP and SHADYW.MAP, which is done in addition to #1 above, to make sure both NPCs exist properly instead of being invisible.
+
+5) Minor text changes to two MSG files (Invaded, RndDesrt)
+
+
+
+//////////////////////////////////////////////////////////////////////
+Alpha 4 changes:	[October 15, 2011]
+//////////////////////////////////////////////////////////////////////
+
+
+f1res (High Resolution Mod) v3.0.3 included (will resolve some World Map crashes, Alpha 3 was using v3.0.2)
+-- (& tweaks to a couple of the default values in f1res.ini)
+-- readme files for it are updated in the {Fallout}\README folder
+slightly improved implementation of custom NPC graphics. prepping for full support of "bald guy" and "long hair guy" for Tycho & Ian in later versions of FIXT
+map edges for radscorpion cave are better now, closer to original (caves.edg)
+misc.msg and scrname.msg now included for French and Spanish
+changes to a dozen message/dialog files (English)
+minor changes to various scripts
+minor combat AI changes
+violence level is set to maximum when the game is run (mmmm, blood)
+a few more empty placeholder soundfiles added (to squelch debug errors)
+
+Fallout Fixt-only fixes: (i.e. fixes to Sduibek's oversights)
+ - updated global vars file (VAULT13.GAM) to fix some issues
+ - Irwin's Farm quest fixed. Alpha 3 had a lot of bugs. Now it will:
+   - properly keep track of which raiders you've killed
+   - allow you to leave the map and come back later without issue
+   - properly reward you once completed
+   -- No more infinitely spawning "zombie raiders" (oops!)
+Flares are no longer broken.
+version number on main menu is now correct
+"The poison has left your system." no longer appears erroneously on load game or new game.
+
+bug "fix" hack for not being able to enter vault 13 --
+ click-hold on your character and select examine (the Binoculars) this will reset all applicable variables. you should now be able to enter Vault 13.
+
+
+
+//////////////////////////////////////////////////////////////////////
+Alpha 3 changes:	[September 02, 2011]
+//////////////////////////////////////////////////////////////////////
+
+
+Fallout Fixt-only fixes: (i.e. fixes to Sduibek's oversights)
+ - Radscorpion Caves crash fixed (hadn't included .PRO files for new critters...)
+ - Some other missing files now included
+ - Crash on killing critters fixed (Weapon Drop code was calling wrong pointer)
+ - Nixie Numbers no longer install by default; them being optional now functions properly
+
+All others:
+ - Dialog & text (.MSG) and interface (.FRM) for Spanish and French versions now included! These are from GOG/Steam data files.
+ -- ^ meaning Fallout Fixt is now multi-language! :)
+P.S. if you have a non- US English version of Fallout, please send me your critter.dat master.dat and falloutw.exe
+ - Weapon Drop now checks both slots (it should, based on how Fallout reads the pointers to each slot's contents) and also only drops if it's item_subtype_Weapon
+ - Weapon Drop code expanded to allow for future support of %chance to destroy armor on death
+ - few more readme files included in "[Fallout]\REAMDE". Granted this is a very disorganized folder currently, but it's got readmes for most of the stuff included in FIXT
+ - Included some non-game-changing files from GOG and Steam versions that were missing from my version (probably doesn't change anything, but doesn't hurt either)
+ - Two tools that can be run before running FalloutW.exe (not made by me) are included in the "[Fallout]\Scrambled Colors Fixes" folder.
+ -- ^ You can also read, for other fixes, "[Fallout]\README\fixing color display issues.txt"
+ - As usual, other minor fixes & changes to scripts, dialog, etc.
+
+
+
+//////////////////////////////////////////////////////////////////////
+Alpha 2 and 2.1 and 2.2 changes:	[August 29-30, 2011]
+//////////////////////////////////////////////////////////////////////
+
+
+Fallout Fixt-only fixes: (i.e. fixes to Sduibek's oversights)
+ - ddraw is now included as intended
+ - f1res.ini and ddraw.ini set to default values to avoid slowdowns
+ [-] note to above, f1res is set to 16bit, so if you experience slowdowns, change it to 8bit
+ - Weapon Drop now fully functional and properly modular on all critters
+
+All others:
+ -- implemented "mother radscorpion" (same as Nasty Radscorpion, but Female flag)
+ -- implemented Baby Radscorpion (aww so cute. until they kill you.)
+ -- art for Baby Deathclaw implemented, just need to create the .PRO files
+ -- various fixes & improvements to radscor lair map & scripts. it's pretty awesome :D make sure to look in all the dark corners, or use your flares.
+ -- fixed constant debug log errors from flare & bomb checks (thanks to gvx for motivation and reporting this)
+ -- fix to caves.edg
+ -- some more text fixes (thanks jury-6)
+ -- fixed Invader's wandering code. could still use improvement though.
+ -- Added MAMTNTKC.ACM to avoid crashes (don't ask, it's retarded)
+ -- Added other empty sound files as placeholders to avoid debug errors (and potential crashes, I think?)
+ -- fixed wrong ring values for RndMtn (monsters in rock!) hopefully now they won't spawn inside the mountains ;)
+ -- fixed partial-displayed right-bottom exit (green) grid in Hub Downtown
+ -- LOTS of commenting added to scripts. Lots and lots.
+ -- various scripting fixes w/ Khans
+ -- restored Prisoner to Khans map
+ -- finally got display fix for Irwin's Farm saved games to work fully :)
+ -- 
+-- added to scripts for functionality, readability and future compatibility:
+	damage_p_proc
+	do_dialog(ue) into talk_p_proc
+	destroy_p_proc
+ -- (incl in above) moved some script action stuff to its proper own procedure
+ -- 
+-- unique graphics for several talking heads and non-talking unique NPCs
+[-] Harry, Viscious, Troy: Tanned Super Mutant Sargeant (subtle difference but whatever)
+[-] Ian: Long Haired Guy Mad Maxx
+[-] Tycho: Bald Guy Leather Armor
+[-] Laura: Sand Robe
+[-] Aradesh: Sand Robe
+--  any instances of "local_vars=0" set to "local_vars=1" for ALL scripts in SCRIPTS.LST. fixes issues and crashes believe it or not.
+--  ground gfx for couple items that didn't have it (won't affect gameplay, and if you don't know what i'm talking about, don't worry about it)
+--  descriptions to many scenery items that were missing it (easy test is to check out Grafitti in Boneyard)
+--  fixed staircases, one or two of the scenery items always had no script linked to them, so clicking the staircase did nothing. NO MORE! :D
+--  fixed AI Packets linked to critters;
+at least a third in the game were completely wrong, if not more like a half
+--  fixed AI type for Invasion Mutants
+--  added some stuff to Shady Sands and fixed crashes
+--  endgame mod fully implemented, & improved
+--  "you tread without persmission" encounter has about three times the ghouls instead of just two. beware!
+--  level 3 of Necro Vault has many many more ghouls,  so if you are a bastard and take the chip without fixing the pump  you have a not-lame fight on your hands
+--  included graphic fixes by... 
+	120% Mutant Deaths		PIXOTE
+	Metal Armor Sledge Thrust	x'il
+	Lou LT fixed			Lexx
+--  combatai and combat msgs, tons of changes
+--  increased speech in combat %chance by 50%, rounded down
+--  incorporated some of the death messages from Wasteland :)
+--  lots of spellchecking in TEXT/ENG/GAME - Done.
+--  commenting added to many scripts. DId I mention that above? ;)
+--  random weap, + stims + radio for Invasion Mutants
+--  Brotherhood Armor (239 PRO) price increased from 4800 to 7800, to fit into armor/price hierarchy
+--  Sharpshooter fix included (by ravachol), and it DOES have an effect at Per of 9 & 10
+
+
+
+//////////////////////////////////////////////////////////////////////
+Alpha 1 changes:	[July 02, 2011]
+//////////////////////////////////////////////////////////////////////
+
+
+"no npc armor appearance changes" is included in the installer, so there's no longer multiple downloads. yay!
+Fixes/updates to the following maps:
+	Hotel (coke machine, computer)
+	Hub Downtown (hookers, Bob's shelf, Mrs Stapleton)
+	Followers (added Heather for future implementation of the Spy quest)
+	Military Base lvls 1-2 (red fields can be blown up, only partially implemented)
+	Shady Sands west (added Agatha and her house's scripts)
+changed wind sound between loading maps (the other one that came with Fallout 1 sounds more eerie/hollow which is cool)
+tons of text file updates - items' descriptions, scenery descriptions, maps, dialog, etc etc
+spelling/grammar/punctuation fixes in some of the above
+better code for rats' detection/attack range
+removed minor amount of rads from dogs (i thought i'd removed it already...)
+fixed issues with radiation damage from ghouls
+fixed multiple bugs with Vance
+new script for the now-blow-up-able red forcefields
+new script for massacred people after mutant invasion (so far only implemented at BoS)
+added commenting in many scripts, for my own benefit but should help those that choose to install the source code
+fixed a dialog issue with coyotes
+coke machines' script can now give you caps as intended - just need to implement it on the maps :D
+since now one's mentioned the Easter Egg yet, i'll give you a hint - it's in Necropolis.
+bunch of other minor fixes
+now includes the newest version of the High Res Mod! And let me tell you, the new version is fuckin sweet
+game is now a modular installer, woohoo!
+	weapon drop mod is optional & customizable -- 0/1/2 hex drop, 1/2 hex drop, or 1 hex drop
+	invasions are no longer enabled by accident (sorry guys) and are enabled only for Necropolis by default (just like in Vanilla 1.1), but can be enabled for all cities anywhere from an instant invasion to 4x the normal invasion time
+added code to support my Survival mod, once i finish it
+added code to include the "censorship fix" for German versions. don't worry, my version automatically includes children, this is a different fix
+can now install source code if you wish
+FIXT comes with the official fallout screen saver! ;)
+option to create Compatibility Mode registry entries (this is in its infancy, later on it will be fully featured)
+now includes two exes that can help fix the messed up colors issue - they are in your CrashFix folder:
+	PalettestealerSuspender
+and	w7ddpatcher
+	(you have to run them manually but they both work very well)
+added a couple more swear words to the BADWORDS file. it was missing some :P
+now includes a modified ereg settings file, which should help some of you who get the "Error initializing input devices" crash
+version of my mod is now stored in text file instead of the exe itself. i have no idea why i'd thought hex editing it each release was a good idea...
+fixed a freeze/crash that could happen when Kyle installed the systolic motivator
+Hub police patrols in random encounters (and the city itself, mostly) now actually wield weapons against you. the weapons they have frames for are limited unfortunately, so the black guys get either a 10mm or DE, and the redheads get spiked knuckles and a combat knife
+removed a few debug messages ;)
+evil characters can buy drugs from Vance. woot!
+removed the freaky Tim Cain face that appears at Tile/Thumbnail view (sorry Pixote)
+added some new talking head backgrounds, changed a few and brought a few from Fallout 2, in prepartion for a fully functioning Tandi NPC
+a bunch of changes/fixes/updates to a bunch of other scripts, mostly minor stuff
+
+
+
+//////////////////////////////////////////////////////////////////////
+v.9995/.9996/.99961 updates/changes:
+//////////////////////////////////////////////////////////////////////
+
+
+-- Party members (including Dogmeat) can be asked to "Step Aside" in dialog, which causes them to walk a few steps in a random direction. No more blocked doorways!!
+-- Khans, if mistaking you for Garl's father, will now display floating messages at a more realistic interval.
+-- Mrs. Stapleton can no longer be stolen from.
+-- MacRae now properly gives you a stat bonus to fighting skills.
+-- When earning experience, stat points, or skill points, a system message is now always displayed.
+-- Fixed a few mismatches between reported Exp earned, and actual Exp earned.
+-- Medics/Doctors now properly heal Radiation and Poison (when & where applicable).
+-- About five female critters were Male gender and/or Male kill type.
+-- Can now alternatively get experience and complete the Phil quest by killing Dogmeat, as originally intended.
+-- Childkiller now works properly (i.e. if you get one of your hired NPCs to slaughter a child, it still counts against you!)
+-- Flamer attacks now realistically last several seconds instead of just a brief burst (thanks to .Pixote. for his Extended Flamer Attack Mod!!)
+-- "Taylor" (shop keeper/trader from Adytum, underground near entrance) is now properly referred to as Tine by all game messages and dialogs.
+-- Killing Tine now turns Adytum hostile.
+-- Tine's barter price mod can no longer be bypassed by clicking on his shelves/Stuff instead of talking to him.
+-- Bob can no longer be bribed for infinite amounts of cash (tops out at 2000 caps every 5 days)
+-- Dialog for all Glowing Ones in Necropolis Vault now functions properly. (Including them attacking you if you don't fix the pump)
+-- Can no longer avoid Hightower's conversation by entering combat and walking forward.
+-- Map view edges corrected for Irwin's Farm (f1res folder)
+-- "Hub - Irwin's Farm" displays instead of "Error" when loading a game from that map.
+-- NPCs: system message generated when they level up, as to what their new level# is.
+-- Children no longer spawn infinite Rocks.
+-- Can no longer steal back your caps after paying through dialog (i.e. hiring Ian, buying holodisk from Stapleton).
+-- Superstims can be used on your NPCs
+-- Generic Caravan Drivers' dialog at the Hub entrance now works as intended.
+-- Going to Lou via Harry's dialog takes proper amount of time in game and from "Days Left" counters.
+-- msg appears when radiation received from monsters, as intended.
+-- radscorpion poisoning damage code optimized & implemented (now checks against Endurance and/or Luck can reduce poison amount received, vanilla FO1 only checked Luck)
+-- ghouls' radiation damage code optimized & implemented, (now checks against Endurance and/or Luck can reduce radiation received, vanilla FO1 only checked Luck)
+-- Tardis' "You see a police box to the northeast." msg no longer appears twice on map load
+-- MaxMutants variable for Watershed properly set to 6.
+-- Caravaner guards' dialog improved/fixed
+-- If you leave Irwin's Farm without killing all the raiders, now you can go back to finish the quest. (big oversight by the programmers here!)
+-- Restored an easter egg from the demo. Smile I don't think it ruins or changes the feel of the game at all, if you think so let me know. Happy hunting!
+-- Doc Morbid animation sequence as intended (when removing eye), you do NOT want to know how long it took to implement this. and it's a mediocre implementation. blah.
+-- Cows only talk on the Mad Cows map (missed a couple last time)
+-- Cows killed make correct city aggro. Explanation -- it used to be that if you killed the "domesticated" (their description) brahmin, Junktown would always go hostile. This was if you killed such a brahma ANYWHERE in the GAME. Now I know why Junktown would be hostile in games when they shouldn't've been. Stupid programmers! lol. SO now if you kill one in the Hub, Hub goes hostile, if you kill one in Shady Sands, they go hostile, etc.
+cows don't walk around as often (for realism)
+ghoul descriptions restored from the MSG files
+-- ladder/stairs showing description again when "use"ing them no longer happens (yay!)
+-- "use"ing a ladder/stairs/whatever now works properly when in your idle animation
+-- Higher quality manual included now (GOG version)
+-- Included two splash screens (#5 & #6) from "kevin" here (see download sections for F1 @ NMA) since they were universally liked by you all
+-- Doc Morbid cutting out your eye actually does HP damage and makes you Blind.
+-- If you kill the 3 guys that come on Caravans with you, there are now consequences - affects how much you get paid, affects your Karma etc.
+-- Fixed some map names/labels (Special encounters for example have a more accurate name when loading a game saved on that map)
+-- Necropolis Ghouls go hostile if chip taken w/out pump fixed (as intended)
+-- Player loses 1 (one) Flask when game states you avoided dehydration "due to your supplies of water" (only in Desert encounters currently)
+-- Talus finally grants the player extra ammo each week!!! (stingy bastard! geez)
+-- Elevator doors in The Glow that didn't used to display exp earned message on pickock and traps disarm, now do.
+-- Message for exp from getting to lvl 5 @ The Glow is displayed
+-- Can get 700xp from ZAX if you beat him at chess - code from TeamX and vanilla versions failed because Criticals can't be rolled when rolling against stats. I change this to [do_check(dude_obj, 4, -9);] which basically means you need an INT of 10, and even then a win is not guaranteed.
+-- Added 2 small descriptions/messages when examining yourself
+-- "Step Aside" function for NPC party members improved & works if character is Stupid (INT < 4)
+Rarely they won't move... this is due to an engine bug. Just pretend it's them choosing to ignore you periodically when you order them around Wink
+-- Can ask NPCs party members to leave & reenter party when Stupid (INT < 4)
+-- shaders.fx note added to ddraw timeslip info
+-- Ladders, Manholes, etc. should now all function normally (error in script changes on my part during last version)
+-- Added code that can be used later to add Step Aside function to Tandi.
+-- Overturned Truck now also spawns bottles of Nuka-Cola based on player's Luck
+-- Fade times tripled in scripts (having sex, going to jail, etc.) because on modern PCs the fade times are way too fast, even on 16bit color mode it ruins realism (at least IMHO)
+-- Crashes at Cathedral level 3, Military Base, and The Glow level 3 should (knock on wood) be fixed for good. This involved copying over all map files from known good versions, and copying over two music files. Might have done some other minor changes too that I don't remember at the moment.
+-- Drugs can be used on your NPCs (still testing this, use at your own risk!!). Stimpacks work just fine, though. Smile
+-- Many many many many many spelling, grammar, formatting and punctuation fixes.
+-- Other dialog fixes (incorrect Tell-Me-Abouts, innacurate information, etc).
+-- Working on getting floating messages to work properly (previously some types were broken; selecting Talk did nothing at all).
+-- (Partially implemented, still in progress) City-specific and Region-specific encounters can now occur on all tiles (Mountain/Coast/City/Desert) instead of just Desert. NOTE: this feature is only implemented for Necropolis currently, still working on it.
+-- (Partially implemented, still in progress) Time reduction bugs fixed: Going to Irwin's Farm, going to the Military Base, and most importantly going on Caravan jobs subtracts time from all "Days Left" variables equal to the amount of time that's added to the displayed game date & time. The time amounts are still very high (sometimes 20 days for a caravan) but as far as I can tell those values are hard-coded, so I can't fix it (yet)
+-- (Partially implemented, still in progress) Some critters were using the same text for hover description and detailed description. working on rebuilding all of these to work as all other critters do.
+-- Radiation "damage" received increased: The Glow all levels & entrance map (very large increase), random encounters near the Military Base and The Glow (doubled), and Ghouls (slight increase) and lastly implemented for all random encounters @ The Glow and Vats/MB. Some of the original values were ridiculously low to the point of being totally unrealistic and having very little (if any) affect on gameplay. Beware and carry Rad-X! :evil grin:
+-- Dropped the variable radiation "damage" from Ghouls to a max of 9, that way you won't see "You have received a large dose of radiation" in addition to the usual "You have been radiated!"
+-- Exp earned message and "You sense a trap near" order changed (this is a fix of an oversight of mine from a previous Fallout Fixt version)
+-- This mod should work just fine on Windows 7 and Windows Vista ("in theory LOL LOL LOL")
+-- Added a note to OP of this thread, that the Cathedral Crash Fix won't run in a 64-bit OS.
+-- Update to screen refresh dialog box verbiage for clarity
+-- (Partially implemented, still in progress) Some dialog options increased the hireable NPCs' opinion of the player for no explicable reason -- like when saying "OK Goodbye" or something similarly mundane. i've change these to be a neutral reaction.
+-- map "introduction" msg for some areas now appear each time, not only on first visit (only a couple implemented so far)
+-- You can now use an angry version of the "Step Aside" text. Go ahead, yell at your NPCs! Very Happy
+-- Underground maps (aside from The Glow due to secondary power) have had their light value(s) reduced from 40 to 20 for realism/atmosphere. (Max is 100)
+-- Still working on getting the Step Aside function to work better (sigh)
+-- Due to a strange bug in how the game reads the critter .PRO files, some critters would start with partial HP on map load. Examples are Lars, Justin Greene, and the Hub cops. I've fixed this so they are set to full HP (on first visit to the map ONLY! not looking to change game balance here). This is now complete - 476 scripts changed.
+-- The above fix for full HP on map load DOES NOT apply to your NPCs (this is to avoid unintended healing when wandering around) but DOES apply to the Mysterious Stranger.
+-- Caravan team members now have some ammo and 1 stimpack each
+-- Glowing Ones, Ghouls/Zombies, and Radiated Rats now do radiation damage as originally intended -- 22 scripts changed.
+-- Fixed a bug that made some monsters invincible (oops, my bad Wink)
+-- For those of you with 64-bit OS, you can now run "64bit OS.bat" instead of running both exes manually Applause
+-- Slight reduction to # of punks spawned on "You encounter a small group of raiders" random encounters, for continuity
+-- Dehydration does about ten times as much damage as it used to, but i'm still working on this (with the unmodded code, the damage can be reduced and blocked by wearing armor, which is RETARDED)
+-- added stats to drugs/useables that were totally useless, so now things like Iguana, Beer, NukaCola, etc., actually have a use and a downside for balance. ((see below))
+-- increased HP to more realistic and balanced for quite a few critters (50 to 100 maybe??) creatures that had ridiculous hit point values - i'm refering to Peasants and Children for example, which were many times a one-hit-kill or just very unrealistic/unbalanced comparatively and we don't like that. Also certain types of rats, the Crack Assault Paladins, radscorpions, etc.
+-- Names of addictions under Karma are a bit more fun now, but should still be obvious which is which. Smile
+-- The addiction messages ("you feel groggy") are now more interesting and actually clear what frickin addiction they apply to!
+-- Alcohol's "you crave a drink" message is a brand new message, created by me.
+-- Changes to some of the addiction % values (see below)
+-- A few worldmap names (the green ones you click on the green circle) changed for accuracy / continuity (Mariposa Military Base, L.A. Boneyard, Brotherhood of Steel, Khans' Camp, Children's Cathedral, The Glow, The Hub)
+-- Version# of FIXT displayed on main menu (yaaayy lol)
+
+THE FOLLOWING ITEM CHANGES ARE TENTATIVE, IF YOU THINK THE CHANGES SUCK PLEASE LET ME KNOW, AND IF YOU HAVE A SUGGESTION OF WHAT TO DO INSTEAD THAT WOULD BE EVEN BETTER!
+-- WEAPON changes
+Molotov Cocktail dmg: 12-30 (unmodded was 8-20)
+Grenade (Frag) dmg: 25-40 (unmodded was 20-35)
+Red Ryder LE dmg: 17-25 (unmodded was 25-25), ammo capacity is now 200 up from 100 (pop culture reference Very Happy)
+throwing knife dmg: 4-8 (unmodded was 3-6)
+
+-- DRUGS/CONSUMABLES changes
+Fruit: 1-6 HP healed, +10 rads total (3 @ two hours / 7 @ four hours)
+Rad-X: +Resist reduced to 20% from 50%, lasts 1/3 as long (-5 @ 8 hours / -5 @ 16 hours)
+Antidote: reduction is -60 (down from -75), takes 5x longer to work: (-20 instant / -20 @ five minutes / -20 @ ten minutes),
+BEER: addiction chance: 15%
+BOOZE: addiction chance: 15%, -2 Perception (was -1)
+Whole Iguana: + (2 to 8) HP healed, +5 rads
+Iguana Bits: + (1 to 4) HP healed, +1 rads
+MENTATS- addiction chance: 20%
+PSYCHO- addiction chance: 30%
+RAD-AWAY- addiction chance: 15%, -100 rads (was -150 in unmodded Fallout), heals less at first, more later (per the item description), however the times of 2hr/4hr remain unchanged
+instant: -10 rads
+@ 2 hours: -30 rads
+@ 4 hours: -60 rads
+
+
+
+//////////////////////////////////////////////////////////////////////
+Version .9995:
+//////////////////////////////////////////////////////////////////////
+
+
+Intergrated Wasteland Ghost's Restoration Mod/Project into mine. The only thing I haven't done is Laura's script, because it's all crazy so it'll take me a while to figure it out.
+-- Random encounter fixes from above are included
+-- Invasion code is included, however it is DISABLED at this time. I find the invasions supremely annoying. Patience, soon I will have a download link that includes invasion Smile
+-- all dialog entries from Restoration
+-- I am NOT linking DethClaw cave/random encounter/quest like RP does... personally I think the Deathclaw is rare enough in Fo1 as it is, if anything i'd like to see it more often in random enocunters, not less. Which you will, since you can now get desert-only encounters in mountain and city squares Wink
+-- Begun adding comments to some scripts, the Global Vars file, etc to those who may eventually want my SSL source.
+-- No more stealing exploit at Killian's store. (thanks Nevill)
+-- Tycho aggro w/ Junktown fixes - you can't hire him if you kill JT residents, if you do he'll leave your party, etc. (thanks Nevill)
+-- Centaurs & Floaters radiate you on hit.
+-- Flares now make no light during combat if held in your hand. It's unrealistic yes, but otherwise the light can be badly exploited.
+-- No more duplicate experience if you kill the radscorpions and then collapse the wall. Several other minor fixes to that map as well.
+-- Animal Friend fixes -- wasn't implemented properly on a couple of the scripts it applied to.
+-- Irwin dissapears from map when saved and has walked off map
+-- Since someone asked, Vault15 shack now always has 1 scorp, and will have 2 if you fail a Luck roll.
+-- WEAPON DROP MOD IMPLEMENTED! Hell yeah Wink
+-- Normalized sound files for the game... ended up changing about 384 if I remember correctly. Examples are dynamite/C4 is louder, 14mm pistol won't explode your brain, various death sfx were way louder or way quiter than others, lowered volume of the "ca-chunk" when moving around your inventory. Many others.
+
+
+
+//////////////////////////////////////////////////////////////////////
+Changes from 0.999:
+//////////////////////////////////////////////////////////////////////
+
+
+-- Psycho's damage resistance boost lowered from 50 to 30.
+-- Hired NPCs should follow the player better now. Also, 'leash' distances modified so they'll start running sooner, which should reduce "follow lag". If you don't know what i'm talking about, don't worry about it Wink
+-- StepAside command- NPC now moves instantly ('teleports' without animating) to a random hex 2 hexes away from their current one. It's very unrealistic but having them walk/run to a random hex always had a chance of them not moving at all, no matter what different code I tried [and believe me i tried a LOT] which I think in the long run is more annoying.
+-- no more childkiller freebies - you kill a kid or a party member does, you're a childkiller. 'nuff said.
+-- Dehydration now ignores your armor's DT and DR as it should have all along; programmers used the critter_dmg code when they should have used the critter_heal code with a negative value.
+-- Dehydration also does more damage -- 10 times as much as before. Don't worry, even at 10x it's not that much.
+-- ^^^ The above also applies to Mountain encounters that caused small amounts of damage -- the damage is negligible enough that i've made it ignore your armor. Yes, not entirely realistic, but personally I found it stupid and annoying to get an encounter only to learn I suffered no damage.
+(The damage for these, however, hasn't been increased)
+-- Badwords.txt copied over from Fallout 2, making many more words censored, for those of you who have the language filter enabled.
+-- More tweaks to how Luck affects random encounters. (characters with Luck of < 4 should see a difference)
+-- Some more grammar/spelling/text-only fixes (yaaay lol lol)
+-- Added sound effect for when player equips a lit flare Smile
+-- Pixote's flare graphic in use (thanks man!)
+-- Flare works a bit better in combat now -- light/nolight status will update after any performed action, such as firing a weapon. Examines and using AP for moving don't trigger it at this time.
+-- Flares function properly on map change/load/exit
+^^^ NOTE on the above, it acts funky if holding a lit flare in the "off" hand. still working on fixing that aspect of it...
+-- various scripts' code optimized/simplified/whatever
+-- lengthened Izo's dialog entries a bit.
+-- when Izo is kicking you out, instant teleport to avoid exploitation: (thanks Nevill)
+-- Tandi can be ordered around now, this leaves room later for combat tactics etc etc:
+-- Marcelles (JT hotel) talks to the player regardless of game time, which allows room rental day or night. (thanks Nevill)
+-- Flash works properly for loitering and attacking player after telling them to leave. (thanks Nevill)
+-- If you set a timer on an explosive you're holding in an active hand slot, it automatically drops once the timer is set Smile
+-- The red force field emitters can be destroyed, sort of. I tried for several hours to find a way to fry the actual red field itself, but no luck. So for now, if you want to you can blow up the emitter thingy but the red field still exists and causes damage. Yeah, it looks stupid visually but I like it. Always pissed me off that an already-damaged device couldn't be damaged by HIGH EXPLOSIVES lol. Anyway, if you don't like the change, don't use explosives on them! Wink
+-- Another easter egg screenshot (see link in my sig)
+-- Brahma while on caravan now identify as a "domesticated brahma" vs. a "wild brahma"
+-- ghouls only radiate when hitting you with bare fists &/or point-blank melee (brass knuckles etc)
+
+
+
+//////////////////////////////////////////////////////////////////////
+v0.998 changes:
+//////////////////////////////////////////////////////////////////////
+
+
+There's now a message to ignore the errors that may show up in the command window (for FalloutW.bat) because they can safely be ignored.
+free_space variable in fallout.cfg is set to zero on every game launch, fix/workaround for the Not Enough Space crash
+Flares -- better ground image (thanks .Pixote.!), make light when held in active hand.
+Mountain worldmap type now supports all location-specific encounters -- in other words you can encounter super mutants in the mountains near the military base, gangs in the mountains by Boneyard, etc etc.
+slight change to how Luck affects the type of random encounter ..uh... encountered. heh. Previously the "Bad" ones were never encountered, this should hopefully fix that
+forcefields on MB level 1 STAY off if you disable them via the computer (although you get a stupid message whenever the map loads...sigh)
+angry version of Step Aside. And yeah it reduces their reaction level of you
+Hookers in Falcon at The Hub now function as would be expected... they cycle through various salutations (both in dialog and floats) and the price is based on your CHarisma. Lastly they can do group action if you have someone in your party, the other details you'll just have to find out
+Children no longer run CONSTANTLY (those buggers had infinite stamina apparently...)
+streamlined my Children's No Infinite Rocks code (will only generate more rocks if all are gone)
+changes to drugs toned down, hopefully they are improved but not "overly changed" now -- i'm feeling lazy so i haven't updated the stats listed in this thread, please try them out in-game and let me know what you think
+
