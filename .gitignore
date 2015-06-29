@@ -4,6 +4,10 @@ Fixt loader zipfile/**/*.FON
 Fixt loader zipfile/**/*.AAF
 Fixt loader zipfile/**/*.RIX
 
+# Ignore this because it's only graphics, and ~2000 files
+German Uncut/**/*.FR*
+
+
 ###############################################################
 #             https://github.com/Sduibek/myignore             #
 ###############################################################
