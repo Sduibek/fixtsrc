@@ -733,7 +733,8 @@ begin
 	if global_var(477) != 3 then begin// DCMUTANT_GAVE_DISK:=0; // 477 // ! Fallout Fixt: 2 means showed disk to Rutger
 		if global_var(477) == 2 then begin
 			if global_var(451) > 1 then begin
-		//		destroy_object(global_var(451));// DCMUTANT_DISK_POINTER     :=0;    //  451  // ! Fallout Fixt: Holds the DCMutant disk pointer
+				destroy_object(global_var(451));// DCMUTANT_DISK_POINTER     :=0;    //  451  // ! Fallout Fixt: Holds the DCMutant disk pointer
+//				display_msg(message_str(295, 107));
 				set_global_var(477, 3);
 			end
 		end
