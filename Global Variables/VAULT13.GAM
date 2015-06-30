@@ -27,7 +27,7 @@ MASTER_BLOWN              :=0;  // (18)  Has the Master been destroyed? :=0;   0
 CHILDKILLER_PIC_RESTORE   :=0;  // (19)  Fixt: CHOSEN BY PLAYER - Use the tummy-kick Vault Boy card for Child-Killer perk?
 MYST_STRANGER_RESPAWNS    :=0;  // (20)  Fixt: CHOSEN BY PLAYER - Does Mysterious Stranger still spawn if killed?
 HIT_GIVES_RADS_GHOULS     :=0;  // (21)  Fixt: CHOSEN BY PLAYER - Do hits from irradiated critters give radiation to player?
-FIXT_BASE_VERSION_NUM     :=7;  // (22)  Fixt: Also check GVAR179 - What version of the mod is currently installed?
+FIXT_BASE_VERSION_NUM     :=0;  // (22)  Fixt: Also check GVAR179 - What version of the mod is currently installed?
 DISPLAY_PLVL_ON_LVLUP     :=0;  // (23)  Fixt: CHOSEN BY PLAYER - Did player choose "You are now level:" messages display?
 FOLLOWERS_LEFT            :=24; // (24)  Fixt: How many Followers Of The Apocalypse members are still alive? Used for checking the Good Followers Ending slide.
 IS_HEATHER_ALIVE          :=1;  // (25)  Fixt: Is Heather alive? Used for tracking Followers Children spy.
@@ -184,7 +184,7 @@ HUNTER_RESPAWNS           :=0;  // (175) Fixt: CHOSEN BY PLAYER - Does Chris the
 FSCOUT_1                  :=0;  // (176)  ScoutF, Rayze (Falldemo)
 FIXT_OLD_VERSION_WARNED   :=0;  // (177) Fixt: Has player been warned if they loaded from an old version save?. Set to 1 for new games.
 CSCOUT_1                  :=0;  // (178)  ScoutC, Baka (Falldemo)
-FIXT_SUBVERSION_INSTALLED :=1;  // (179) Fixt: Fallout Fixt version subversion, used for tracking player warning.
+FIXT_SUBVERSION_INSTALLED :=80;  // (179) Fixt: Fallout Fixt version subversion, used for tracking player warning.
 VATS_BLOWN_CUTSCENE_DONE  :=0;  // (180) Fixt: Has the "vats blowing up" movie played?
 ANIMAL_FRIEND_RADSCORPS   :=0;  // (181) Fixt: CHOSEN BY PLAYER - Are radscorpions considered Animals, for Animal Friend perk?
 KILLIAN_WARES_MERGED      :=0;  // (182) Fixt: CHOSEN BY PLAYER - When you barter with Killian do you always see all his stuff?
