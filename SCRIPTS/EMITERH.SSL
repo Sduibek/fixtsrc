@@ -93,7 +93,8 @@ procedure damage_p_proc
 begin
 	set_local_var(0, 1);
 	if (FieldH_Ptr != 0) then begin
-		FieldH_Ptr := 0;
+		//FieldH_Ptr := 0;
+		destroy_object(FieldH_Ptr);
 	end
 	if (global_var(418) == 0) then begin
 		display_msg(message_str(875, 102));
