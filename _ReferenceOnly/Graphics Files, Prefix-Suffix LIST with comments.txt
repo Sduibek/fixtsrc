@@ -1,0 +1,279 @@
+///////////////////////////////////////////////////////////////////////////////////////
+Here is a list of all of the appearances in critter.dat:
+///////////////////////////////////////////////////////////////////////////////////////
+
+	HA POWR = Power Armor
+	HA ROBE = Purple Robes
+	HA SROB = Sand Robes
+
+	HF CMBT = Fem Combat Armor
+	HF JMPS = Fem Vault13 Jump suit
+	HF LTHR = Fem Leather Armor
+	HF MAXX = Fem Leather Jacket
+	HF METL = Fem Metal Armor
+
+	HM BJMP = Black Male Vault13 Jump suit
+	HM BMET = Black Male Metal Armor
+	HM CMBT = Male Combat Armor
+	HM JMPS = Male Vault13 Jump suit
+	HM LTHR = Male Leather Armor
+	HM MAXX = Male Leather Jacket
+	HM METL = Male Metal Armor
+
+	MA BROM = Brahmin
+	MA CLAW = Adult Deathclaw
+	MA CLW2 = Baby DeathClaw
+	MA DDOG = Dog
+	MA FEYE = Eye Robot
+	MA HAND = Mr. Handy
+	MA LIEU = Lieutenant
+	MA MANT = Mantis
+	MA MRAT = Mole Rat
+	MA MTN2 = Super Mutant Leather
+	MA MTN3 = Super Mutant Leather (Tanned)
+	MA MTNT = Super Mutant
+	MA MURT = Pig Rat
+	MA ROBO = Brain bot
+	MA SCP2 = Baby Radscorpion
+	MA SCRP = Radscorpion
+	MA SPHN = Floater
+	MA SRAT = Rat
+	MA THNG = Centaur
+
+	NA BLUE = Blue Robe
+	NA BRWN = Brown Robe
+	NA CHLD = Child
+	NA GHUL = Ghoul
+	NA GLOW = Glow Ghoul
+	NA POWR = Power Armor w/o Helmet
+	NA ROBE = Rag robes
+	NA WHIT = Black Robe
+
+	NF BRLP = Fem Blonde Peasant
+	NF MAXX = Fem Leather Punkette
+	NF METL = Fem Redhead Metal Armor
+	NF PEAS = Fem Redhead Peasant
+	NF TRMP = Fem Tramp
+	NF VRED = Fem Vaultsuit Redhead
+
+	NM BPEA = Black Male Peasant
+	NM BRLP = Male Peasant
+	NM BSNP = Male Peasant Balding
+	NM DOCC = Doctor
+	NM GRCH = Midget
+	NM LOSR = Male Junkie
+	NM LTHR = Male Bald Leather Armor
+	NM MAXX = Male Longhair Leather Jacket
+	NM OVR2 = Overseer (out of his chair)
+	NM PEAS = Male Hat Peasant
+
+	TYCHO_ = Tycho (duh)
+
+///////////////////////////////////////////////////////////////////////////////////////
+The meaning of the last two letters in frm names:
+///////////////////////////////////////////////////////////////////////////////////////
+
+A	movement
+B	dying
+C	get up
+D	knife
+E	club/prod
+F	sledge
+G	spear
+H	pistol
+I	SMG
+J	rifle
+K	flamer		(KK not used in Fallout1 yet)
+L	minigun
+M	bazooka
+N	VATS image
+R	corpse
+
+
+	(A_) MOVEMENTS:
+	AA - IDLE
+	AB - WALK
+	AC - SMOKING	(fanmade)
+	AE - CLIMB
+	AK - PICK UP
+	AL - USE
+	AN - DODGE
+	AO - HIT_FRONT
+	AP - HIT_BACK
+	AQ - PUNCH
+	AR - KICK
+	AS - THROW	(grenade etc)
+	AT - RUN
+	AU - UNKNOWN (???, check hmlthrau.frm, probably obsolete/redundant OR used in in-game NEW RENO cutscenes)
+
+	(B_) DEATH/UNCONSCIUOS:
+	BA - FALLING_BACK
+	BB - FALLING_FRONT
+	BC - FALLING_BACK (???, check hfcmbtbc.fr0-5, it's half-missing "ba - FALLING_BACK" animation)
+	BD - HOLE_IN_BODY
+	BE - FALLING_BACK_BURNED
+	BF - RIPPING_APART
+	BG - PERFORATED_DEATH
+	BH - FALLING_BACK_ELECTRIC_BURNED
+	BI - SLICE_IN_TWO
+	BJ - FALLING_FRONT_FIRE_BURNED
+	BK - ELECTRIC_BURNED_TO_ASHES
+	BL - BLOW_EXPLOSION
+	BM - MELTDOWN
+	BN - BURNING_DANCE
+	BO - BLEEDING_BACK
+	BP - BLEEDING_FRONT
+
+	(C_) MOVEMENTS:
+	CH - GET_UP_FRONT
+	CJ - GET_UP_BACK
+
+	(D_) KNIFE ANIMATIONS:
+	DA - KNIFE_IDLE
+	DB - KNIFE_WALK
+	DC - KNIFE_PULL_OUT
+	DD - KNIFE_PUT_IN
+	DE - KNIFE_DODGE
+	DF - KNIFE_ATTACK_THRUST
+	DG - KNIFE_ATTACK_SWING
+	DM - KNIFE_ATTACK_THROW
+
+	(E_) MELEE WEAPONS ANIMATIONS:
+	EA - MELEE_IDLE
+	EB - MELEE_WALK
+	EC - MELEE_PULL_OUT
+	ED - MELEE_PUT_IN
+	EE - MELEE_DODGE
+	EF - MELEE_THRUST
+	EG - MELEE_SWING
+
+	(F_) HAMMER WEAPONS ANIMATIONS:
+	FA - HAMMER_IDLE
+	FB - HAMMER_WALK
+	FC - HAMMER_PULL_OUT
+	FD - HAMMER_PUT_IN
+	FE - HAMMER_DODGE
+	FF - HAMMER_THRUST
+	FG - HAMMER_SWING
+
+	(G_) SPEAR ANIMATIONS:
+	GA - SPEAR_IDLE
+	GB - SPEAR_WALK
+	GC - SPEAR_PULL_OUT
+	GD - SPEAR_PUT_IN
+	GE - SPEAR_DODGE
+	GF - SPEAR_ATTACK_THRUST
+	GG - SPEAR_ATTACK_SWING (???, check it in hfjmpsgg.frm)
+	GM - SPEAR_ATTACK_THROW
+
+	(H_) PISTOL WEAPONS ANIMATIONS:
+	HA - PISTOL_IDLE/RELOAD
+	HB - PISTOL_WALK
+	HC - PISTOL_PULL_OUT
+	HD - PISTOL_PUT_IN
+	HE - PISTOL_DODGE
+	HH - PISTOL_AIM
+	HI - PISTOL_PULL_DOWN
+	HJ - PISTOL_SHOT
+
+	(I_) SMG WEAPONS ANIMATIONS:
+	IA - SMG_IDLE/RELOAD
+	IB - SMG_WALK
+	IC - SMG_PULL_OUT
+	ID - SMG_PUT_IN
+	IE - SMG_DODGE
+	IH - SMG_AIM
+	II - SMG_PULL_DOWN
+	IJ - SMG_SHOT
+	IK - SMG_BURST
+
+	(J_) RIFLE WEAPONS ANIMATIONS:
+	JA - RIFLE_IDLE/RELOAD
+	JB - RIFLE_WALK
+	JC - RIFLE_PULL_OUT
+	JD - RIFLE_PUT_IN
+	JE - RIFLE_DODGE
+	JH - RIFLE_AIM
+	JI - RIFLE_PULL_DOWN
+	JJ - RIFLE_SHOT
+	JK - RIFLE_BURST
+
+	(K_) HEAVY_WEAPON WEAPONS ANIMATIONS:
+	KA - HEAVY_WEAPON_IDLE/RELOAD
+	KB - HEAVY_WEAPON_WALK
+	KC - HEAVY_WEAPON_PULL_OUT
+	KD - HEAVY_WEAPON_PUT_IN
+	KE - HEAVY_WEAPON_DODGE
+	KH - HEAVY_WEAPON_AIM
+	KI - HEAVY_WEAPON_PULL_DOWN
+	KJ - HEAVY_WEAPON_SHOT
+	KK - HEAVY_WEAPON_BURST
+	KL - FLAMER_SHOT
+
+	(L_) MINIGUN/GATTLING_LASER WEAPONS ANIMATIONS:
+	LA - MINIGUN/GATTLING_LASER_IDLE/RELOAD
+	LB - MINIGUN/GATTLING_LASER_WALK
+	LC - MINIGUN/GATTLING_LASER_PULL_OUT
+	LD - MINIGUN/GATTLING_LASER_PUT_IN
+	LE - MINIGUN/GATTLING_LASER_DODGE
+	LH - MINIGUN/GATTLING_LASER_AIM
+	LI - MINIGUN/GATTLING_LASER_PULL_DOWN
+	LK - MINIGUN/GATTLING_LASER_BURST
+
+	(M_) ROCKET_LAUNCHER WEAPONS ANIMATIONS:
+	MA - ROCKET_LAUNCHER_IDLE/RELOAD
+	MB - ROCKET_LAUNCHER_WALK
+	MC - ROCKET_LAUNCHER_PULL_OUT
+	MD - ROCKET_LAUNCHER_PUT_IN
+	ME - ROCKET_LAUNCHER_DODGE
+	MH - ROCKET_LAUNCHER_AIM
+	MI - ROCKET_LAUNCHER_PULL_DOWN
+	MJ - ROCKET_LAUNCHER_SHOT
+
+	(N_) TARGET_PICTURE:
+	na - TARGET PICTURE
+
+	(R_) DEAD_BODIES ANIMATIONS:
+	RA - DEAD_LYING_BACK
+	RB - DEAD_LYING_FRONT
+	RC - DEAD_LYING_BACK (???, it looks the same as ******ra.frm, check hfcmbtrc.frm, probably unused)
+	RD - DEAD_LYING_HOLE
+	RE - DEAD_LYING_BURNED
+	RF - DEAD_LYING_PERFORATED_FRONT
+	RG - DEAD_LYING_PERFORATED_BACK
+	RH - DEAD_LYING_BURNED (???, the same as ******re.frm, this was probably intended to be ELECTRIC_BURNED)
+	RI - DEAD_LYING_SLICE_IN_TWO
+	RJ - DEAD_LYING_ASHES
+	RK - ASHES (!!!literaly)
+	RL - DEAD_LYING_BLOW_EXPLOSION
+	RM - DEAD_LYING_MELTDOWN
+	RO - DEAD_LYING_BLEED_BACK
+	RP - DEAD_LYING_BLEED_FRONT
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+The meaning of the first two letters in frm names:
+///////////////////////////////////////////////////////////////////////////////////////
+
+	HA = Hero Androgneus
+	HF = Hero Female
+	HM = Hero Male
+	NA = NPC Androgneus
+	NF = NPC Female
+	NM = NPC Male
+	MA = Monster Androgynous
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+Talking Head FRM Index:
+///////////////////////////////////////////////////////////////////////////////////////
+
+	B = Bad mood
+	G = Good Mood
+	N = Nuetral Mood
+	F1 = Blink
+	F2 = Nod
+	F3 = Shake
+	(B,G,N)P = Talk
+	(B,G,N)(B,G,N) = Mood transistion from (B,G,N) to (B,G,N)
+
