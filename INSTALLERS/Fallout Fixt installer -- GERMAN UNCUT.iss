@@ -52,8 +52,8 @@
 ;  alpha 6.7.3        June 2, 2014
 ;  alpha 7.0          March 30, 2015
 ;  alpha 7.1          April 4, 2015
-;  0.80alpha          June 28, 2015  <-- using Fallout engine (deprecated)
-;  0.90beta           June 28, 2015  <-- using Fallout 2 engine
+;  0.80alpha          June 30, 2015  <-- using Fallout engine (deprecated)
+;  0.90beta           June 30, 2015  <-- using Fallout 2 engine
 #define MyAppName "Fallout Fixt"
 #define MyAppPublisher "Sduibek"
 #define MyAppURL "http://www.nma-fallout.com/showthread.php?194562"
@@ -430,7 +430,7 @@ Name: Full; Description: Full [NO PURISTS ALLOWED] - All fixes, and include most
 Name: FullCustom; Description: Custom [WARNING: SPOILERS!!!] - All fixes, and the new content is customizable.; Flags: iscustom
 [Components]
 ; Water Chip timer
-Name: VAULT_WATER; Description: " --- Vault water runs out? ---"; Flags: disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER; Description: " --- Vault water runs out? ---"; Flags: disablenouninstallwarning fixed; Types: FullCustom FixesONLY Standard Full
 Name: VAULT_WATER\30; Description: Yes, after 30 days.  (1 month); Flags: exclusive disablenouninstallwarning; Types: FullCustom
 Name: VAULT_WATER\60; Description: Yes, after 60 days.  (2 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
 Name: VAULT_WATER\90; Description: Yes, after 90 days.  (3 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
@@ -445,7 +445,7 @@ Name: VAULT_WATER\330; Description: Yes, after 330 days. (11 months); Flags: exc
 Name: VAULT_WATER\365; Description: Yes, after 365 days. (12 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
 Name: VAULT_WATER\DISABLED; Description: No. (2,133 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
 ; Invasions
-Name: INVASIONS; Description: --- Enable super-mutant invasions of towns? --- [Clear this box to disable]; Flags: disablenouninstallwarning; Types: FullCustom
+Name: INVASIONS; Description: --- Enable super-mutant invasions of towns? --- [Clear this box to disable]; Flags: disablenouninstallwarning; Types: FullCustom FixesONLY
 Name: INVASIONS\Necro_after30; Description: Necropolis invaded 30 days after Watershed mutants gone. (Fallout default); Flags: disablenouninstallwarning; Types: FullCustom FixesONLY
 Name: INVASIONS\DEFAULT_VANILLA_patched; Description: "Necropolis only; invaded after 110 days. (Default in Fallout versions 1.1 & 1.2)"; Flags: exclusive disablenouninstallwarning; Types: FullCustom FixesONLY
 Name: INVASIONS\DEFAULT_VANILLA_v13; Description: Necropolis + Vault 13: Necropolis at 110, Vault 13 at 500. (Fallout v1.0 default); Flags: exclusive disablenouninstallwarning; Types: FullCustom

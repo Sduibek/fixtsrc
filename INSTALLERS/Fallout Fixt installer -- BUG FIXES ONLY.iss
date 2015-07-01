@@ -52,8 +52,8 @@
 ;  alpha 6.7.3        June 2, 2014
 ;  alpha 7.0          March 30, 2015
 ;  alpha 7.1          April 4, 2015
-;  0.80alpha          June 28, 2015  <-- using Fallout engine (deprecated)
-;  0.90beta           June 28, 2015  <-- using Fallout 2 engine
+;  0.80alpha          June 30, 2015  <-- using Fallout engine (deprecated)
+;  0.90beta           June 30, 2015  <-- using Fallout 2 engine
 #define MyAppName "Fallout Fixt"
 #define MyAppPublisher "Sduibek"
 #define MyAppURL "http://www.nma-fallout.com/showthread.php?194562"
@@ -325,17 +325,24 @@ Filename: {app}\CrashFix\BITS_BOB_GOES_TO_JAIL_1.bat; WorkingDir: {app}\CrashFix
 ; Difficulty
 Filename: {app}\CrashFix\ANIMAL_FRIEND_RADSCORPS_0.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: Mod
 Filename: {app}\CrashFix\ANIMAL_FRIEND_RADSCORPS_1.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: BalanceChallenge\Combat\ANIMAL_FRIEND_RADSCORPS
+Filename: {app}\CrashFix\CHILDKILLER_FROM_HOMIES.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: BalanceChallenge\Combat\CHILDKILLER_FROM_HOMIES
 Filename: {app}\CrashFix\CHILDKILLER_NUM_KILLS_1.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: BalanceChallenge\Combat\CHILDKILLER_NUM_KILLS\1
 Filename: {app}\CrashFix\CHILDKILLER_NUM_KILLS_3.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: BalanceChallenge\Combat\CHILDKILLER_NUM_KILLS\3
 Filename: {app}\CrashFix\HIT_GIVES_RADS_FLOATERS.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: BalanceChallenge\Combat\HIT_GIVES_RADS_FLOATERS
 Filename: {app}\CrashFix\HIT_GIVES_RADS_GHOULS.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: BalanceChallenge\Combat\HIT_GIVES_RADS_GHOULS
 Filename: {app}\CrashFix\HUNTER_RESPAWNS.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: BalanceChallenge\Combat\HUNTER_RESPAWNS
 ; Messages
+Filename: {app}\CrashFix\DISPLAY_PLVL_ON_LVLUP.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: MessagesInMsgBox\DISPLAY_PLVL_ON_LVLUP
+Filename: {app}\CrashFix\DISPLAY_TITLE_ON_LVLUP.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: MessagesInMsgBox\DISPLAY_TITLE_ON_LVLUP
 ; Invasions
+Filename: {app}\CrashFix\INVASIONS_VERSION_1.0_DEFAULT.BAT; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: INVASIONS\DEFAULT_VANILLA_v13
 Filename: {app}\CrashFix\INVASIONS_VERSION_1.2_DEFAULT.BAT; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: INVASIONS\DEFAULT_VANILLA_patched
+Filename: {app}\CrashFix\NECRO_30_DAYS_GVAR225_disable.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: Mod
 Filename: {app}\CrashFix\NECRO_30_DAYS_GVAR225_enable.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: INVASIONS\Necro_after30
 ; Mrs. Stapleton
 ; Water Chip
+Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_120.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\120
+Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_150_DEFAULT.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\150
 ; Weapon Drop
 ; Just For Fun
 ; KEEP THESE IN THIS ORDER:
@@ -362,13 +369,14 @@ Name: FixesONLY; Description: PURIST:  Fix bugs, typos, exploits, oversights, et
 Name: FullCustom; Description: MOSTLY PURIST:  All fixes included, and allow customizations. [SPOILERS!!]; Flags: iscustom
 [Components]
 ; Water Chip timer
-Name: VAULT_WATER; Description: " --- Vault water runs out? ---"; Flags: disablenouninstallwarning; Types: FullCustom FixesONLY
+Name: VAULT_WATER; Description: " --- Vault water runs out? ---"; Flags: disablenouninstallwarning fixed; Types: FullCustom FixesONLY
 Name: VAULT_WATER\150; Description: Yes, after 150 days. (5 months - DEFAULT); Flags: exclusive disablenouninstallwarning; Types: FullCustom FixesONLY
 Name: VAULT_WATER\120; Description: "Yes, after 120 days. (4 months - Purist-OK, Overseer says ""4 to 5 months left"")"; Flags: exclusive disablenouninstallwarning; Types: FullCustom
 ; Invasions
-Name: INVASIONS; Description: --- Enable mutant invasions? --- [uncheck to disable invasion of Necropolis]; Flags: disablenouninstallwarning; Types: FullCustom FixesONLY
+Name: INVASIONS; Description: --- Enable super-mutant invasions of towns? --- [Clear this box to disable]; Flags: disablenouninstallwarning; Types: FullCustom FixesONLY
 Name: INVASIONS\Necro_after30; Description: Necropolis invaded 30 days after Watershed mutants gone. (Fallout default); Flags: disablenouninstallwarning; Types: FullCustom FixesONLY
-Name: INVASIONS\DEFAULT_VANILLA_patched; Description: Necropolis always invaded 110 days after game starts. (Fallout default); Flags: exclusive disablenouninstallwarning; Types: FullCustom FixesONLY
+Name: INVASIONS\DEFAULT_VANILLA_patched; Description: "Necropolis only; invaded after 110 days. (Default in Fallout versions 1.1 & 1.2)"; Flags: exclusive disablenouninstallwarning; Types: FullCustom FixesONLY
+Name: INVASIONS\DEFAULT_VANILLA_v13; Description: Necropolis + Vault 13: Necropolis at 110, Vault 13 at 500. (Fallout v1.0 default); Flags: exclusive disablenouninstallwarning; Types: FullCustom
 ; Weapon Drop mod
 ; --- GUI ---
 Name: GraphicsInterface; Description: " --- Graphics / Interface ---"; Flags: disablenouninstallwarning; Types: FullCustom
@@ -433,6 +441,8 @@ Name: BalanceChallenge\ITEMS; Description: " --- Game Balance: Items --- "; Flag
 Name: BalanceChallenge\ITEMS\POWER_ARMOR_WEIGHTS; Description: Power Armor weights are same as Fallout 2? (42LB and 50LB, vs 85LB and 100LB); Flags: disablenouninstallwarning; Types: FullCustom
 ; --- Messages/Notifications ---
 Name: MessagesInMsgBox; Description: " --- Messages/Notifications --- "; Flags: disablenouninstallwarning; Types: FullCustom
+Name: MessagesInMsgBox\DISPLAY_PLVL_ON_LVLUP; Description: "Display character level on levelup? [""You are now level 2.""]"; Flags: disablenouninstallwarning; Types: FullCustom Full
+Name: MessagesInMsgBox\DISPLAY_TITLE_ON_LVLUP; Description: "Display character title on levelup? [""Your title: Vault Scion.""] These come from the Fallout manual, I did not create the titles."; Flags: disablenouninstallwarning; Types: FullCustom Full Standard
 Name: MessagesInMsgBox\TRAIT_Descriptions; Description: Use detailed descriptions for Traits. These detail all effects of the Trait in exact game terms and numbers. Recommended.; Flags: disablenouninstallwarning; Types: FixesONLY FullCustom
 ; Restorations
 Name: RESTORATIONS; Description: " --- Restorations --- "; Flags: disablenouninstallwarning; Types: FullCustom
@@ -4820,7 +4830,7 @@ Source: ..\..\..\Fallout\Scrambled Colors Fixes\Win7-colorsfix-readme.txt; DestD
 ;
 ; --- {app}\source [optional] ---
 ;
-Source: ..\..\..\Fallout\DATA\MAPS\FO2FO1_map_converter.exe; DestDir: {app}\source\bin; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+;Source: ..\..\..\Fallout\DATA\MAPS\FO2FO1_map_converter.exe; DestDir: {app}\source\bin; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 ;
 ; NORMAL SCRIPTS
 ;
