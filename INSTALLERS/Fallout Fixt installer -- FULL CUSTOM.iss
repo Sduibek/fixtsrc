@@ -471,14 +471,14 @@ Name: GraphicsInterface\RedMenu; Description: Blood-red backdrop for main menu P
 Name: GraphicsInterface\MoreSPLASH; Description: 7 additional splash screens! (Can be found in DATA\ART\SPLASH to remove); Flags: disablenouninstallwarning; Types: FullCustom Standard Full
 Name: GraphicsInterface\ChildkillerKickTheBaby; Description: Restore Child-Killer karma picture? (Vault Boy kicking a pregnant woman); Flags: disablenouninstallwarning; Types: FullCustom Full
 Name: GraphicsInterface\FasterRunning; Description: Increase running speed of slow NPCs? (peasants, dogs, children); Flags: disablenouninstallwarning; Types: FullCustom Full
-Name: GraphicsInterface\20FPS_PowerArmor; Description: Do characters in Power Armor run as fast as all others? [Default is NO, slower]; Flags: disablenouninstallwarning; Types: FullCustom Standard Full
+Name: GraphicsInterface\20FPS_PowerArmor; Description: Do characters in Power Armor run as fast as all others? [Default is NO, slower]; Flags: disablenouninstallwarning; Types: FullCustom FixesONLY Standard Full
 Name: GraphicsInterface\BendDownPickupForAllContainers; Description: "Does player bend down to open all containers instead of doing the ""magic hands"" animation on standing containers? [Default is disabled. Enabled saves time, for the impatient or lazy or speedrunners)"; Flags: disablenouninstallwarning; Types: FullCustom
 ; Rollers used for Date and Time on Worldmap & PIP-Boy, HP & AC in main interface, SPECIAL stats and Available Skill Points in Character screen.
-Name: GraphicsInterface\Rollers; Description: "Choose type of ""rollers"": these are used in scrolling digit displays in-game."; Flags: disablenouninstallwarning fixed; Types: FullCustom
+Name: GraphicsInterface\Rollers; Description: "Choose type of ""rollers"": these are used in scrolling digit displays in-game."; Flags: disablenouninstallwarning fixed; Types: FullCustom FixesONLY Standard Full
 Name: GraphicsInterface\Rollers\Default; Description: White/Yellow/Red default numbers -- see top-right of this installer; Flags: exclusive disablenouninstallwarning; Types: FullCustom FixesONLY Standard
-Name: GraphicsInterface\Rollers\NixieGreen; Description: "Green/Yellow/Red ""nixie"" numbers -- see top-right of this installer"; Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: GraphicsInterface\Rollers\NixieGreen; Description: "Green/Yellow/Red ""nixie"" numbers -- see top-right of this installer"; Flags: exclusive disablenouninstallwarning; Types: FullCustom Full
 Name: GraphicsInterface\Rollers\NixieOrange; Description: "Orange-only ""nixie"" numbers -- like the top-right image except all orange"; Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: GraphicsInterface\FONTS; Description: Which style of font to use? (Yellow font used in pretty much all game menus); Flags: disablenouninstallwarning fixed; Types: FullCustom
+Name: GraphicsInterface\FONTS; Description: Which style of font to use? (Yellow font used in pretty much all game menus); Flags: disablenouninstallwarning fixed; Types: FullCustom FixesONLY Standard Full
 Name: GraphicsInterface\FONTS\DefaultENGLISH; Description: Default US-English font. (Wide letters, moderate spacing between letters); Flags: exclusive disablenouninstallwarning; Types: FullCustom FixesONLY Standard Full
 Name: GraphicsInterface\FONTS\ENGLISH_TighterTracking; Description: Condensed US-English font. (Wide letters, tight spacing between letters); Flags: exclusive disablenouninstallwarning; Types: FullCustom
 Name: GraphicsInterface\FONTS\DefaultEU_UK; Description: Condensed UK-English font. (Narrow letters, tight spacing between letters); Flags: exclusive disablenouninstallwarning; Types: FullCustom

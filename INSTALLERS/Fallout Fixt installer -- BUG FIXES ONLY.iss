@@ -315,9 +315,10 @@ Filename: {app}\CrashFix\BackupSavesEachTime.bat; WorkingDir: {app}\CrashFix; Fl
 Filename: {app}\CrashFix\OneTimeBackup.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Performing one-time first-run backup of all savegames, if necessary ...; Components: Mod
 Filename: {app}\CrashFix\Install32bit.bat; WorkingDir: {app}\CrashFix; Check: not IsWin64; Flags: runminimized runhidden; StatusMsg: Running Cathedral Crash Fix patch x86 ...; Components: Mod
 Filename: {app}\CrashFix\Install64bit.bat; WorkingDir: {app}\CrashFix; Check: IsWin64; Flags: runminimized runhidden; StatusMsg: Running Cathedral Crash Fix patch x64 ...; Components: Mod
-
-Filename: {app}\CrashFix\BUGFIXESONLY_ENABLE.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Enabling Bug Fixes Only mode ...; Components: FixesOnlyEnable
+Filename: {app}\CrashFix\BUGFIXESONLY_ENABLE.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Enabling Bug Fixes Only mode ...; Components: Mod FixesOnlyEnable
 ; BoS Lorri doctor
+Filename: {app}\CrashFix\BOS_LORRI_CHARISMA_ENABLED_0.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: Mod
+Filename: {app}\CrashFix\BOS_LORRI_CHARISMA_ENABLED_1.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: BalanceChallenge\LORRI\BOS_LORRI_CHARISMA_ENABLED
 ; Restorations
 Filename: {app}\CrashFix\CAN_REPORT_BITS_BOB.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: RESTORATIONS\CAN_REPORT_BITS_BOB
 Filename: {app}\CrashFix\BITS_BOB_GOES_TO_JAIL_0.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: Mod
@@ -386,11 +387,11 @@ Name: GraphicsInterface\ChildkillerKickTheBaby; Description: Restore Child-Kille
 Name: GraphicsInterface\FasterRunning; Description: Increase running speed of slow NPCs? (peasants, dogs, children); Flags: disablenouninstallwarning; Types: FullCustom
 Name: GraphicsInterface\20FPS_PowerArmor; Description: Do characters in Power Armor run as fast as all others? [Default is NO, slower]; Flags: disablenouninstallwarning; Types: FullCustom FixesONLY
 ; Rollers used for Date and Time on Worldmap & PIP-Boy, HP & AC in main interface, SPECIAL stats and Available Skill Points in Character screen.
-Name: GraphicsInterface\Rollers; Description: "Choose type of ""rollers"": these are used in scrolling digit displays in-game."; Flags: disablenouninstallwarning fixed; Types: FullCustom
+Name: GraphicsInterface\Rollers; Description: "Choose type of ""rollers"": these are used in scrolling digit displays in-game."; Flags: disablenouninstallwarning fixed; Types: FullCustom FixesONLY
 Name: GraphicsInterface\Rollers\Default; Description: White/Yellow/Red default numbers -- see top-right of this installer; Flags: exclusive disablenouninstallwarning; Types: FullCustom FixesONLY
 Name: GraphicsInterface\Rollers\NixieGreen; Description: "Green/Yellow/Red ""nixie"" numbers -- see top-right of this installer"; Flags: exclusive disablenouninstallwarning; Types: FullCustom
 Name: GraphicsInterface\Rollers\NixieOrange; Description: "Orange-only ""nixie"" numbers -- like the top-right image except all orange"; Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: GraphicsInterface\FONTS; Description: Which style of font to use? (Yellow font used in pretty much all game menus); Flags: disablenouninstallwarning fixed; Types: FullCustom
+Name: GraphicsInterface\FONTS; Description: Which style of font to use? (Yellow font used in pretty much all game menus); Flags: disablenouninstallwarning fixed; Types: FullCustom FixesONLY
 Name: GraphicsInterface\FONTS\DefaultENGLISH; Description: Default US-English font. (Wide letters, moderate spacing between letters); Flags: exclusive disablenouninstallwarning; Types: FullCustom FixesONLY
 Name: GraphicsInterface\FONTS\ENGLISH_TighterTracking; Description: Condensed US-English font. (Wide letters, tight spacing between letters); Flags: exclusive disablenouninstallwarning; Types: FullCustom
 Name: GraphicsInterface\FONTS\DefaultEU_UK; Description: Condensed UK-English font. (Narrow letters, tight spacing between letters); Flags: exclusive disablenouninstallwarning; Types: FullCustom
@@ -441,8 +442,8 @@ Name: BalanceChallenge\ITEMS; Description: " --- Game Balance: Items --- "; Flag
 Name: BalanceChallenge\ITEMS\POWER_ARMOR_WEIGHTS; Description: Power Armor weights are same as Fallout 2? (42LB and 50LB, vs 85LB and 100LB); Flags: disablenouninstallwarning; Types: FullCustom
 ; --- Messages/Notifications ---
 Name: MessagesInMsgBox; Description: " --- Messages/Notifications --- "; Flags: disablenouninstallwarning; Types: FullCustom
-Name: MessagesInMsgBox\DISPLAY_PLVL_ON_LVLUP; Description: "Display character level on levelup? [""You are now level 2.""]"; Flags: disablenouninstallwarning; Types: FullCustom Full
-Name: MessagesInMsgBox\DISPLAY_TITLE_ON_LVLUP; Description: "Display character title on levelup? [""Your title: Vault Scion.""] These come from the Fallout manual, I did not create the titles."; Flags: disablenouninstallwarning; Types: FullCustom Full Standard
+Name: MessagesInMsgBox\DISPLAY_PLVL_ON_LVLUP; Description: "Display character level on levelup? [""You are now level 2.""]"; Flags: disablenouninstallwarning; Types: FullCustom
+Name: MessagesInMsgBox\DISPLAY_TITLE_ON_LVLUP; Description: "Display character title on levelup? [""Your title: Vault Scion.""] These come from the Fallout manual, I did not create the titles."; Flags: disablenouninstallwarning; Types: FullCustom
 Name: MessagesInMsgBox\TRAIT_Descriptions; Description: Use detailed descriptions for Traits. These detail all effects of the Trait in exact game terms and numbers. Recommended.; Flags: disablenouninstallwarning; Types: FixesONLY FullCustom
 ; Restorations
 Name: RESTORATIONS; Description: " --- Restorations --- "; Flags: disablenouninstallwarning; Types: FullCustom
@@ -690,8 +691,8 @@ Source: ..\Batchfiles\Components\ANIMAL_FRIEND_RADSCORPS_0.bat; DestDir: {app}\C
 Source: ..\Batchfiles\Components\ANIMAL_FRIEND_RADSCORPS_1.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Components\BITS_BOB_GOES_TO_JAIL_0.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Components\BITS_BOB_GOES_TO_JAIL_1.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
-;	Source: ..\Batchfiles\Components\BOS_LORRI_CHARISMA_ENABLED_0.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
-;	Source: ..\Batchfiles\Components\BOS_LORRI_CHARISMA_ENABLED_1.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
+Source: ..\Batchfiles\Components\BOS_LORRI_CHARISMA_ENABLED_0.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
+Source: ..\Batchfiles\Components\BOS_LORRI_CHARISMA_ENABLED_1.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 ;	Source: ..\Batchfiles\Components\BOS_LORRI_NUM_OPS_ALLOWED_2.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 ;	Source: ..\Batchfiles\Components\BOS_LORRI_NUM_OPS_ALLOWED_3.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 ;	Source: ..\Batchfiles\Components\BOS_LORRI_NUM_OPS_ALLOWED_4.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
@@ -707,7 +708,7 @@ Source: ..\Batchfiles\Components\BUGFIXESONLY_ENABLE.bat; DestDir: {app}\CrashFi
 Source: ..\Batchfiles\Components\CAN_REPORT_BITS_BOB.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Components\CAVESLIGHTLEVEL_20.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Components\CAVESLIGHTLEVEL_30.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
-;	Source: ..\Batchfiles\Components\CHILDKILLER_FROM_HOMIES.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
+Source: ..\Batchfiles\Components\CHILDKILLER_FROM_HOMIES.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Components\CHILDKILLER_NUM_KILLS_1.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Components\CHILDKILLER_NUM_KILLS_3.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Components\DISPLAY_PLVL_ON_LVLUP.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
@@ -724,7 +725,7 @@ Source: ..\Batchfiles\Components\HUNTER_RESPAWNS.bat; DestDir: {app}\CrashFix; F
 ;	Source: ..\Batchfiles\Components\INVASIONS_ALL_ENABLED_4_DOUBLE.BAT; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 ;	Source: ..\Batchfiles\Components\INVASIONS_ALL_ENABLED_5_TRIPLE.BAT; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 ;	Source: ..\Batchfiles\Components\INVASIONS_ALL_ENABLED_6_QUAD.BAT; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
-;	Source: ..\Batchfiles\Components\INVASIONS_VERSION_1.0_DEFAULT.BAT; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
+Source: ..\Batchfiles\Components\INVASIONS_VERSION_1.0_DEFAULT.BAT; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Components\INVASIONS_VERSION_1.2_DEFAULT.BAT; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Components\NECRO_30_DAYS_GVAR225_disable.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Components\NECRO_30_DAYS_GVAR225_enable.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
