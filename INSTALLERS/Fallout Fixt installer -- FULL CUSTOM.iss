@@ -268,9 +268,6 @@ Name: {app}\Fallout Fixt changelog.txt; Type: files; Components: Mod
 Name: {app}\Fallout FIXT.bat; Type: files; Components: Mod
 Name: {app}\Fallout Fixt.bat; Type: files; Components: Mod
 Name: {app}\Fallout1 Manual.pdf; Type: files; Components: Mod
-Name: {app}\fo1_screen_refresh.exe; Type: files; Components: Mod
-Name: {app}\fo1_screen_refresh_int.exe; Type: files; Components: Mod
-Name: {app}\hook_fo1.dll; Type: files; Components: Mod
 Name: {app}\Install.bat; Type: files; Components: Mod
 Name: {app}\launcher.dll; Type: files; Components: Mod
 Name: {app}\launcher.exe; Type: files; Components: Mod
@@ -299,6 +296,12 @@ Name: {app}\DATA\SOUND\SPEECH\ARDSH\ara_90.acm; Type: files; Components: Mod
 Name: {app}\DATA\SOUND\SPEECH\ARDSH\ara_90.lip; Type: files; Components: Mod
 Name: {app}\DATA\SOUND\SPEECH\ARDSH\ara_90.txt; Type: files; Components: Mod
 Name: {app}\DATA\SOUND\SPEECH\ARDSH\ARA_90.wav; Type: files; Components: Mod
+; (FILES, Icons)
+Name: {app}\Icons (.ico)\FalloutFixt.ico; Type: files; Components: Mod
+Name: {app}\Icons (.ico)\rad1.ico; Type: files; Components: Mod
+Name: {app}\Icons (.ico)\rad3.ico; Type: files; Components: Mod
+Name: {app}\Icons (.ico)\vboy1.ico; Type: files; Components: Mod
+Name: {app}\Icons (.ico)\vboy2.ico; Type: files; Components: Mod
 [Run]
 ;	Flags: postinstall unchecked shellexec skipifdoesntexist; Description: "Run the DirectDrawCompatibiltyTool? (Recommended. Point it to Fixt's ""FALLOUTW.exe"" and click ""Apply"". This will help prevent graphics issues.)"
 Filename: {app}\CrashFix\vcr_2005_x86; WorkingDir: {app}\CrashFix; Parameters: /Q; Flags: runminimized runhidden; Check: not IsWin64; StatusMsg: Installing Microsoft Visual C++ 2005 Runtime Components x86 ...; Components: Mod
@@ -375,11 +378,11 @@ Filename: {app}\CrashFix\STAPLE_RESTOCK_WEEKS_6.bat; WorkingDir: {app}\CrashFix;
 Filename: {app}\CrashFix\STAPLE_RESTOCK_WEEKS_7.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: BalanceChallenge\STAPLETON\STAPLE_RESTOCK_WEEKS\7
 Filename: {app}\CrashFix\STAPLE_RESTOCK_WEEKS_8.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: BalanceChallenge\STAPLETON\STAPLE_RESTOCK_WEEKS\8
 ; Water Chip
-Filename: {app}\CrashFix\VAULT_WATER_DISABLED.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: Mod
 Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_30.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\30
 Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_60.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\60
 Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_90.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\90
 Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_120.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\120
+Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_150_DEFAULT.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\150
 Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_180.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\180
 Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_210.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\210
 Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_240.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\240
@@ -387,7 +390,7 @@ Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_270.bat; WorkingDir: {app}\CrashF
 Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_300.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\300
 Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_330.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\330
 Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_365.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\365
-Filename: {app}\CrashFix\VAULT_WATER_DAYS_LEFT_150_DEFAULT.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\150
+Filename: {app}\CrashFix\VAULT_WATER_DISABLED.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: VAULT_WATER\DISABLED
 ; Weapon Drop
 Filename: {app}\CrashFix\WEAPONDROPMOD_MINMAX_RANGE_0.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: WEAPONDROP\WEAPONDROPMOD_MINMAX_RANGE_0
 Filename: {app}\CrashFix\WEAPONDROPMOD_MINMAX_RANGE_0_to_1.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Applying custom settings and global variables ...; Components: WEAPONDROP\WEAPONDROPMOD_MINMAX_RANGE_0_to_1
@@ -427,19 +430,20 @@ Name: Full; Description: Full [NO PURISTS ALLOWED] - All fixes, and include most
 Name: FullCustom; Description: Custom [WARNING: SPOILERS!!!] - All fixes, and the new content is customizable.; Flags: iscustom
 [Components]
 ; Water Chip timer
-Name: VAULT_WATER; Description: " --- Vault water runs out? --- [Clear this box sets to ""No"", never]"; Flags: disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER; Description: " --- Vault water runs out? ---"; Flags: disablenouninstallwarning; Types: FullCustom
 Name: VAULT_WATER\30; Description: Yes, after 30 days.  (1 month); Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: VAULT_WATER\60; Description: 60 days.  (2 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: VAULT_WATER\90; Description: 90 days.  (3 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: VAULT_WATER\120; Description: "120 days. (4 months - Purist-OK, Overseer says ""4 to 5 months left"")"; Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: VAULT_WATER\150; Description: 150 days. (5 months - DEFAULT); Flags: exclusive disablenouninstallwarning; Types: FullCustom FixesONLY Standard Full
-Name: VAULT_WATER\180; Description: 180 days. (6 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: VAULT_WATER\210; Description: 210 days. (7 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: VAULT_WATER\240; Description: 240 days. (8 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: VAULT_WATER\270; Description: 270 days. (9 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: VAULT_WATER\300; Description: 300 days. (10 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: VAULT_WATER\330; Description: 330 days. (11 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: VAULT_WATER\365; Description: 365 days. (12 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER\60; Description: Yes, after 60 days.  (2 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER\90; Description: Yes, after 90 days.  (3 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER\120; Description: "Yes, after 120 days. (4 months - Purist-OK, Overseer says ""4 to 5 months left"")"; Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER\150; Description: Yes, after 150 days. (5 months - DEFAULT); Flags: exclusive disablenouninstallwarning; Types: FullCustom FixesONLY Standard Full
+Name: VAULT_WATER\180; Description: Yes, after 180 days. (6 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER\210; Description: Yes, after 210 days. (7 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER\240; Description: Yes, after 240 days. (8 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER\270; Description: Yes, after 270 days. (9 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER\300; Description: Yes, after 300 days. (10 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER\330; Description: Yes, after 330 days. (11 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER\365; Description: Yes, after 365 days. (12 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: VAULT_WATER\DISABLED; Description: No. (2,133 months); Flags: exclusive disablenouninstallwarning; Types: FullCustom
 ; Invasions
 Name: INVASIONS; Description: --- Enable super-mutant invasions of towns? --- [Clear this box to disable]; Flags: disablenouninstallwarning; Types: FullCustom
 Name: INVASIONS\Necro_after30; Description: Necropolis invaded 30 days after Watershed mutants gone. (Fallout default); Flags: disablenouninstallwarning; Types: FullCustom FixesONLY
@@ -454,7 +458,7 @@ Name: INVASIONS\25; Description: Enable ALL, 25%: Boneyard at 22 days, ending at
 Name: INVASIONS\instant; Description: Enable ALL, instant: All except Vault 13 on first day, Vault 13 at 125 days.; Flags: exclusive disablenouninstallwarning; Types: FullCustom
 ; Weapon Drop mod
 Name: WEAPONDROP; Description: --- Enable weapon drop on critter death? --- [except flares/rocks/knuckles/Fist]; Flags: disablenouninstallwarning; Types: FullCustom
-Name: WEAPONDROP\WEAPONDROPMOD_MINMAX_RANGE_1; Description: Drop weapons always 1 hex from corpse; Flags: exclusive disablenouninstallwarning; Types: FullCustom Standard Full
+Name: WEAPONDROP\WEAPONDROPMOD_MINMAX_RANGE_1; Description: Drop weapons always 1 hex from corpse; Flags: exclusive disablenouninstallwarning; Types: FullCustom
 Name: WEAPONDROP\WEAPONDROPMOD_MINMAX_RANGE_1_to_2; Description: Drop weapons either 1 or 2 hexes from corpse.; Flags: exclusive disablenouninstallwarning; Types: FullCustom
 Name: WEAPONDROP\WEAPONDROPMOD_MINMAX_RANGE_2; Description: Drop weapons always 2 hexes from corpse.; Flags: exclusive disablenouninstallwarning; Types: FullCustom
 Name: WEAPONDROP\WEAPONDROPMOD_MINMAX_RANGE_0_to_2; Description: Drop weapons either 0, 1, or 2 hexes from corpse. (0 means under corpse); Flags: exclusive disablenouninstallwarning; Types: FullCustom
@@ -749,10 +753,13 @@ Source: f1_res.ini; DestDir: {app}; Flags: overwritereadonly ignoreversion sortf
 Source: ..\..\..\Fallout\ddraw.dll; DestDir: {app}; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod
 Source: ..\..\..\Fallout\f1_res.dll; DestDir: {app}; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod
 Source: ..\..\..\Fallout\f1_res_Config.exe; DestDir: {app}; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod
+Source: ..\..\..\Fallout\fo1_screen_refresh.exe; DestDir: {app}; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod
+Source: ..\..\..\Fallout\fo1_screen_refresh-shortened.txt; DestDir: {app}; DestName: fo1_screen_refresh.txt; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod
+Source: ..\..\..\Fallout\hook_fo1.dll; DestDir: {app}; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod
 ;----------------------------------OPTIONAL----------------------------------
 Source: bin\FO1_encounter_tweaker.exe; DestDir: {app}; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod; Tasks: EncounterTweaker
-Source: ..\FALCHE_W.EXE; DestDir: {app}; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: BioWare\WorthlessCheater
-Source: ..\F12se.exe; DestDir: {app}; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: BioWare\WorthlessCheater
+Source: bin\FALCHE_W.EXE; DestDir: {app}; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: BioWare\WorthlessCheater
+Source: ..\..\..\Fallout\F12se.exe; DestDir: {app}; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: BioWare\WorthlessCheater
 ;DOSexe
 Source: bin\FALLOUTD.EXE; DestName: FALLOUTD.EXE; DestDir: {app}; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod; Tasks: DOSexe
 Source: bin\hmidet.386; DestDir: {app}; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod; Tasks: DOSexe
@@ -5127,6 +5134,9 @@ Source: ..\..\fixtlang\ENGLISH_FIXT\DATA\TEXT\ENGLISH\GAME\SKILLDEX.MSG; DestDir
 Source: ..\..\fixtlang\ENGLISH_FIXT\DATA\TEXT\ENGLISH\GAME\STAT.MSG; DestDir: {app}\DATA\TEXT\ENGLISH\GAME; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod
 Source: ..\..\fixtlang\ENGLISH_FIXT\DATA\TEXT\ENGLISH\GAME\WORLDMAP.MSG; DestDir: {app}\DATA\TEXT\ENGLISH\GAME; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod
 ;
+Source: ..\..\..\Fallout\DATA\TEXT\ENGLISH\GAME\ddraw_ru.ini; DestDir: {app}\DATA\TEXT\ENGLISH\GAME; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod
+Source: ..\..\..\Fallout\DATA\TEXT\ENGLISH\GAME\ddraw_en.ini; DestDir: {app}\DATA\TEXT\ENGLISH\GAME; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod
+;
 ; Exit Grids
 ;
 Source: ..\..\fixtlang\ENGLISH_FIXT\DATA\TEXT\ENGLISH\GAME\Exit Grid description versions (PRO_MISC.MSG)\PRO_MISC - original exit grids.MSG; DestDir: {app}\DATA\TEXT\ENGLISH\GAME; DestName: PRO_MISC.MSG; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod
@@ -5157,26 +5167,26 @@ Source: ..\..\..\Fallout\ereg\Eregui32.dll; DestDir: {app}\ereg; Flags: overwrit
 ;
 ; --- {app}\EXTRAS [optional] ---
 ;
-Source: ..\EXTRAS\ssFalloutOfficial.SCR; DestDir: {app}\EXTRAS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod; Tasks: SSaver_drop
+Source: ..\..\..\Fallout\EXTRAS\ssFalloutOfficial.SCR; DestDir: {app}\EXTRAS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod; Tasks: SSaver_drop
 ;	Source: ..\EXTRAS\ssFalloutOfficial.SCR; DestDir: C:\Windows\System32; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod; Tasks: SSaver_installed
 ;
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Code1.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Ereg.bin; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Ereg3201.dll; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Eregui.bak; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Eregui.ini; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Eregui32.dll; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Inter.bmp; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Prtbody.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Prtfax.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Prtmail.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Prtrcrd.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Reg32a.exe; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\ereg\Xmt.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\Falldemo.dat; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\Falldemo.exe; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\Manual.doc; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo; Components: Mod; Tasks: F1demo
-Source: ..\EXTRAS\Fallout1 Interactive Demo\Readme.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Code1.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Ereg.bin; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Ereg3201.dll; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Eregui.bak; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Eregui.ini; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Eregui32.dll; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Inter.bmp; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Prtbody.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Prtfax.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Prtmail.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Prtrcrd.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Reg32a.exe; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\ereg\Xmt.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo\ereg; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\Falldemo.dat; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\Falldemo.exe; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\Manual.doc; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo; Components: Mod; Tasks: F1demo
+Source: ..\..\..\Fallout\EXTRAS\Fallout1 Interactive Demo\Readme.txt; DestDir: {app}\EXTRAS\Fallout1 Interactive Demo; Components: Mod; Tasks: F1demo
 ;
 ; --- {app}\Icons (.ico)---
 ;
@@ -5253,10 +5263,8 @@ Source: ..\..\..\Fallout\Scrambled Colors Fixes\Win7-colorsfix-readme.txt; DestD
 ;
 Source: ..\..\..\Fallout\DATA\MAPS\FO2FO1_map_converter.exe; DestDir: {app}\source\bin; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 ;
-Source: ..\SCRIPTS\1DEDGUL1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\1LADDER1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\1MANHOL1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\1MOLERAT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+; NORMAL SCRIPTS
+;
 Source: ..\SCRIPTS\1MOLRAT1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ABEL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ADY2CELL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5269,23 +5277,18 @@ Source: ..\SCRIPTS\AGATHBED.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\AIRGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\AIRGRD2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\AIRLOCK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\ALAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ALEX.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\ALLDOGS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ALLNONE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ALPHHOTL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ALYA.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\AMBER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ANDREW.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\ANIMFR~1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ANIMFRVR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ARADESH.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ARMDOOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ARMOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\ARMORY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ARMSDEAL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ARTIFACT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\ASSBLOW.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\AVERY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BAKA.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BARFLY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5293,16 +5296,10 @@ Source: ..\SCRIPTS\BARRACUS.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\BARRY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BARSTOW.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BARTER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\BARTER~1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\BARTERGU.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\BARTERGY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\BASIC.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BECA.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BETHBOX.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\BETHGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BGUARD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BHDOOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\BILL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BILLY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BITSBOB.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BLADE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5310,8 +5307,6 @@ Source: ..\SCRIPTS\BLADES.SSL; DestDir: {app}\source\scripts; Flags: overwritere
 Source: ..\SCRIPTS\BLAST.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BLKROM.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BLKROOM.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\BOB.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\BOBSIGN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BOBSTAND.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BONEBODY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BOOKCASE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5336,7 +5331,6 @@ Source: ..\SCRIPTS\BVAIRL.SSL; DestDir: {app}\source\scripts; Flags: overwritere
 Source: ..\SCRIPTS\BVBROKEN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BVCACHE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BVCORE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\BVELEV1W.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BVELV1W.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BVELV2E.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\BVELV2W.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5353,7 +5347,6 @@ Source: ..\SCRIPTS\BYMIKE.SSL; DestDir: {app}\source\scripts; Flags: overwritere
 Source: ..\SCRIPTS\CABBOT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CALDER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CALEB.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\CALLY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CARCOW.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CARCUST.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CARENCTR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5367,7 +5360,6 @@ Source: ..\SCRIPTS\CBLKDOOR.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\CCGUARD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CCGUARD1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CCGUARD2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\CCRTNVN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CCVAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CELL2ADY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHAIR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5375,7 +5367,6 @@ Source: ..\SCRIPTS\CHANTER.SSL; DestDir: {app}\source\scripts; Flags: overwriter
 Source: ..\SCRIPTS\CHARBODY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHDGUARD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHDSCOUT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\CHEATER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHEPSLOT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHID2MAS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHID2TWR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5387,17 +5378,14 @@ Source: ..\SCRIPTS\CHILD.SSL; DestDir: {app}\source\scripts; Flags: overwriterea
 Source: ..\SCRIPTS\CHILDEAD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHILDMEM.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHILDOOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\CHILDR~1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHILDRN1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHILDRN2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\CHITEM.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHOCDOOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHOCTECH.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CHUCK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CINDY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CITIZEN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CLEO.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\CLOCKMAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\COCDOOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CODEDISK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\COKE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5414,11 +5402,9 @@ Source: ..\SCRIPTS\COVER.SSL; DestDir: {app}\source\scripts; Flags: overwriterea
 Source: ..\SCRIPTS\COW.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\COYOTE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CPRAY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\CR_DIALG.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CRASHBOX.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CRASHRM.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CREDDOOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\CRVNDRVR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CRVNENMY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CRVNMSTR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\CRVNTEAM.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5440,9 +5426,7 @@ Source: ..\SCRIPTS\DEATHSPR.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\DECKER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DECKGARD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DECKGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\DEFINE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DEMETRE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\DEMOCOMP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DEMOCRYP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DEMODOG.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DEMODOOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5450,7 +5434,6 @@ Source: ..\SCRIPTS\DEMOFOOL.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\DEMOGEN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DEMOPEAS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DEMOPHIL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\DESERT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DESK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DETHCAVE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DETHCLAW.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5464,7 +5447,6 @@ Source: ..\SCRIPTS\DOG.SSL; DestDir: {app}\source\scripts; Flags: overwritereado
 Source: ..\SCRIPTS\DOG2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DOGMEAT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DOLGAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\DONOTUSE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DOOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DOORCODE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\DRAGON.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5504,7 +5486,6 @@ Source: ..\SCRIPTS\EMITER4A.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\EMITER5A.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\EMITER6A.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\EMITERH.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\ENEMY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\EXITBASE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\EXITLITE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FALCON1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5518,12 +5499,10 @@ Source: ..\SCRIPTS\FARMRAD5.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\FARMRAD6.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FARMRAD7.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FARMRAID.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\FEARDARK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FEMFARMR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FEVDISK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FGTCARVN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FGTGARD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\FGTRTNVN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FGTVAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FIELD1A.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FIELD1B.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5550,7 +5529,6 @@ Source: ..\SCRIPTS\FIELDI.SSL; DestDir: {app}\source\scripts; Flags: overwritere
 Source: ..\SCRIPTS\FIRE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FISHRMAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FISHRSON.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\FKE_DUDE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FLARE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FLASH.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\FLIP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5584,11 +5562,9 @@ Source: ..\SCRIPTS\GARL.SSL; DestDir: {app}\source\scripts; Flags: overwriteread
 Source: ..\SCRIPTS\GARRET.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GARY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GASTRAP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\GATEDEMO.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GDOOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENBCASE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENCHANT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\GENCHAT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENCOP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENDISK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENEMIT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5603,15 +5579,12 @@ Source: ..\SCRIPTS\GENGRDC.SSL; DestDir: {app}\source\scripts; Flags: overwriter
 Source: ..\SCRIPTS\GENINIT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENINT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENKNIGH.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\GENLOCK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENMERCA.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENMERCB.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\GENMERCC.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENMUTAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENPALA.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENPALAD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENPALB.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\GENPALC.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENPRIS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENRAID2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GENRAIDA.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5631,11 +5604,8 @@ Source: ..\SCRIPTS\GHDORGRD.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\GHGENDED.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GHGUARD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GHKICK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\GHMAIN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\GHOUL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GHREFUGE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GHRNDGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\GHTEMP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GHZERO.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GIDEON.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GIZGUARD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5650,7 +5620,6 @@ Source: ..\SCRIPTS\GLOBLELV.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\GLOCABN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GLOCOMP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GLORDDOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\GLOW4W~1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GLOWCAGE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GLOWDESK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GLOWENT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5670,6 +5639,7 @@ Source: ..\SCRIPTS\GPWRTERM.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\GRAFFITI.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GRETCH.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GRNFARM.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\GRNMTARM.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GROUNDR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GSENROB.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GUARD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5678,7 +5648,6 @@ Source: ..\SCRIPTS\GUARDEMO.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\GUIDO.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GUNCACHE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GUNCASE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\GUNLOCK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GUNRNR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GUNRUNR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\GUNTHER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5707,19 +5676,14 @@ Source: ..\SCRIPTS\HGENCVAN.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\HGENDEAL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HGENFARM.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HGENGAMB.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\HGENGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HGENVAN2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\HHOOKER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\HHOOKER2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HHOOKERA.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HHOOKERD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HICRAPS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HIGHELD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\HIGHJACK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HIGHTOWR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HJOHN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HORD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\HOSTILE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HOTELMAP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HOTGHOUL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HOTSPOT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5734,10 +5698,7 @@ Source: ..\SCRIPTS\HTWRGRGE.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\HTWRLEON.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HTWRRICK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HTWRWIFE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\HUBBER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HUBCAPTR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\HUBCARVN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\HUBCOP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HUBDWNTN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HUBENCTR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\HUBENT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5756,10 +5717,8 @@ Source: ..\SCRIPTS\HUNTER.SSL; DestDir: {app}\source\scripts; Flags: overwritere
 Source: ..\SCRIPTS\HWMHOST.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\IAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ICECHEST.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\ICEPICK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\INBLADE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\INITIATE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\INVADED.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\INVADER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\IRWIN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ISMARC.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5783,12 +5742,10 @@ Source: ..\SCRIPTS\JEREM2.SSL; DestDir: {app}\source\scripts; Flags: overwritere
 Source: ..\SCRIPTS\JKIL2CAS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JKIL2ENT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JNKSCOUT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\JOBPOST.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JOHN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JON.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JONATHAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JTBOB.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\JTCHIDME.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JTDN2UP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JTGENGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JTILE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5798,13 +5755,11 @@ Source: ..\SCRIPTS\JTUP2DN.SSL; DestDir: {app}\source\scripts; Flags: overwriter
 Source: ..\SCRIPTS\JULIANNA.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JUNKCAS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JUNKDEMO.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\JUNKDOG.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JUNKENT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JUNKIE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JUNKJAIL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JUNKKILL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JUNKPEAS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\JUNKY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\JUSTIN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\KALNOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\KANE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5842,7 +5797,6 @@ Source: ..\SCRIPTS\LENNY.SSL; DestDir: {app}\source\scripts; Flags: overwriterea
 Source: ..\SCRIPTS\LENORE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\LEON.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\LEX.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\LGFTPRNT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\LIBCOMP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\LIBRARY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\LITELEAV.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5854,11 +5808,8 @@ Source: ..\SCRIPTS\LOOT.SSL; DestDir: {app}\source\scripts; Flags: overwriteread
 Source: ..\SCRIPTS\LOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\LORENZO.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\LORRAINE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\LORRI.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\LORRIAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\LOSER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\LOWCRAPS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\LOWJACK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\LOXLEY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\LT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\LTCODES.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5875,7 +5826,6 @@ Source: ..\SCRIPTS\MANGLED.SSL; DestDir: {app}\source\scripts; Flags: overwriter
 Source: ..\SCRIPTS\MANHOLE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MANTIS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MAP_INIT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\MARCEL~1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MARCELLE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MARNEY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MAS2CHID.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5898,9 +5848,7 @@ Source: ..\SCRIPTS\MEANDER.SSL; DestDir: {app}\source\scripts; Flags: overwriter
 Source: ..\SCRIPTS\MEDIC.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MEDLAB.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MEETING.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\MERCH1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\METLDOOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\MICHAE~1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MICHAEL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MICHELLE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MIKE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5912,7 +5860,6 @@ Source: ..\SCRIPTS\MLPRIS.SSL; DestDir: {app}\source\scripts; Flags: overwritere
 Source: ..\SCRIPTS\MLPRISON.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MOATCHEK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MOATGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\MODREACT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MOLERAT2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MOMCLAW.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MONSTER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5944,7 +5891,6 @@ Source: ..\SCRIPTS\MVNUKE.SSL; DestDir: {app}\source\scripts; Flags: overwritere
 Source: ..\SCRIPTS\MVRCRDOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MVSCTSHF.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\MVUP2DWN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\MYSTSTRN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\NDEBRIS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\NDWN2UP1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\NDWN2UP2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -5984,14 +5930,12 @@ Source: ..\SCRIPTS\ODDWALL.SSL; DestDir: {app}\source\scripts; Flags: overwriter
 Source: ..\SCRIPTS\OFFICER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ORFEO.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\OVER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\OVERSEE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\P.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\PAINFELD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\PALADINA.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\PALADINB.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\PALADINC.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\PALGUARD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\PALSCOUT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\PATRICK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\PAUL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\PEASANTC.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -6051,9 +5995,7 @@ Source: ..\SCRIPTS\RIPUP2DN.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\RN1SCRB1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\RNDCITY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\RNDCOAST.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\RNDDERT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\RNDDESRT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\RNDECGEN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\RNDMTN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ROAMCLAW.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ROBCTRL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -6061,17 +6003,13 @@ Source: ..\SCRIPTS\ROBOT.SSL; DestDir: {app}\source\scripts; Flags: overwriterea
 Source: ..\SCRIPTS\ROCK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ROMERO.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ROOMGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\ROPE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ROZBED.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\RUBCHIP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\RUBCORE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\RUFUS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\RUTGE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\RUTGER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\SALLY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\SAMMAEL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\SAMMY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\SAMMY2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\SARAH.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\SAUL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\SBOKCASE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -6147,15 +6085,12 @@ Source: ..\SCRIPTS\SUPLYGRD.SSL; DestDir: {app}\source\scripts; Flags: overwrite
 Source: ..\SCRIPTS\SURF.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\SWST2EST.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TALIUS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\TALKCOW.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TALKCOWS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TALUS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TANDI.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TARDIS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TAYLOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\TCOWMAP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TEACHER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\TEMP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TERM.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TERM1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TERM2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -6167,7 +6102,6 @@ Source: ..\SCRIPTS\TERM7.SSL; DestDir: {app}\source\scripts; Flags: overwriterea
 Source: ..\SCRIPTS\TERM8.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TERRY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TEST.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\TESTER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TGUARD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\THERESA.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\THFD2U.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -6189,13 +6123,11 @@ Source: ..\SCRIPTS\TROPHY.SSL; DestDir: {app}\source\scripts; Flags: overwritere
 Source: ..\SCRIPTS\TROY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TYCHO.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\TYLIER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\UNDRBED.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\USEDCAR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\UTHERN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\UZCHAIR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\V132CAVE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\V13CAVE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\V13CAVES.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\V13COMP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\V13DOOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\VALEL1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -6259,8 +6191,6 @@ Source: ..\SCRIPTS\VTEAM1.SSL; DestDir: {app}\source\scripts; Flags: overwritere
 Source: ..\SCRIPTS\VTEAM2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\VTEAM3.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\VTEAM4.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\VTEAM5.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\VTEAM6.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\VTEAM7.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\VTEAM8.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\VWEPLOKR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -6269,13 +6199,11 @@ Source: ..\SCRIPTS\WANRATS.SSL; DestDir: {app}\source\scripts; Flags: overwriter
 Source: ..\SCRIPTS\WATRSHED.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WDEBRIS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WEAPSYS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\WHOMAP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WIFE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WIGGUP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WMCARVN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WMGROUP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WMGUARD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\WMRTNVN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WMVAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WOMEN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WOODDOOR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -6284,37 +6212,127 @@ Source: ..\SCRIPTS\WORLD.SSL; DestDir: {app}\source\scripts; Flags: overwriterea
 Source: ..\SCRIPTS\WTRGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WTRHOLE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WTRLADR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\SCRIPTS\WTRMGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\WTRTHIEF.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\YOURROOM.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ZACK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ZARK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\ZAX.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 ;
-Source: ..\source\BatchFiles\LOGFILE.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\source\BatchFiles\LogFileDebug.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: ..\source\BatchFiles\ONSCREEN.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: unpack ACM to WAV, all.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: unpack demo sfx.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: unpack scripts.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+; PLACEHOLDER SCRIPTS
+;
+Source: ..\SCRIPTS\Placeholders\1DEDGUL1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\1LADDER1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\1MANHOL1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\1MOLERAT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\ALAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\ALLDOGS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\ANIMFR~1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\ARMORY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\ASSBLOW.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\BARTER~1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\BARTERGU.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\BARTERGY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\BASIC.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\BETHGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\BILL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\BOB.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\BOBSIGN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\BOSASIS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\BOSLORI.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\BVELEV1W.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\CALLY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\CCRTNVN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\CHEATER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\CHILDR~1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\CHITEM.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\CLOCKMAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\CR_DIALG.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\CRVNDRVR.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\DEFINE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\DEMOCOMP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\DESERT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\DONOTUSE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\ENEMY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\FEARDARK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\FGTRTNVN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\FKE_DUDE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\GATEDEMO.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\GENCHAT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\GENLOCK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\GENMERCC.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\GENPALC.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\GHMAIN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\GHOUL.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\GHTEMP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\GLOW4W~1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\GUNLOCK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\HGENGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\HHOOKER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\HHOOKER2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\HIGHJACK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\HOSTILE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\HUBBER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\HUBCARVN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\HUBCOP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\ICEPICK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\INVADED.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\JOBPOST.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\JTCHIDME.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\JUNKDOG.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\JUNKY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\LGFTPRNT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\LORRI.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\LORRIAN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\LOWJACK.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\MARCEL~1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\MERCH1.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\MICHAE~1.ssl; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\MODREACT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\MYSTSTRN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\OVERSEE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\PALSCOUT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\RNDDERT.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\RNDECGEN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\ROPE.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\RUFUS.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\SAMMY.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\SAMMY2.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\TALKCOW.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\TCOWMAP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\TEMP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\TESTER.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\UNDRBED.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\V13CAVES.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\VTEAM5.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\VTEAM6.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\WHOMAP.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\WMRTNVN.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\SCRIPTS\Placeholders\WTRMGRD.SSL; DestDir: {app}\source\scripts; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+;
+Source: ..\Batchfiles\LOGFILE.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\Batchfiles\LogFileDebug.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\Batchfiles\ONSCREEN.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\Batchfiles\unpack ACM to WAV, all.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\Batchfiles\unpack demo sfx.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\Batchfiles\unpack scripts.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 ;	Source: ..\..\..\Fallout\DATA\SOUND\SFX\silent file\unpack ACM to WAV, all.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: ..\SCRIPTS\_pack scripts.bat; DestDir: {app}\source\batch files; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 ;
-Source: corpse types, for Invasions\2. spread eagle, full blood.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\34. spread eagle, minor blood.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\35. face down, minor blood.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\48. spread eagle, no blood.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\49. face down, no blood.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\51. side blown out.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\53. headless, face down.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\54. bullet holes.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\55. burnt, spread eagle.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\56. cut in half.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\57. burnt, face down -- NOT FOR LARGE CRITTERS.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\58. ash pile -- NOT FOR LARGE CRITTERS.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\59. exploded.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\60. goo pile (plasma).bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
-Source: corpse types, for Invasions\63. face down, full blood.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\2. spread eagle, full blood.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\34. spread eagle, minor blood.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\35. face down, minor blood.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\48. spread eagle, no blood.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\49. face down, no blood.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\51. side blown out.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\53. headless, face down.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\54. bullet holes.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\55. burnt, spread eagle.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\56. cut in half.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\57. burnt, face down -- NOT FOR LARGE CRITTERS.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\58. ash pile -- NOT FOR LARGE CRITTERS.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\59. exploded.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\60. goo pile (plasma).bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
+Source: ..\_ReferenceOnly\corpse types, for Invasions\63. face down, full blood.bmp; DestDir: {app}\source\dead body types; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 ;
 Source: Fallout FIXT installer -- GERMAN UNCUT.iss; DestDir: {app}\source; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
 Source: Fallout FIXT installer -- BUG FIXES ONLY.iss; DestDir: {app}\source; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Tasks: "  SRC"
@@ -11746,61 +11764,75 @@ Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMAP.FRM; DestD
 Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMAQ.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
 Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMAR.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
 Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMAT.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBO.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
-Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBA.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBB.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBD.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBF.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBG.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBI.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBL.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBM.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBO.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBO.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBO.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBO.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBO.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBO.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FR0; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FR1; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FR2; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FR3; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FR4; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
+;Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMBP.FR5; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
 Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMCH.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
 Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMCJ.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
 Source: ..\Fixt loader zipfile\KATJA_Weapons\WEAPONS_Default\HFKATMDA.FRM; DestDir: {app}\DATA\ART\CRITTERS; Flags: overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname; Components: Mod KatjaOptions\NoChange KatjaOptions\NoChangeALLWEAPONS KatjaOptions\ArmorChanges KatjaOptions\ArmorChangesALLWEAPONS
