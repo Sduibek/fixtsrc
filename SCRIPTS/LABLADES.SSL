@@ -97,9 +97,9 @@ begin
 		call Lighting;
 	end
 	if (global_var(613) == 9104) then begin
-		if (metarule(22, 0) == 0) then begin	set_obj_visibility(RazorPtr, 1);	end
-		move_to(RazorPtr, 0, 0);
-		kill_critter(RazorPtr, 0);
+		//if (metarule(22, 0) == 0) then begin	set_obj_visibility(RazorPtr, 1);	end
+		//move_to(RazorPtr, 0, 0);
+		//kill_critter(RazorPtr, 0);
 		gfade_in(1);
 	end
 	call update_party;
@@ -109,9 +109,9 @@ procedure map_exit_p_proc
 begin
 	call remove_party;
 	if ((global_var(613) == 9103) or (global_var(613) == 9102)) then begin
-		if (metarule(22, 0) == 0) then begin	set_obj_visibility(RazorPtr, 1);	end
-		move_to(RazorPtr, 0, 0);
-		kill_critter(RazorPtr, 0);
+		//if (metarule(22, 0) == 0) then begin	set_obj_visibility(RazorPtr, 1);	end
+		//move_to(RazorPtr, 0, 0);
+		//kill_critter(RazorPtr, 0);
 	end
 end
 

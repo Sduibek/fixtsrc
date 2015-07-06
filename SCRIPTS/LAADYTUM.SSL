@@ -189,7 +189,7 @@ begin
 			kill_critter_type(16777216 + 261, 0);
 			kill_critter_type(16777216 + 262, 0);
 			kill_critter_type(16777216 + 263, 0);
-			critter_attempt_placement(RazorPtr, 12700, 0);
+//			critter_attempt_placement(RazorPtr, 12700, 0);
 			set_global_var(613, 2);
 			set_global_var(155, global_var(155) + 2);
 			display_msg(message_str(766, 103) + 2000 + message_str(766, 104));
@@ -203,7 +203,7 @@ begin
 				end
 				gfade_out(1);
 				kill_critter_type(16777216 + 268, 0);
-				critter_attempt_placement(RazorPtr, 12700, 0);
+//				critter_attempt_placement(RazorPtr, 12700, 0);
 				set_global_var(613, 2);
 				set_global_var(352, 1);
 				set_global_var(155, global_var(155) + 2);
