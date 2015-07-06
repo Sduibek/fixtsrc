@@ -1,13 +1,11 @@
 //
 // ---HOLODISK SCRIPT---  Sduibek
 //
-
 procedure start;
 procedure NewPtr;
 
 // local_var(0) == Used (put in Pip-Boy)
 // local_var(1) == Examined (change item hoverdescrip)
-
 
 procedure start
 begin
@@ -50,6 +48,16 @@ begin
 	if self_obj != 0 then begin
 		set_global_var(453, self_obj);
 	end
+	if script_action == 1 then begin
+		if (metarule(22, 0) == 0) then begin// not IS_LOADING_GAME
+			if global_var(452) == 1 then begin// REMOVE_JON_DISK_SON       :=0;  //  452  Fixt: Has he taken it from the player in the Zimmerman/Razor quest
+				set_global_var(452, 2);// REMOVE_JON_DISK_SON       :=0;  //  452  Fixt: Has he taken it from the player in the Zimmerman/Razor quest
+				set_global_var(453, 0);// Clear it too, just in case.
+				rm_obj_from_inven(dude_obj, self_obj);
+				display_msg(message_str(295, 107));
+				destroy_object(self_obj);
+			end
+		end
+	end
 end
-
 

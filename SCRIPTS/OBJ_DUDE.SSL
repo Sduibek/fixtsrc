@@ -593,32 +593,32 @@ begin
 				end
 			end
 		end
-		if global_var(453) != 0 then begin// RAZOR_HOLODISK_POINTER    :=0;  //  453  Fixt: For tracking and destroying it
-			if global_var(452) == 1 then begin// REMOVE_JON_DISK_SON       :=0;  //  452  Fixt: Has he taken it from the player in the Zimmerman/Razor quest
-				if global_var(453) > 255 then begin
-					set_global_var(452, 2);// REMOVE_JON_DISK_SON       :=0;  //  452  Fixt: Has he taken it from the player in the Zimmerman/Razor quest
-					if Ian_ptr > 0 then begin
-						rm_obj_from_inven(Ian_ptr, global_var(453));
-					end
-					if Tandi_ptr > 0 then begin
-						rm_obj_from_inven(Tandi_ptr, global_var(453));
-					end
-					if Tycho_ptr > 0 then begin
-						rm_obj_from_inven(Tycho_ptr, global_var(453));
-					end
-					if Katja_ptr > 0 then begin
-						rm_obj_from_inven(Katja_ptr, global_var(453));
-					end
-					rm_obj_from_inven(dude_obj, global_var(453));
-					destroy_object(global_var(453));
-					set_global_var(453, 0);// Clear it too, just in case.
-					display_msg(message_str(295, 107));
-				end
-				else begin// else if invalid pointer, then clear it.
-					set_global_var(453, 0);
-				end
-			end
-		end
+//		if global_var(453) != 0 then begin// RAZOR_HOLODISK_POINTER    :=0;  //  453  Fixt: For tracking and destroying it
+//			if global_var(452) == 1 then begin// REMOVE_JON_DISK_SON       :=0;  //  452  Fixt: Has he taken it from the player in the Zimmerman/Razor quest
+//				if global_var(453) > 255 then begin
+//					set_global_var(452, 2);// REMOVE_JON_DISK_SON       :=0;  //  452  Fixt: Has he taken it from the player in the Zimmerman/Razor quest
+//					if Ian_ptr > 0 then begin
+//						rm_obj_from_inven(Ian_ptr, global_var(453));
+//					end
+//					if Tandi_ptr > 0 then begin
+//						rm_obj_from_inven(Tandi_ptr, global_var(453));
+//					end
+//					if Tycho_ptr > 0 then begin
+//						rm_obj_from_inven(Tycho_ptr, global_var(453));
+//					end
+//					if Katja_ptr > 0 then begin
+//						rm_obj_from_inven(Katja_ptr, global_var(453));
+//					end
+//					rm_obj_from_inven(dude_obj, global_var(453));
+//					destroy_object(global_var(453));
+//					set_global_var(453, 0);// Clear it too, just in case.
+//					display_msg(message_str(295, 107));
+//				end
+//				else begin// else if invalid pointer, then clear it.
+//					set_global_var(453, 0);
+//				end
+//			end
+//		end
 		if global_var(450) != 0 then begin//   VREE_AUTOPSY_POINTER // 450  // ! Fallout Fixt: Pointer used to create and destroy the tape.
 			if global_var(449) == 2 then begin//   VREE_GIVEN_DUDE_AUTOPSY  :=0;  //  449  // Vree sets to 1, Master sets to 2, set to 5 is given to Master
 				if global_var(450) > 255 then begin
