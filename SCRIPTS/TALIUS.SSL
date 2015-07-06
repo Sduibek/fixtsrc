@@ -272,9 +272,7 @@ end
 procedure Talius06
 begin
 	gsay_reply(274, 126);
-//	if not(global_var(0)) then begin
-//		giq_option(4, 274, 127, Talius07, 50);
-//	end
+	giq_option(4, 274, 127, Talius07, 50);
 	giq_option(4, 274, 128, Talius31, 50);
 	giq_option(4, 274, 129, Talius32, 50);
 end
@@ -283,9 +281,7 @@ procedure Talius07
 begin
 	gsay_reply(274, 130);
 	giq_option(4, 274, 131, Talius08, 50);
-//	if not(global_var(0)) then begin
-//		giq_option(4, 274, 132, Talius29, 50);
-//	end
+	giq_option(4, 274, 132, Talius29, 50);
 	giq_option(4, 274, 133, Talius30, 50);
 	giq_option(4, 274, 134, combat, 50);
 end
