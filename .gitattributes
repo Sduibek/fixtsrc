@@ -78,6 +78,10 @@
 *.INF  diff=astextplain
 *.ini  diff=astextplain
 *.INI  diff=astextplain
+*.isl  diff=astextplain
+*.ISL  diff=astextplain
+*.lnk  diff=astextplain
+*.LNK  diff=astextplain
 *.reg  diff=astextplain
 *.REG  diff=astextplain
 
@@ -85,6 +89,8 @@
 *.7z  binary
 *.7Z  binary
 *.application  binary
+*.bmp  binary
+*.BMP  binary
 *.bz2  binary
 *.bZ2  binary
 *.cab  binary
