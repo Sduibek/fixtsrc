@@ -1156,11 +1156,11 @@ begin
 	end
 // Warn if from older version of Fixt:
 	if (metarule(22, 0) == 1) then begin// if Load Game is true. If going into actual dialog, CANNOT DO ON GAME LOAD, because it crashes.
-		if not(((global_var(22) == 0) and (global_var(179) == 80))) then begin// VERSION, SUBVERSION
+		if not(((global_var(22) == 0) and (global_var(179) == 81))) then begin// VERSION, SUBVERSION
 // if FIXT_OLD_VERSION_WARNED hasn't been set - increment this by 1 each release!
-			if (global_var(177) != 4) then begin
+			if (global_var(177) != 5) then begin
 				display_msg(message_str(766, 433));// Warning player when loading from old version
-				set_global_var(177, 4);
+				set_global_var(177, 5);
 			end
 		end
 	end
