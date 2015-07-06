@@ -876,31 +876,34 @@ begin
 				critter_mod_skill(dude_obj, 18, global_var(476) * has_trait(0, dude_obj, 18));
 			end
 		end
-		if not(global_var(0)) then begin// if   FIXES_ONLY == 0
-			if global_var(23) or global_var(62) then begin// if display plvl or title on levelup == yes
-				if (global_var(27) == 1) then begin// plvl 1
-					if global_var(62) then begin// display title == 1
-						display_msg(message_str(766, 404) + message_str(766, (global_var(27) + 404)));// "Your title is _____"
-					end
+		if global_var(23) or global_var(62) then begin// if display plvl or title on levelup == yes
+			if (global_var(27) == 1) then begin// plvl 1
+				if global_var(62) then begin// display title == 1
+					display_msg(message_str(766, 404) + message_str(766, (global_var(27) + 404)));// "Your title is _____"
 				end
-				else begin//plvl between 2 and 21, inclusive
-					if (global_var(27) <= 21) then begin
-						if (global_var(23) and global_var(62)) then begin// plvl and title
-							display_msg(message_str(766, 294) + global_var(27) + ". " + message_str(766, 404) + message_str(766, (global_var(27) + 404)));// "You are now lvl ___. Your title is ___"
+			end
+			else begin//plvl between 2 and 21, inclusive
+				if (global_var(27) <= 21) then begin
+					if (global_var(23) and global_var(62)) then begin// plvl and title
+						display_msg(message_str(766, 294) + global_var(27) + ". " + message_str(766, 404) + message_str(766, (global_var(27) + 404)));// "You are now lvl ___. Your title is ___"
+					end
+					else begin
+						if global_var(62) then begin// title only
+							display_msg(message_str(766, 404) + message_str(766, (global_var(27) + 404)));// "Your title is _____"
 						end
 						else begin
-							if global_var(62) then begin// title only
-								display_msg(message_str(766, 404) + message_str(766, (global_var(27) + 404)));// "Your title is _____"
-							end
-							else begin
-								if global_var(23) then begin// plvl only
-									display_msg(message_str(766, 294) + global_var(27) + ".");// "You are now lvl ___"
-								end
+							if global_var(23) then begin// plvl only
+								display_msg(message_str(766, 294) + global_var(27) + ".");// "You are now lvl ___"
 							end
 						end
 					end
-				end					
-			end
+				end
+			end					
+		end
+		// if FULL_HP_ON_LVLUP == 1
+		if global_var(64) then begin//  variable MaxHP;  MaxHP := get_critter_stat(dude_obj, 7);
+			critter_heal(dude_obj, 999);
+		end
 // if player is level 21 and PLAYER_CAN_LVL_PAST_21 == 1
 //			if global_var(58) and (get_pc_stat(1) == 21) then begin
 //				set_global_var(27, (global_var(27) + 1));
@@ -913,11 +916,6 @@ begin
 //				end
 //					// Do shit here for players that want to level past 21
 //			end
-		// if FULL_HP_ON_LVLUP == 1
-			if global_var(64) then begin//  variable MaxHP;  MaxHP := get_critter_stat(dude_obj, 7);
-				critter_heal(dude_obj, 999);
-			end
-		end
 	end
 // "Poison has left your system"
 	if (get_critter_stat(dude_obj, 36) > 0) then begin// is_poisoned
