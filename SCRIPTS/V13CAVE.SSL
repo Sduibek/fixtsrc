@@ -768,14 +768,10 @@ begin
 	if (proto_data(obj_pid(dude_obj), 1) == "Max Stone") then begin
 		item := create_object_sid(30, 0, 0, -1);//10mm AP
 		add_mult_objs_to_inven(dude_obj, item, 1);
-		item := create_object_sid(21, 0, 0, -1);//Brass Knuckles
-		add_mult_objs_to_inven(dude_obj, item, 1);
 	end
 	if (proto_data(obj_pid(dude_obj), 1) == "Natalia") then begin
 		item := create_object_sid(45, 0, 0, -1);//Throwing Knife
 		add_mult_objs_to_inven(dude_obj, item, 2);
-		item := create_object_sid(84, 0, 0, -1);//Lock Picks
-		add_mult_objs_to_inven(dude_obj, item, 1);
 	end
 	if (proto_data(obj_pid(dude_obj), 1) == "Albert") then begin
 		item := create_object_sid(40, 0, 0, -1);//Stimpak
