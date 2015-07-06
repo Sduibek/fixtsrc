@@ -10,7 +10,7 @@ ECHO x86: Running Install32bit.bat: >> ..\DATA\FIXT\install.log
 @CD
 @ECHO.
 @ECHO.
-@tpatch.exe ..\master.dat master.pat
+@tpatch.exe ..\..\master.dat master.pat
 @IF ERRORLEVEL 0 (GoTo msuccess) ELSE (
 @ECHO.
 @ECHO Error during Cathedral Crash Fix patch = masterdat >> ..\DATA\FIXT\install.log
@@ -36,7 +36,7 @@ ECHO x86: Running Install32bit.bat: >> ..\DATA\FIXT\install.log
 @CD
 @ECHO.
 @ECHO.
-@tpatch.exe ..\critter.dat critter.pat
+@tpatch.exe ..\..\critter.dat critter.pat
 @IF ERRORLEVEL 0 (GoTo csuccess) ELSE (
 @ECHO.
 @ECHO Error during Cathedral Crash Fix patch = critterdat >> ..\DATA\FIXT\install.log
