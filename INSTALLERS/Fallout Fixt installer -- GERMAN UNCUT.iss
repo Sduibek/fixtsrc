@@ -4,16 +4,17 @@
 ;
 ;	PRE-RELEASE CHECKLIST:  (notes-to-self for Sduibek)
 ;  0)   Compile all scripts!!!
-;  1)	update version# in CREDITS.TXT, MISC.MSG, .iss installer files, VAULT13.GAM, and OBJ_DUDE.SSL checks
-;  2)	update Change Log file and run compare on changelog from last version, to generate incremental changelog.
-;  3)	copy stuff from VAULT13.GAM to all the base/invasion GAM files
-;  4)	roll back any testing stuff: OBJ_DUDE settings, overpowered item .PROs, remember Flare (79) is from C:\Games\Fo1 extracted - DO NOT MODIFY.
-;  5)	update Troubleshooting Guide
+;  1)	Update version#: CREDITS.TXT, MISC.MSG, Installers, VAULT13.GAM, OBJ_DUDE.SSL
+;  2)	Update changelog and run compare on changelog from last version, to generate incremental changelog.
+;  3)   Verify files (*.msg, *.txt, VAULT13.GAM, GLOBAL.H, fallout.cfg, ddraw.ini, f1_res.ini) are same across all locations: Fallout, fixtsrc, fixtlang, Fo1toFo2
+;  4)	Roll back any testing stuff: OBJ_DUDE settings, overpowered item .PROs, remember Flare (79) is from C:\Games\Fo1 extracted - DO NOT MODIFY.
+;  5)	Update the Troubleshooting Guide
 ;  6)   Make sure has newest version of f1_res/f2_res and Sfall/ddraw.
 ;  7)   Check settings of f1_res/f2_res and ddraw/Sfall.
-;  7)   Do a test install and compare folders to make sure no files missed.
-;  8)   remove fixed stuff from Fallout Fixt Bug Reports wiki
-;  9)   Verify web links still go to valid & current files: Troubleshooting Guide, Changelog, etc.
+;  8)   Do a test install and compare folders to make sure no files missed.
+;  9)   Remove fixed stuff from Fallout Fixt Bug Reports wiki
+; 10)   Verify web links still go to valid & current files: Troubleshooting Guide, Changelog, etc.
+; 11)   Copy all current text/dialog files to "ARCHIVES (Previous Fixt versions)" within fixtlang
 ;
 ;  alpha first        December 2010, maybe?
 ;  alpha 0.?          Jan 5, 2011
@@ -168,35 +169,35 @@ Name: {group}\Sduibek on GitHub (source code, translations); Filename: https://g
 Name: {group}\Troubleshooting guide; Filename: {#MyAppSupportURL}
 Name: {commondesktop}\{#MyAppName}; Filename: {app}\{#MyAppExeName}; IconFilename: {app}\Icons (.ico)\FalloutFixt.ico; Tasks: desktopicon
 Name: {userappdata}\Microsoft\Internet Explorer\Quick Launch\{#MyAppName}; Filename: {app}\{#MyAppExeName}; IconFilename: {app}\Icons (.ico)\FalloutFixt.ico; Tasks: quicklaunchicon
-[Registry]
+;[Registry]
 ;Compatibility entries were created with DirectDraw Compatibility Tool (http://crappybitter.livejournal.com/tag/ddc_tool)
 ; All systems (32-bit)
-Root: HKLM; Subkey: SOFTWARE\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror
-Root: HKLM; Subkey: SOFTWARE\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror; ValueType: string; ValueName: Name; ValueData: FALLOUTW.exe
+;Root: HKLM; Subkey: SOFTWARE\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror
+;Root: HKLM; Subkey: SOFTWARE\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror; ValueType: string; ValueName: Name; ValueData: FALLOUTW.exe
 ;Root: HKLM; Subkey: SOFTWARE\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror; ValueType: dword; ValueName: ID; ValueData: 889582044
-Root: HKLM; Subkey: SOFTWARE\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror; ValueType: binary; ValueName: Flags; ValueData: 00 08 00 00
+;Root: HKLM; Subkey: SOFTWARE\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror; ValueType: binary; ValueName: Flags; ValueData: 00 08 00 00
 ; 64-bit systems only
-Root: HKLM; Subkey: SOFTWARE\Wow6432Node\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror; Check: IsWin64
-Root: HKLM; Subkey: SOFTWARE\Wow6432Node\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror; ValueType: string; ValueName: Name; ValueData: FALLOUTW.exe; Check: IsWin64
+;Root: HKLM; Subkey: SOFTWARE\Wow6432Node\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror; Check: IsWin64
+;Root: HKLM; Subkey: SOFTWARE\Wow6432Node\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror; ValueType: string; ValueName: Name; ValueData: FALLOUTW.exe; Check: IsWin64
 ;Root: HKLM; Subkey: SOFTWARE\Wow6432Node\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror; ValueType: dword; ValueName: ID; ValueData: 889582044; Check: IsWin64
-Root: HKLM; Subkey: SOFTWARE\Wow6432Node\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror; ValueType: binary; ValueName: Flags; ValueData: 00 08 00 00; Check: IsWin64
+;Root: HKLM; Subkey: SOFTWARE\Wow6432Node\Microsoft\DirectDraw\Compatibility\FALLOUTW; Flags: noerror; ValueType: binary; ValueName: Flags; ValueData: 00 08 00 00; Check: IsWin64
 ;Not sure what it's for, but mine also had: [HKEY_LOCAL_MACHINE\SOFTWARE\Interplay\Fallout\1.0]"SrcPath"="C:\\Games\\"
 ; CURRENT USER
-Root: HKCU; Subkey: Software\Interplay; Flags: noerror
-Root: HKCU; Subkey: Software\Interplay\Fallout; Flags: noerror
-Root: HKCU; Subkey: Software\Interplay\Fallout\1.0; Flags: noerror
-Root: HKCU; Subkey: Software\Interplay\Fallout\1.0; Flags: noerror; ValueType: string; ValueName: DestPath; ValueData: {app}
-Root: HKCU; Subkey: Software\Interplay\Fallout\1.0; ValueType: string; ValueName: Language; ValueData: English
+;Root: HKCU; Subkey: Software\Interplay; Flags: noerror
+;Root: HKCU; Subkey: Software\Interplay\Fallout; Flags: noerror
+;Root: HKCU; Subkey: Software\Interplay\Fallout\1.0; Flags: noerror
+;Root: HKCU; Subkey: Software\Interplay\Fallout\1.0; Flags: noerror; ValueType: string; ValueName: DestPath; ValueData: {app}
+;Root: HKCU; Subkey: Software\Interplay\Fallout\1.0; ValueType: string; ValueName: Language; ValueData: English
 ;Root: HKCU; Subkey: Software\Interplay\Fallout\1.0; ValueType: string; ValueName: Language; ValueData: Czech; Tasks: Czech
 ;Root: HKCU; Subkey: Software\Interplay\Fallout\1.0; ValueType: string; ValueName: Language; ValueData: Spanish; Tasks: Spanish
-Root: HKCU; Subkey: Software\Interplay\Fallout\1.1; Flags: noerror
-Root: HKCU; Subkey: Software\Interplay\Fallout\1.1; Flags: noerror; ValueType: string; ValueName: DestPath; ValueData: {app}
-Root: HKCU; Subkey: Software\Interplay\Fallout\1.1; ValueType: string; ValueName: Language; ValueData: English
+;Root: HKCU; Subkey: Software\Interplay\Fallout\1.1; Flags: noerror
+;Root: HKCU; Subkey: Software\Interplay\Fallout\1.1; Flags: noerror; ValueType: string; ValueName: DestPath; ValueData: {app}
+;Root: HKCU; Subkey: Software\Interplay\Fallout\1.1; ValueType: string; ValueName: Language; ValueData: English
 ;Root: HKCU; Subkey: Software\Interplay\Fallout\1.1; ValueType: string; ValueName: Language; ValueData: Czech; Tasks: Czech
 ;Root: HKCU; Subkey: Software\Interplay\Fallout\1.1; ValueType: string; ValueName: Language; ValueData: Spanish; Tasks: Spanish
-Root: HKCU; Subkey: Software\Interplay\Fallout\1.2; Flags: noerror
-Root: HKCU; Subkey: Software\Interplay\Fallout\1.2; Flags: noerror; ValueType: string; ValueName: DestPath; ValueData: {app}
-Root: HKCU; Subkey: Software\Interplay\Fallout\1.2; ValueType: string; ValueName: Language; ValueData: English
+;Root: HKCU; Subkey: Software\Interplay\Fallout\1.2; Flags: noerror
+;Root: HKCU; Subkey: Software\Interplay\Fallout\1.2; Flags: noerror; ValueType: string; ValueName: DestPath; ValueData: {app}
+;Root: HKCU; Subkey: Software\Interplay\Fallout\1.2; ValueType: string; ValueName: Language; ValueData: English
 ;Root: HKCU; Subkey: Software\Interplay\Fallout\1.2; ValueType: string; ValueName: Language; ValueData: Czech; Tasks: Czech
 ;Root: HKCU; Subkey: Software\Interplay\Fallout\1.2; ValueType: string; ValueName: Language; ValueData: Spanish; Tasks: Spanish
 ;Root: HKCU; Subkey: Software\Microsoft\Windows\CurrentVersion\App Paths\FALLOUTW.exe
@@ -204,21 +205,21 @@ Root: HKCU; Subkey: Software\Interplay\Fallout\1.2; ValueType: string; ValueName
 ;Root: HKCU; Subkey: Software\Microsoft\Windows\CurrentVersion\App Paths\FALLOUTW.exe; ValueType: string; ValueName: InstallPath; ValueData: {app}
 ;Root: HKCU; Subkey: Software\Microsoft\Windows\CurrentVersion\App Paths\FALLOUTW.exe; ValueType: string; ValueName: Path; ValueData: {app}
 ; LOCAL MACHINE
-Root: HKLM; Subkey: SOFTWARE\Interplay; Flags: noerror
-Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout; Flags: noerror
-Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.0; Flags: noerror
-Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.0; Flags: noerror; ValueType: string; ValueName: DestPath; ValueData: {app}
-Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.0; ValueType: string; ValueName: Language; ValueData: English
+;Root: HKLM; Subkey: SOFTWARE\Interplay; Flags: noerror
+;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout; Flags: noerror
+;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.0; Flags: noerror
+;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.0; Flags: noerror; ValueType: string; ValueName: DestPath; ValueData: {app}
+;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.0; ValueType: string; ValueName: Language; ValueData: English
 ;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.0; ValueType: string; ValueName: Language; ValueData: Czech; Tasks: Czech
 ;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.0; ValueType: string; ValueName: Language; ValueData: Spanish; Tasks: Spanish
-Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.1; Flags: noerror
-Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.1; Flags: noerror; ValueType: string; ValueName: DestPath; ValueData: {app}
-Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.1; ValueType: string; ValueName: Language; ValueData: English
+;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.1; Flags: noerror
+;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.1; Flags: noerror; ValueType: string; ValueName: DestPath; ValueData: {app}
+;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.1; ValueType: string; ValueName: Language; ValueData: English
 ;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.1; ValueType: string; ValueName: Language; ValueData: Czech; Tasks: Czech
 ;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.1; ValueType: string; ValueName: Language; ValueData: Spanish; Tasks: Spanish
-Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.2; Flags: noerror
-Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.2; Flags: noerror; ValueType: string; ValueName: DestPath; ValueData: {app}
-Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.2; ValueType: string; ValueName: Language; ValueData: English
+;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.2; Flags: noerror
+;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.2; Flags: noerror; ValueType: string; ValueName: DestPath; ValueData: {app}
+;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.2; ValueType: string; ValueName: Language; ValueData: English
 ;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.2; ValueType: string; ValueName: Language; ValueData: Czech; Tasks: Czech
 ;Root: HKLM; Subkey: SOFTWARE\Interplay\Fallout\1.2; ValueType: string; ValueName: Language; ValueData: Spanish; Tasks: Spanish
 ;Root: HKLM; Subkey: SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\FALLOUTW.exe
@@ -311,8 +312,8 @@ Filename: {app}\CrashFix\vcr_2008_x64; WorkingDir: {app}\CrashFix; Parameters: /
 Filename: {app}\CrashFix\DXSETUP.exe; WorkingDir: {app}\CrashFix; Parameters: /silent; Flags: runminimized runhidden; StatusMsg: Installing Direct3D & DirectX Runtime Components 3.0, 3.1, 4.2, 4.3 ...; Components: Mod
 ; Batch files
 Filename: {app}\CrashFix\InstallBegins.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Begin install logging ...; Components: Mod
-Filename: {app}\CrashFix\BackupSavesEachTime.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Performing each-time backup of all savegames ...; Components: Mod
-Filename: {app}\CrashFix\OneTimeBackup.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Performing one-time first-run backup of all savegames, if necessary ...; Components: Mod
+;Filename: {app}\CrashFix\BackupSavesEachTime.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Performing each-time backup of all savegames ...; Components: Mod
+;Filename: {app}\CrashFix\OneTimeBackup.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Performing one-time first-run backup of all savegames, if necessary ...; Components: Mod
 Filename: {app}\CrashFix\Install32bit.bat; WorkingDir: {app}\CrashFix; Check: not IsWin64; Flags: runminimized runhidden; StatusMsg: Running Cathedral Crash Fix patch x86 ...; Components: Mod
 Filename: {app}\CrashFix\Install64bit.bat; WorkingDir: {app}\CrashFix; Check: IsWin64; Flags: runminimized runhidden; StatusMsg: Running Cathedral Crash Fix patch x64 ...; Components: Mod
 Filename: {app}\CrashFix\BUGFIXESONLY_DISABLE.bat; WorkingDir: {app}\CrashFix; Flags: runminimized runhidden; StatusMsg: Disabling Bug Fixes Only mode ...; Components: Mod
@@ -846,7 +847,7 @@ Source: ..\CrashFix\sed.exe; DestDir: {app}\CrashFix; Flags: deleteafterinstall 
 Source: ..\CrashFix\stdole2.tlb; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\CrashFix\tpatch.exe; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Global Variables\VAULT13.GAM; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
-Source: ..\CrashFix\XCOPY.exe; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
+;Source: ..\CrashFix\XCOPY.exe; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\CrashFix\zlib1.dll; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 ;
 Source: ..\Batchfiles\Install\DeleteSavegamesOPTIONAL.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
@@ -854,8 +855,8 @@ Source: ..\Batchfiles\Install\Install32bit.bat; Check: not IsWin64; DestDir: {ap
 Source: ..\Batchfiles\Install\Install64bit.bat; Check: IsWin64; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Install\InstallBegins.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Install\InstallDone_FixtFilesMove.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
-Source: ..\Batchfiles\Install\OneTimeBackup.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
-Source: ..\Batchfiles\Install\BackupSavesEachTime.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
+;Source: ..\Batchfiles\Install\OneTimeBackup.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
+;Source: ..\Batchfiles\Install\BackupSavesEachTime.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 ;
 Source: ..\Batchfiles\Components\ANIMAL_FRIEND_RADSCORPS_0.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
 Source: ..\Batchfiles\Components\ANIMAL_FRIEND_RADSCORPS_1.bat; DestDir: {app}\CrashFix; Flags: deleteafterinstall overwritereadonly ignoreversion sortfilesbyextension solidbreak sortfilesbyname
