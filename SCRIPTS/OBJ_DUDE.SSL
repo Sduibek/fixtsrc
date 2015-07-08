@@ -246,6 +246,9 @@ end
 
 procedure combat_p_proc
 begin
+	if global_var(325) then begin
+		set_light_level(100);
+	end
 	if fixed_param == 4 then begin// beginning of combat round (including beginning of very first round)
 		if (cur_map_index > 29) and (cur_map_index < 33) then begin// For military base explosion countdown, displaying nice 5-second increment updates of "time left" amount:
 			if ((global_var(17) == 1) and (global_var(308) == 2)) then begin//   (each combat round in Fallout is treated as exactly 5 in-game seconds, which is 50 ticks)
@@ -419,6 +422,9 @@ end
 
 procedure critter_p_proc
 begin
+	if global_var(325) then begin
+		set_light_level(100);
+	end
 //	if (obj_is_carrying_obj_pid(dude_obj, 206) > 0) or (obj_is_carrying_obj_pid(dude_obj, 209) > 0) then begin
 //		//set_global_var(355 + cur_map_index, 1);
 //	end
