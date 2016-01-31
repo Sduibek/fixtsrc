@@ -71,12 +71,12 @@
 #define MyAppCopyrightString "Fallout © Interplay, Bethesda. All other content copyright its respective creator. MIT License."
 [Setup]
 ; lzma2/ultra64  3  ultra64  2  273  1  1  1
-Compression=none
+Compression=lzma2/ultra64
 CompressionThreads=3
-InternalCompressLevel=none
-;LZMANumBlockThreads=2
-;LZMANumFastBytes=273
-;LZMAUseSeparateProcess=yes
+InternalCompressLevel=ultra64
+LZMANumBlockThreads=2
+LZMANumFastBytes=273
+LZMAUseSeparateProcess=yes
 MergeDuplicateFiles=true
 SolidCompression=true
 ; -- All other settings ---
@@ -489,8 +489,8 @@ Name: GraphicsInterface\Rollers\NixieGreen; Description: "Green/Yellow/Red ""nix
 Name: GraphicsInterface\Rollers\NixieOrange; Description: "Orange-only ""nixie"" numbers -- like the top-right image except all orange"; Flags: exclusive disablenouninstallwarning; Types: FullCustom
 Name: GraphicsInterface\FONTS; Description: Which style of font to use? (Yellow font used in pretty much all game menus); Flags: disablenouninstallwarning fixed; Types: FullCustom FixesONLY Standard Full
 Name: GraphicsInterface\FONTS\DefaultENGLISH; Description: Default US-English font. (Wide letters, moderate spacing between letters); Flags: exclusive disablenouninstallwarning; Types: FullCustom FixesONLY Standard Full
-Name: GraphicsInterface\FONTS\ENGLISH_TighterTracking; Description: Condensed US-English font. (Wide letters, tight spacing between letters); Flags: exclusive disablenouninstallwarning; Types: FullCustom
-Name: GraphicsInterface\FONTS\DefaultEU_UK; Description: Condensed UK-English font. (Narrow letters, tight spacing between letters); Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: GraphicsInterface\FONTS\ENGLISH_TighterTracking; Description: Condensed US-English font. (Wide letters, tight spacing. Not advised.); Flags: exclusive disablenouninstallwarning; Types: FullCustom
+Name: GraphicsInterface\FONTS\DefaultEU_UK; Description: Condensed UK-English font. (Narrow letters, tight spacing. AVOID THIS.); Flags: exclusive disablenouninstallwarning; Types: FullCustom
 ; --- Ian ---
 ;	VANILLA IAN: unarmed (AQ AR), knife (D_), throwing knife (DM), pistol (H_), SMG (I_)
 Name: IanOptions; Description: " --- Ian --- [defaults: Longhair, blue pants, leather jacket, Knives/Pistols/SMGs]"; Flags: disablenouninstallwarning fixed; Types: FullCustom

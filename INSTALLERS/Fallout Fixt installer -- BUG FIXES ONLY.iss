@@ -71,12 +71,12 @@
 #define MyAppCopyrightString "Fallout © Interplay, Bethesda. All other content copyright its respective creator. MIT License."
 [Setup]
 ; lzma2/ultra64  3  ultra64  2  273  1  1  1
-Compression=none
+Compression=lzma2/ultra64
 CompressionThreads=3
-InternalCompressLevel=none
-;LZMANumBlockThreads=2
-;LZMANumFastBytes=273
-;LZMAUseSeparateProcess=yes
+InternalCompressLevel=ultra64
+LZMANumBlockThreads=2
+LZMANumFastBytes=273
+LZMAUseSeparateProcess=yes
 MergeDuplicateFiles=true
 SolidCompression=true
 ; -- All other settings ---
