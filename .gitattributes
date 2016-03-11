@@ -89,8 +89,6 @@
 *.7z  binary
 *.7Z  binary
 *.application  binary
-*.bmp  binary
-*.BMP  binary
 *.bz2  binary
 *.bZ2  binary
 *.cab  binary
@@ -103,10 +101,6 @@
 *.EXE  binary
 *.gz  binary
 *.GZ  binary
-*.jpeg  binary
-*.JPEG  binary
-*.jpg  binary
-*.JPG  binary
 *.mid  binary
 *.MID  binary
 *.mp3  binary
@@ -117,8 +111,6 @@
 *.MSM  binary
 *.msp  binary
 *.MSP  binary
-*.png  binary
-*.PNG  binary
 *.psd  binary
 *.PSD  binary
 *.rar  binary
