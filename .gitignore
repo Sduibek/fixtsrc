@@ -7,6 +7,9 @@ Fixt loader zipfile/**/*.RIX
 # Ignore this because it's only graphics, and ~2000 files
 German Uncut/**/*.FR*
 
+# Not needed; binaries and already included in installer
+INSTALLERS/Icons (.ico)/*.*
+
 
 ###############################################################
 #             https://github.com/Sduibek/myignore             #
@@ -68,14 +71,8 @@ German Uncut/**/*.FR*
 # Pictures / Images
 #===================
 
-*.[Bb][Mm][Pp]
-*.[Gg][Ii][Ff]
 *.[Ii][Cc][Oo]
-*.[Jj][Pp][Ee][Gg]
-*.[Jj][Pp][Gg]
-*.[Pp][Cc][Xx]
 *.[Pp][Dd][Ff]
-*.[Pp][Nn][Gg]
 *.[Pp][Ss][Dd]
 *.[Tt][Gg][Aa]
 
