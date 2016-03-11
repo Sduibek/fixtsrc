@@ -43,6 +43,7 @@ version info for f1_res (previously was just zeros)
 
 
 THESE ARE REQUIRED FOR THE NEW VAULTBOY ICON TO WORK PROPERLY:
+(the one that replaces Tim Cain's face for FalloutW.exe in Thumbnail and Tile view with Vault Boy)
 
 0xA1
 mine was B2, f1RP is CC
